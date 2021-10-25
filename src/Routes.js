@@ -23,7 +23,6 @@ const Routes = () => {
       <Route exact path="/" render={() => <IndexView />} />
       <Route exact path="/home" render={() => <HomeView />} />
       <Route exact path="/enroll" render={() => <EnrollFormView />} />
-
       <Route
         exact
         path="/career-listing"
@@ -36,7 +35,7 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/career-opening/:id"
+        path="/career-opening/:jobList"
         render={() => <CareerOpeningView />}
       />
       <Route exact path="/contact-page" render={() => <ContactPageView />} />

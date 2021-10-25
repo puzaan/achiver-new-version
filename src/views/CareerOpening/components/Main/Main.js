@@ -12,9 +12,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-const Main = () => {
+const Main = props  => {
+  const { data } = props;
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -30,9 +31,11 @@ const Main = () => {
       >
         <Box>
           <Typography fontWeight={700} variant={'h4'} gutterBottom>
-            asdfdasdf
+            {data.title}
           </Typography>
-          <Typography variant={'h6'}>San Francisco, CA · Full time</Typography>
+          <Typography
+            variant={'h6'}
+          >{`${data.jobTitle} \n ${data.location} `}</Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
           <Button variant="contained" color="primary" size="large">
@@ -54,22 +57,13 @@ const Main = () => {
         <Grid item xs={12} md={8}>
           <Box marginBottom={3}>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              Who we are
+              Job Type
             </Typography>
-            <Typography component={'p'}>
-              We believe lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Phasellus feugiat elit vitae enim lacinia semper. Cras nulla
-              lectus, porttitor vitae urna iaculis, malesuada tincidunt lectus.
-              Proin nec tellus sit amet massa auctor imperdiet id vitae diam.
-              Aenean gravida est nec diam suscipit iaculis. Praesent urna velit,
-              auctor nec turpis et, vehicula lobortis sem. Vivamus convallis mi
-              sagittis eleifend laoreet. Praesent vitae venenatis enim. Nulla
-              tincidunt felis et lectus rhoncus laoreet.
-            </Typography>
+            <Typography component={'p'}>{data.type}</Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              What we’re looking for
+              Requirement
             </Typography>
             <Typography component={'p'}>
               Aenean gravida est nec diam suscipit iaculis. Praesent urna velit,
@@ -78,14 +72,104 @@ const Main = () => {
               tincidunt felis et lectus rhoncus laoreet.
             </Typography>
             <Grid container spacing={1} sx={{ marginTop: 1 }}>
-              {[
-                'Our sign up is dead simple. We only require your basic company information',
-                'We support bulk uploading via SQL, integrations with most data storage products',
-                'Simply select where you\'d like to transfer your data',
-                'Our sign up is dead simple. We only require your basic company information',
-                'We support bulk uploading via SQL, integrations with most data storage products',
-                'Simply select where you\'d like to transfer your data',
-              ].map((item, i) => (
+              {data.jobReq.map((item, i) => (
+                <Grid item xs={12} key={i}>
+                  <Box
+                    component={ListItem}
+                    disableGutters
+                    width={'auto'}
+                    padding={0}
+                  >
+                    <Box
+                      component={ListItemAvatar}
+                      minWidth={'auto !important'}
+                      marginRight={2}
+                    >
+                      <Box
+                        component={Avatar}
+                        bgcolor={theme.palette.secondary.main}
+                        width={20}
+                        height={20}
+                      >
+                        <svg
+                          width={12}
+                          height={12}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </Box>
+                    </Box>
+                    <ListItemText primary={item} />
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+          <Box marginBottom={3}>
+            <Typography variant={'h5'} fontWeight={700} gutterBottom>
+              Exprences
+            </Typography>
+            <Grid container spacing={1} sx={{ marginTop: 1 }}>
+              {data.exprences.map((item, i) => (
+                <Grid item xs={12} key={i}>
+                  <Box
+                    component={ListItem}
+                    disableGutters
+                    width={'auto'}
+                    padding={0}
+                  >
+                    <Box
+                      component={ListItemAvatar}
+                      minWidth={'auto !important'}
+                      marginRight={2}
+                    >
+                      <Box
+                        component={Avatar}
+                        bgcolor={theme.palette.secondary.main}
+                        width={20}
+                        height={20}
+                      >
+                        <svg
+                          width={12}
+                          height={12}
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                      </Box>
+                    </Box>
+                    <ListItemText primary={item} />
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+
+          <Box>
+            <Typography variant={'h5'} fontWeight={700} gutterBottom>
+              Education Requirement
+            </Typography>
+            <Typography component={'p'}>{data.educationRequirement}</Typography>
+          </Box>
+          <Box marginBottom={3}>
+            <Typography variant={'h5'} fontWeight={700} gutterBottom>
+              Additional Requirements
+            </Typography>
+            <Grid container spacing={1} sx={{ marginTop: 1 }}>
+              {data.addInfo.map((item, i) => (
                 <Grid item xs={12} key={i}>
                   <Box
                     component={ListItem}
@@ -127,18 +211,15 @@ const Main = () => {
           </Box>
           <Box>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
-              Why to apply
+              Salary
             </Typography>
-            <Typography component={'p'}>
-              We believe lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Phasellus feugiat elit vitae enim lacinia semper. Cras nulla
-              lectus, porttitor vitae urna iaculis, malesuada tincidunt lectus.
-              Proin nec tellus sit amet massa auctor imperdiet id vitae diam.
-              Aenean gravida est nec diam suscipit iaculis. Praesent urna velit,
-              auctor nec turpis et, vehicula lobortis sem. Vivamus convallis mi
-              sagittis eleifend laoreet. Praesent vitae venenatis enim. Nulla
-              tincidunt felis et lectus rhoncus laoreet.
+            <Typography component={'p'}>{data.salary}</Typography>
+          </Box>
+          <Box>
+            <Typography variant={'h5'} fontWeight={700} gutterBottom>
+              Vacancies
             </Typography>
+            <Typography component={'p'}>{data.vacancy}</Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={4}>
@@ -207,6 +288,6 @@ const Main = () => {
 };
 
 export default Main;
-// Main.propTypes = {
-//   data: PropTypes.array.isRequired,
-// };
+Main.propTypes = {
+  data: PropTypes.array.isRequired,
+};

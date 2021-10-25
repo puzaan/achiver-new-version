@@ -2,10 +2,6 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-//import InputLabel from '@mui/material/InputLabel';
-//import MenuItem from '@mui/material/MenuItem';
-//import FormControl from '@mui/material/FormControl';
-//import Select from '@mui/material/Select';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { jobs } from '../../data/index';
@@ -74,108 +70,11 @@ const Jobs = () => {
   return (
     <Box>
       <Box marginBottom={4}>
-        {/* <Typography
-          align={'center'}
-          color={'text.secondary'}
-          sx={{ textTransform: 'uppercase' }}
-          variant={'subtitle2'}
-          fontWeight={600}
-        >
-          Open positions
-        </Typography> */}
+        
         <Typography fontWeight={700} variant={'h4'} align={'center'}>
           Current job openings
         </Typography>
       </Box>
-      {/* <Grid
-        container
-        spacing={4}
-        sx={{
-          '.MuiOutlinedInput-root': {
-            background: theme.palette.background.paper,
-          },
-        }}
-      >
-
-        <Grid item xs={12} md={4}>
-          <FormControl variant="outlined" sx={{ minWidth: 1 }}>
-            <InputLabel id="career-listing__jobs-role--label">Roles</InputLabel>
-            <Select labelId="career-listing__jobs-role--label" label="Roles">
-              <MenuItem value="">
-                <em>All roles</em>
-              </MenuItem>
-              <MenuItem value={'design'}>Design</MenuItem>
-              <MenuItem value={'engineering'}>Engineering</MenuItem>
-              <MenuItem value={'product'}>Product</MenuItem>
-              <MenuItem value={'support'}>Support</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <FormControl variant="outlined" sx={{ minWidth: 1 }}>
-            <InputLabel id="career-listing__jobs-role--label">Teams</InputLabel>
-            <Select labelId="career-listing__jobs-role--label" label="Teams">
-              <MenuItem value="">
-                <em>All teams</em>
-              </MenuItem>
-              <MenuItem value={'consumer'}>Consumer</MenuItem>
-              <MenuItem value={'consulting'}>Consulting</MenuItem>
-              <MenuItem value={'internal-tools'}>Internal tools</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <FormControl variant="outlined" sx={{ minWidth: 1 }}>
-            <InputLabel id="career-listing__jobs-role--label">
-              Locations
-            </InputLabel>
-            <Select
-              labelId="career-listing__jobs-role--label"
-              label="Locations"
-            >
-              <MenuItem value="">
-                <em>All locations</em>
-              </MenuItem>
-              <MenuItem value={'milan'}>Milan</MenuItem>
-              <MenuItem value={'yerevan'}>Yerevan</MenuItem>
-              <MenuItem value={'paris'}>Paris</MenuItem>
-            </Select>
-          </FormControl>
-        </Grid>
-      </Grid> */}
-
-      {/* <Box
-        display={'flex'}
-        flexDirection={{ xs: 'column', sm: 'row' }}
-        flex={'1 1 100%'}
-        justifyContent={{ sm: 'space-between' }}
-        alignItems={{ xs: 'flex-start', sm: 'center' }}
-        marginY={4}
-      >
-        <Box marginBottom={{ xs: 1, sm: 0 }}>
-          <Typography variant={'h6'} fontWeight={700}>
-            Design & UX, Engineering
-          </Typography>
-          <Typography color={'text.secondary'}>
-            User experience and design are top priorities at theFront.
-          </Typography>
-        </Box>
-        <Box
-          paddingY={1 / 2}
-          paddingX={1}
-          bgcolor={'secondary.main'}
-          borderRadius={2}
-          marginRight={1}
-        >
-          <Typography
-            variant={'caption'}
-            fontWeight={700}
-            sx={{ color: 'common.black' }}
-          >
-            {mock.length} openings
-          </Typography>
-        </Box>
-      </Box> */}
       <Grid
         container
         sx={{
