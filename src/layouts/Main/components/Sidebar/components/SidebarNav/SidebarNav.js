@@ -6,14 +6,12 @@ import { useTheme } from '@mui/material/styles';
 import NavItem from './components/NavItem';
 import { NavLink } from 'react-router-dom';
 import { Typography } from '@mui/material';
-
-const SidebarNav = ({ pages }) => {
+import { about, services, career } from '../../../../../navigation';
+import { Course } from '../../../../../../views/CourseDetails/data';
+const SidebarNav = () => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
-  const {
-    blog: blogPages,
-  } = pages;
 
   return (
     <Box>
@@ -38,69 +36,31 @@ const SidebarNav = ({ pages }) => {
         </Box>
       </Box>
       <Box paddingX={2} paddingY={2}>
-        <Box paddingBottom={1} >
-          <Typography
-            style={{ textDecoration: 'none'}}
-
-            color= 'text.primary'
-            component={NavLink}
-            activeStyle={{
-              color: 'text.primary',
-              fontWeight: 700
-            }}
-            to="/about"
-
-          >
-            About
-          </Typography>
+        <Box>
+          <NavItem title={'About'} items={about} />
         </Box>
-        <Box paddingBottom={1}>
+        <Box>
+          <NavItem title={'Services'} items={services} />
+        </Box>
+        <Box>
+          <NavItem title={'Career'} items={career} />
+        </Box>
+        <Box>
+          <NavItem title={'Traning'} items={Course} />
+        </Box>
+        <Box>
           <Typography
             style={{ textDecoration: 'none' }}
-
-            color='text.primary'
+            color="text.primary"
             component={NavLink}
             activeStyle={{
               color: 'text.primary',
-              fontWeight: 700
-            }}
-            to="/service"
-          >
-            Services
-          </Typography>
-        </Box>
-        <Box paddingBottom={1}>
-          <Typography
-            style={{ textDecoration: 'none' }}
-
-            color='text.primary'
-            component={NavLink}
-            activeStyle={{
-              color: 'text.primary',
-              fontWeight: 700
-            }}
-            to="/career-listing"
-          >
-            Careers
-          </Typography>
-        </Box>
-        <Box >
-          <Typography
-            style={{ textDecoration: 'none' }}
-            color='text.primary'
-            component={NavLink}
-            activeStyle={{
-              color: 'text.primary',
-              fontWeight: 700
+              fontWeight: 700,
             }}
             to="/contact-page"
           >
             Contact Us
           </Typography>
-        </Box>
-        
-        <Box>
-          <NavItem title={'Traning'} items={blogPages} />
         </Box>
       </Box>
     </Box>

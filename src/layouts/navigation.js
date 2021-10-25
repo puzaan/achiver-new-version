@@ -229,24 +229,71 @@ const pages = {
   ],
 };
 
-
 export default pages;
 
-export const header = [
+export const about = [
   {
-    id:'01',
-    title: 'About',
-    href: '/about',
+    id: '01',
+    title: 'Our Missions',
+    link: '/about',
   },
   {
-    id:'02',
-    title: 'Services',
-    href: '/service',
+    id: '02',
+    title: 'Our Visions',
+    link: '/about',
   },
   {
-    id:'03',
-    title: 'Contact Us',
-    href: '/contact-page',
+    id: '03',
+    title: 'Our Teams',
+    link: '/about',
   },
-
+];
+export const services = [
+  {
+    id: '01',
+    title: 'Web Development',
+    link: '/service',
+  },
+  {
+    id: '02',
+    title: 'App Development',
+    link: '/service',
+  },
+  {
+    id: '03',
+    title: 'IT Traning',
+    link: '/service',
+  },
+  {
+    id: '04',
+    title: 'Job Placement',
+    link: '/service',
+  },
+  {
+    id: '05',
+    title: 'Career Guidance',
+    link: '/service',
+  },
+  {
+    id: '06',
+    title: 'Internship',
+    link: '/service',
+  },
+];
+export const career = [
+  {
+    id: '01',
+    title: 'Remote Vacancies',
+    link: '/career-listing',
+  },
+  {
+    id: '02',
+    title: 'On-Site Offers',
+    link: '/career-listing',
+  },
+  {
+    id: '03',
+    title: 'Internship',
+    link: '/career-listing',
+  },
 ];

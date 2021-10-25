@@ -6,6 +6,7 @@ export const Course = [
     title: 'Machine Learning Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
+    link: '/course-detail',
     subtitle: [
       'Machine Learning is a first-class ticket to the most exciting careers in data analysis today. As data sources proliferate along with the computing power to process them, going straight to the data is one of the most straightforward ways to quickly gain insights and make predictions.',
       'Machine Learning (ML) is basically that field of computer science with the help of which computer systems can provide sense to data in much the same way as human beings do. In simple words, ML is a type of artificial intelligence that extract patterns out of raw data by using an algorithm or method. The key focus of ML is to allow computer systems to learn from experience without being explicitly programmed or human intervention.',
@@ -196,7 +197,8 @@ export const Course = [
     title: 'MERN Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
-    isNew: true,
+    link: '/course-detail',
+    isNew: false,
     subtitle: [
       'MERN Stack (MongoDB, ExpressJs, Reactjs and Nodejs) is a very popular programming technology used for developing web apps as well as mobile Apps. Since this technology is user- friendly, interactive, and swift, it has become well accepted in a short period of time. MERN Stack Training in Achiever Groups Software and Research Center is a career-oriented and high-paying job-oriented course which can be done by anyone who wants to build a solid career in the IT sector.',
       'The MERN architecture allows you to easily construct a 3-tier architecture (frontend, backend, database) entirely using JavaScript and JSON.',
@@ -422,6 +424,7 @@ export const Course = [
     title: 'Python Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
+    link: '/course-detail',
     isNew: true,
     subtitle: [
       'Python is a powerful programming language used in a variety of professions, ranging from data science to web development. Its in the top 10 for "Most Popular" and "Most Loved" technologies (according to StackOverflows 2016 Developer Survey), making it a relatively friendly language for beginners. Learning Python will enable you to program pretty much anything.',
@@ -706,6 +709,7 @@ export const Course = [
     title: 'Flutter Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
+    link: '/course-detail',
     isNew: true,
     subtitle: [
       'Welcome to the Complete Flutter App Development Bootcamp with Dart --Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase. Over a million developers worldwide are using it, from individuals and startups to big companies like Alibaba, Capital One, and eBay. The course covers some of the fundamental concepts for Flutter development, teaching you how to code using Dart and walking you through building nine real-world apps that run on iOS and Android, even if you have no programming experience.',

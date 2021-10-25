@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
 const NavItem = ({ title, items }) => {
   const theme = useTheme();
@@ -45,8 +46,9 @@ const NavItem = ({ title, items }) => {
               <Grid item key={i} xs={12}>
                 <Button
                   size={'large'}
-                  component={'a'}
-                  href={p.href}
+                  component={Link}
+                  // to={`${p.link}/${p.id}`}
+                  to={`${p.link}`}
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',

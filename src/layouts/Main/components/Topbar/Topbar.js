@@ -9,7 +9,7 @@ import { NavItem } from './components';
 import { Typography } from '@mui/material';
 import { ThemeModeToggler } from 'layouts/Fixed/components/Topbar/components';
 import { Course } from '../../../../views/CourseDetails/data';
-
+import { about, services, career } from '../../../navigation';
 
 const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();
@@ -43,48 +43,37 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        <Box>
-          <Typography
-            style={{ textDecoration: 'none' }}
-            color={linkColor}
-            component={NavLink}
-            activeStyle={{
-              color: 'text.primary',
-              fontWeight: 700,
-            }}
-            to="/about"
-          >
-            About
-          </Typography>
-        </Box>
-
         <Box marginLeft={4}>
-          <Typography
-            style={{ textDecoration: 'none' }}
-            color={linkColor}
-            component={NavLink}
-            activeStyle={{
-              color: 'text.primary',
-              fontWeight: 700,
-            }}
-            to="/service"
-          >
-            Services
-          </Typography>
+          <NavItem
+            title={'About'}
+            id={'About-pages'}
+            items={about}
+            colorInvert={colorInvert}
+          />
         </Box>
         <Box marginLeft={4}>
-          <Typography
-            style={{ textDecoration: 'none' }}
-            color={linkColor}
-            component={NavLink}
-            activeStyle={{
-              color: 'text.primary',
-              fontWeight: 700,
-            }}
-            to="/career-listing"
-          >
-            Careers
-          </Typography>
+          <NavItem
+            title={'Services'}
+            id={'Services-pages'}
+            items={services}
+            colorInvert={colorInvert}
+          />
+        </Box>
+        <Box marginLeft={4}>
+          <NavItem
+            title={'Career'}
+            id={'Career-pages'}
+            items={career}
+            colorInvert={colorInvert}
+          />
+        </Box>
+        <Box marginLeft={4}>
+          <NavItem
+            title={'Traning'}
+            id={'traning-pages'}
+            items={Course}
+            colorInvert={colorInvert}
+          />
         </Box>
         <Box marginLeft={4}>
           <Typography
@@ -99,15 +88,6 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
           >
             Contact Us
           </Typography>
-        </Box>
-
-        <Box marginLeft={4}>
-          <NavItem
-            title={'Traning'}
-            id={'blog-pages'}
-            items={Course}
-            colorInvert={colorInvert}
-          />
         </Box>
         <Box marginLeft={4}>
           <ThemeModeToggler />
