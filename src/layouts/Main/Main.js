@@ -43,9 +43,6 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
           paddingBottom={'0 !important'}
         >
           <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>
-            {/* <Box>
-              <ThemeModeToggler />
-            </Box> */}
           </Box>
         </Container>
       </Box>

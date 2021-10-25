@@ -1,10 +1,5 @@
-export { default as About } from './About';
-export { default as Advantages } from './Advantages';
-export { default as Features } from './Features';
+
 export { default as Integrations } from './Integrations';
-export { default as Reviews } from './Reviews';
-export { default as Team } from './Team';
-export { default as VideoSection } from './VideoSection';
 export { default as Services } from './Services';
 export { default as CourseCategories } from './CourseCategories';
 export { default as StudentReviews } from '../../Service/components/StudentReviews';

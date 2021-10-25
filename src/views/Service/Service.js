@@ -5,18 +5,12 @@ import Divider from '@mui/material/Divider';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
-  // About,
-  // Advantages,
-  // Features,
   Integrations,
-  // Reviews,
-  //Team,
-  //VideoSection,
   CourseCategories,
   StudentReviews,
   Services,
 } from './components';
-//import { CourseCategories, StudentReviews } from '../IndexView/components/index';
+
 const Service = () => {
   const theme = useTheme();
   return (
@@ -31,7 +25,7 @@ const Service = () => {
         }}
       >
         <Container position={'relative'} zIndex={3}>
-          {/* <About /> */}
+          
           <Services />
         </Container>
         <Box
@@ -58,27 +52,17 @@ const Service = () => {
         </Box>
       </Box>
       <Container>
-        {/* <VideoSection /> */}
+        
         <CourseCategories />
       </Container>
-      {/* <Box bgcolor={'alternate.main'}>
-        <Container>
-          <Advantages />
-        </Container>
-      </Box> */}
-      {/* <Container>
-        <Features />
-      </Container> */}
+      
       <Divider />
-      {/* <Container>
-        <Reviews />
-      </Container> */}
+      
       <Container paddingTop={'0 !important'}>
         <Integrations />
       </Container>
       <Box bgcolor={'alternate.main'}>
         <Container>
-          {/* <Team /> */}
           <StudentReviews />
         </Container>
       </Box>

@@ -135,12 +135,11 @@ const Footer = props => {
   const theme = useTheme();
   const { mode } = theme.palette;
   return (
-
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.footerContainer}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={3} >
-            <List  >
+          <Grid item xs={12} md={3}>
+            <List>
               <ListItem disableGutters className={classes.logoContainerItem}>
                 <div className={classes.logoContainer}>
                   <a href="/" title="Achievers Groups">
@@ -156,39 +155,48 @@ const Footer = props => {
                   </a>
                 </div>
               </ListItem>
-              <ListItem disableGutters>
+              <ListItem disableGutters alignItems='center'>
                 <IconButton className={classes.socialIcon}>
-                  <a href='https://www.facebook.com/achievergroups' target='_blank' rel='noreferrer' style={{
-                    textDecoration: 'none',
-                    color:
-                      theme.palette.mode === 'dark'
-                        ? '#ffffff'
-                        : '#000000',
-                  }}>
+                  <a
+                    href="https://www.facebook.com/achievergroups"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      textDecoration: 'none',
+                      color:
+                        theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                    }}
+                  >
                     <FacebookIcon className={classes.icon} />
                   </a>
                 </IconButton>
 
                 <IconButton className={classes.socialIcon}>
-                  <a href=" https://www.instagram.com/achievergroups/" target='_blank' rel='noreferrer' style={{
-                    textDecoration: 'none',
-                    color:
-                      theme.palette.mode === 'dark'
-                        ? '#ffffff'
-                        : '#000000',
-                  }}>
+                  <a
+                    href=" https://www.instagram.com/achievergroups/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      textDecoration: 'none',
+                      color:
+                        theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                    }}
+                  >
                     <InstagramIcon className={classes.icon} />
                   </a>
                 </IconButton>
 
                 <IconButton className={classes.socialIcon}>
-                  <a href='https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021308,85.3203425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312' target='_blank' rel='noreferrer' style={{
-                    textDecoration: 'none',
-                    color:
-                      theme.palette.mode === 'dark'
-                        ? '#ffffff'
-                        : '#000000',
-                  }} >
+                  <a
+                    href="https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021308,85.3203425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      textDecoration: 'none',
+                      color:
+                        theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                    }}
+                  >
                     <LocationOnIcon className={classes.icon} />
                   </a>
                 </IconButton>
@@ -198,13 +206,10 @@ const Footer = props => {
 
           <Grid item xs={12} md={3} className={classes.menuListContainer}>
             <Grid container spacing={0}>
-
               <List disablePadding>
                 <Typography
                   color="textPrimary"
                   className={classes.menuGroupTitle}
-
-
                 >
                   Usefull Links
                 </Typography>
@@ -270,7 +275,6 @@ const Footer = props => {
                   style={{ textDecoration: 'none' }}
                   color="textPrimary"
                   className={classes.menuGroupTitle}
-
                 >
                   Contact Us
                 </Typography>
@@ -280,8 +284,8 @@ const Footer = props => {
                   data-aos="fade-up"
                 >
                   <ListItemText
-                    primary='Phone'
-                    secondary='01-4221824,9881261300'
+                    primary="Phone"
+                    secondary="01-4221824,9881261300"
                     primaryTypographyProps={{
                       variant: 'subtitle1',
                       color: 'textSecondary',
@@ -300,8 +304,8 @@ const Footer = props => {
                   <div>
                     <a>
                       <ListItemText
-                        primary='Email'
-                        secondary='info@achivergroups.com'
+                        primary="Email"
+                        secondary="info@achivergroups.com"
                         primaryTypographyProps={{
                           variant: 'subtitle1',
                           color: 'textSecondary',
@@ -320,16 +324,19 @@ const Footer = props => {
                   data-aos="fade-up"
                 >
                   <div>
-                    <a href='https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021355,85.3200425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312' target='_blank' rel='noreferrer' style={{
-                      textDecoration: 'none',
-                      color:
-                        theme.palette.mode === 'dark'
-                          ? '#ffffff'
-                          : '#000000',
-                    }}>
+                    <a
+                      href="https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021355,85.3200425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        textDecoration: 'none',
+                        color:
+                          theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                      }}
+                    >
                       <ListItemText
-                        primary='Office'
-                        secondary='Putalisadak,Kathmandu,Nepal'
+                        primary="Office"
+                        secondary="Putalisadak,Kathmandu,Nepal"
                         primaryTypographyProps={{
                           variant: 'subtitle1',
                           color: 'textSecondary',
@@ -349,16 +356,19 @@ const Footer = props => {
                   data-aos="fade-up"
                 >
                   <div>
-                    <a href='https://www.facebook.com/achievergroups' target='_blank' rel='noreferrer' style={{
-                      textDecoration: 'none',
-                      color:
-                        theme.palette.mode === 'dark'
-                          ? '#ffffff'
-                          : '#000000',
-                    }}>
+                    <a
+                      href="https://www.facebook.com/achievergroups"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        textDecoration: 'none',
+                        color:
+                          theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                      }}
+                    >
                       <ListItemText
-                        primary='Facebook Page'
-                        secondary='@achievergroups'
+                        primary="Facebook Page"
+                        secondary="@achievergroups"
                         primaryTypographyProps={{
                           variant: 'subtitle1',
                           color: 'textSecondary',
@@ -377,16 +387,19 @@ const Footer = props => {
                   data-aos="fade-up"
                 >
                   <div>
-                    <a href='https://www.instagram.com/achievergroups/' target='_blank' rel='noreferrer' style={{
-                      textDecoration: 'none',
-                      color:
-                        theme.palette.mode === 'dark'
-                          ? '#ffffff'
-                          : '#000000',
-                    }}>
+                    <a
+                      href="https://www.instagram.com/achievergroups/"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{
+                        textDecoration: 'none',
+                        color:
+                          theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                      }}
+                    >
                       <ListItemText
-                        primary='Instagram Page'
-                        secondary='achievergroups'
+                        primary="Instagram Page"
+                        secondary="achievergroups"
                         primaryTypographyProps={{
                           variant: 'subtitle1',
                           color: 'textSecondary',
@@ -399,8 +412,6 @@ const Footer = props => {
                     </a>
                   </div>
                 </ListItem>
-
-
               </List>
             </Grid>
           </Grid>
@@ -410,7 +421,6 @@ const Footer = props => {
                 <Typography
                   color="textPrimary"
                   className={classes.menuGroupTitle}
-
                 >
                   Our Services
                 </Typography>
@@ -421,12 +431,10 @@ const Footer = props => {
                 >
                   <ListItemText
                     primary="App Development"
-
                     primaryTypographyProps={{
                       variant: 'subtitle1',
                       color: 'textSecondary',
                     }}
-
                   />
                 </ListItem>
                 <ListItem
@@ -436,12 +444,10 @@ const Footer = props => {
                 >
                   <ListItemText
                     primary="Web Devlopment"
-
                     primaryTypographyProps={{
                       variant: 'subtitle1',
                       color: 'textSecondary',
                     }}
-
                   />
                 </ListItem>
                 <ListItem
@@ -451,22 +457,17 @@ const Footer = props => {
                 >
                   <ListItemText
                     primary="Research"
-
                     primaryTypographyProps={{
                       variant: 'subtitle1',
                       color: 'textSecondary',
                     }}
-
                   />
                 </ListItem>
               </List>
             </Grid>
           </Grid>
-
         </Grid>
-
       </div>
-
     </div>
   );
 };

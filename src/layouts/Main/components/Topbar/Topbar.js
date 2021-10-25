@@ -14,9 +14,7 @@ import { Course } from '../../../../views/CourseDetails/data';
 const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  // const {
-  //   blog: blogPages,
-  // } = pages;
+
 
   const linkColor = colorInvert ? 'common.white' : 'text.primary';
   return (
