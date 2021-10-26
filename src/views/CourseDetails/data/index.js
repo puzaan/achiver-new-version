@@ -191,9 +191,37 @@ export const Course = [
       },
     ],
   },
-
   {
     id: '02',
+    title: 'JAVA',
+  },
+  {
+    id: '11',
+    title: 'Full Stact Development',
+  },
+  {
+    id: '03',
+    title: 'Database Administration',
+  },
+  {
+    id: '04',
+    title: 'IOT',
+  },
+  {
+    id: '05',
+    title: 'UI/UX Design',
+  },
+  {
+    id: '06',
+    title: 'Degital Marketing [Graphic Design, Wordpress, SEO]',
+  },
+  {
+    id: '07',
+    title: 'Business Intelligence',
+  },
+
+  {
+    id: '08',
     title: 'MERN Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
@@ -420,7 +448,7 @@ export const Course = [
   },
 
   {
-    id: '03',
+    id: '09',
     title: 'Python Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
@@ -705,7 +733,7 @@ export const Course = [
   },
 
   {
-    id: '04',
+    id: '10',
     title: 'Flutter Course',
     time: '1 hour class daily',
     class: 'Offline/Online Class',

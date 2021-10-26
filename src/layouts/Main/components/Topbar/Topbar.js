@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
-import { NavItem } from './components';
+import { NavItem, CourseItem } from './components';
 import { Typography } from '@mui/material';
 import { ThemeModeToggler } from 'layouts/Fixed/components/Topbar/components';
 import { Course } from '../../../../views/CourseDetails/data';
@@ -68,7 +68,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
           />
         </Box>
         <Box marginLeft={4}>
-          <NavItem
+          <CourseItem
             title={'Traning'}
             id={'traning-pages'}
             items={Course}

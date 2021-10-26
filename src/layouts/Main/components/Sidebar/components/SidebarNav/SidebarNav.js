@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
 
 import NavItem from './components/NavItem';
+import CourseItem from './components/CourseItem';
 import { NavLink } from 'react-router-dom';
 import { Typography } from '@mui/material';
 import { about, services, career } from '../../../../../navigation';
@@ -46,7 +47,7 @@ const SidebarNav = () => {
           <NavItem title={'Career'} items={career} />
         </Box>
         <Box>
-          <NavItem title={'Traning'} items={Course} />
+          <CourseItem title={'Traning'} items={Course} />
         </Box>
         <Box>
           <Typography
