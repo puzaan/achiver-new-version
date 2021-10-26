@@ -4,13 +4,13 @@ import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-// import {
-//   //Contact,
-//   //Form,
-//   //Hero,
-//   //Newsletter
-// } from './components';
-import { Contact} from '../About/components/index';
+import {
+  Contact,
+  //Form,
+  //Hero,
+  //Newsletter
+} from './components';
+
 
 const ContactPage = () => {
   const theme = useTheme();

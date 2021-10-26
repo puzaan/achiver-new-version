@@ -7,7 +7,7 @@ import NavItem from './components/NavItem';
 import CourseItem from './components/CourseItem';
 import { NavLink } from 'react-router-dom';
 import { Typography } from '@mui/material';
-import { about, services, career } from '../../../../../navigation';
+import { services, career } from '../../../../../navigation';
 import { Course } from '../../../../../../views/CourseDetails/data';
 const SidebarNav = () => {
   const theme = useTheme();
@@ -38,8 +38,22 @@ const SidebarNav = () => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'About'} items={about} />
+          <Typography
+            style={{ textDecoration: 'none' }}
+            color="text.primary"
+            component={NavLink}
+            activeStyle={{
+              color: 'text.primary',
+              fontWeight: 700,
+            }}
+            to="/about"
+          >
+            About Us
+          </Typography>
         </Box>
+        {/* <Box>
+          <NavItem title={'About'} items={about} />
+        </Box> */}
         <Box>
           <NavItem title={'Services'} items={services} />
         </Box>

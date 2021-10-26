@@ -12,7 +12,7 @@ import {
   Partners
   
 } from './components';
-import { Contact } from '../About/components/index';
+import { Contact } from '../ContactPage/components/index';
 const IndexView = () => {
   const theme = useTheme();
   return (

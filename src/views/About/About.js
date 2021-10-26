@@ -4,18 +4,17 @@ import Divider from '@mui/material/Divider';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
-  Contact,
+  // Contact,
   Gallery,
-  Hero,
+  // Hero,
   Story,
   WhoWeAre,
-  
+  Team,
 } from './components';
 
 const About = () => {
   return (
-    <Main colorInvert={true}>
-      <Hero />
+    <Main >
       <Container>
         <Story />
       </Container>
@@ -25,7 +24,9 @@ const About = () => {
       <Container maxWidth={800} paddingY={'0 !important'}>
         <Divider />
       </Container>
-      <Contact />
+      <Container>
+        <Team />
+      </Container>
       <Container>
         <Gallery />
       </Container>

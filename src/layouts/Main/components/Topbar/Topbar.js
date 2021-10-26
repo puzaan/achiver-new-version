@@ -9,7 +9,7 @@ import { NavItem, CourseItem } from './components';
 import { Typography } from '@mui/material';
 import { ThemeModeToggler } from 'layouts/Fixed/components/Topbar/components';
 import { Course } from '../../../../views/CourseDetails/data';
-import { about, services, career } from '../../../navigation';
+import { services, career } from '../../../navigation';
 
 const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();
@@ -43,13 +43,27 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        <Box marginLeft={4}>
+        {/* <Box marginLeft={4}>
           <NavItem
             title={'About'}
             id={'About-pages'}
             items={about}
             colorInvert={colorInvert}
           />
+        </Box> */}
+        <Box marginLeft={4}>
+          <Typography
+            style={{ textDecoration: 'none' }}
+            color={linkColor}
+            component={NavLink}
+            activeStyle={{
+              color: 'text.primary',
+              fontWeight: 700,
+            }}
+            to="/about"
+          >
+            About Us
+          </Typography>
         </Box>
         <Box marginLeft={4}>
           <NavItem

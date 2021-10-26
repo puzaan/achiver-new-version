@@ -7,13 +7,13 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import { useTheme } from '@mui/material/styles';
+
 import Container from 'components/Container';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+
 const mock = [
   {
     label: 'Phone',
-    value: '01-4221824,9881261300',
+    value: '+39 659-657-0133',
     icon: (
       <svg
         width={20}
@@ -28,7 +28,7 @@ const mock = [
   },
   {
     label: 'Email',
-    value: 'info@achivergroups.com',
+    value: 'hi@maccarianagency.com',
     icon: (
       <svg
         width={20}
@@ -42,13 +42,9 @@ const mock = [
       </svg>
     ),
   },
-  
-];
-
-const link = [
   {
-    label: 'Head Office',
-    value: 'Putalisadak, Kathmandu, Nepal',
+    label: 'Address',
+    value: 'Via Venini 33, 20147',
     icon: (
       <svg
         width={20}
@@ -64,19 +60,6 @@ const link = [
         />
       </svg>
     ),
-    weblink:'https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021355,85.3200425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312'
-  },
-  {
-    label: 'Facebook Page',
-    value: '@achievergroups',
-    icon: <FacebookIcon />,
-    weblink:'https://www.facebook.com/achievergroups'
-  },
-  {
-    label: 'Instagram Page',
-    value: 'achievergroups',
-    icon: <InstagramIcon />,
-    weblink:'https://www.instagram.com/achievergroups/'
   },
 ];
 
@@ -88,7 +71,12 @@ const Contact = () => {
       <Box>
         <Box marginBottom={2}>
           <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
-            Contact us for more information
+            Contact details
+          </Typography>
+          <Typography color="text.secondary">
+            Rather than worrying about switching offices every couple years, you
+            can instead stay in the same location and grow-up from your shared
+            coworking space to an office that takes up an entire floor.
           </Typography>
         </Box>
         <Box
@@ -120,50 +108,8 @@ const Contact = () => {
               </Box>
               <ListItemText primary={item.label} secondary={item.value} />
             </Box>
-          ))} 
-        </Box>
-
-
-        <Box
-          display={'flex'}
-          flexDirection={'column'}
-          justifyContent={'space-between'}
-        >
-          {link.map((item, i) => (
-            <a key={i} href={item.weblink} target='_blank' rel='noreferrer' style={{
-              textDecoration: 'none',
-              color:
-                theme.palette.mode === 'dark'
-                  ? '#ffffff'
-                  : '#000000',
-            }}>
-              <Box
-                key={i}
-                component={ListItem}
-                disableGutters
-                width={'auto'}
-                padding={0}
-              >
-                <Box
-                  component={ListItemAvatar}
-                  minWidth={'auto !important'}
-                  marginRight={2}
-                >
-                  <Box
-                    component={Avatar}
-                    bgcolor={theme.palette.secondary.main}
-                    width={40}
-                    height={40}
-                  >
-                    {item.icon}
-                  </Box>
-                </Box>
-                <ListItemText primary={item.label} secondary={item.value} />
-              </Box>
-            </a>
           ))}
         </Box>
-
       </Box>
     );
   };
@@ -178,7 +124,7 @@ const Contact = () => {
         marginHeight={0}
         marginWidth={0}
         scrolling="no"
-        src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4905801984137!2d85.32004251456524!3d27.70213553232898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195da1bc6e81%3A0x554ecdb446d5b245!2sAchiever%20Groups%20Software%20%26%20Research%20Centre!5e0!3m2!1sen!2snp!4v1634794978720!5m2!1sen!2snp"
+        src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
         style={{
           minHeight: 300,
           filter:
@@ -204,7 +150,12 @@ const Contact = () => {
           flexDirection={{ xs: 'column', md: 'row' }}
           position={'relative'}
         >
-          <Box width={1} order={{ xs: 2, md: 1 }}>
+          <Box
+            display={'flex'}
+            alignItems={'center'}
+            width={1}
+            order={{ xs: 2, md: 1 }}
+          >
             <Container>
               <LeftSide />
             </Container>
@@ -214,6 +165,7 @@ const Contact = () => {
               flex: { xs: '0 0 100%', md: '0 0 50%' },
               position: 'relative',
               maxWidth: { xs: '100%', md: '50%' },
+              minHeight: { xs: 300, md: 600 },
               order: { xs: 1, md: 2 },
             }}
           >
