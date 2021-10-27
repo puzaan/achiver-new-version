@@ -10,3 +10,4 @@ export { default as About } from './About';
 export { default as NotFound } from './NotFound';
 export { default as CourseDetail } from './CourseDetails';
 export { default as EnrollForm } from './EnrollForm';
+export { default as ItTraning } from './ItTraning';

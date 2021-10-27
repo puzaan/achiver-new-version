@@ -13,6 +13,7 @@ import {
   About as AboutView,
   NotFound as NotFoundView,
   EnrollForm as EnrollFormView,
+  ItTraning as ItTraning,
 } from './views';
 
 const Routes = () => {
@@ -21,6 +22,7 @@ const Routes = () => {
       <Route exact path="/" render={() => <IndexView />} />
       <Route exact path="/home" render={() => <HomeView />} />
       <Route exact path="/enroll" render={() => <EnrollFormView />} />
+      <Route exact path="/it-traning" render={() => <ItTraning />} />
       <Route
         exact
         path="/career-listing"
