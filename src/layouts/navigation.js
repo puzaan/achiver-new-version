@@ -252,7 +252,7 @@ export const services = [
   {
     id: '01',
     title: 'Web Development',
-    link: '/service',
+    link: '/web-service',
   },
   {
     id: '02',
@@ -262,7 +262,7 @@ export const services = [
   {
     id: '03',
     title: 'IT Traning',
-    link: '/service',
+    link: '/it-traning',
   },
   {
     id: '04',

@@ -1,5 +1,4 @@
 import React from 'react';
-//import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -78,7 +77,9 @@ const Solutions = () => {
                 <Box
                   display={'flex'}
                   justifyContent={'left'}
-                  marginBottom={{ xs: 2, md: 4 }}
+                  alignItems={'center'}
+                  marginBottom={{ xs: 2, md: 2 }}
+                  
                   sx={{
                     '& .lazy-load-image-loaded': {
                       maxWidth: { xs: '80%', md: '70%' },
@@ -94,20 +95,37 @@ const Solutions = () => {
                     color={greenColor}
                     variant={'rounded'}
                     borderRadius={2}
+                    
                   >
                     {icon}
+                  </Box>
+                  <Box>
+                    <Typography
+                      variant={'h6'}
+                      gutterBottom
+                      sx={{ fontWeight: 700, marginLeft: 5 }}
+                      paragraph={true}
+                      align= 'justify'
+                      
+                    >
+                      {item.title}
+                    </Typography>
                   </Box>
                   
                 </Box>
                 <Box>
-                  <Typography
+                  {/* <Typography
                     variant={'h6'}
                     gutterBottom
                     sx={{ fontWeight: 700 }}
                   >
                     {item.title}
-                  </Typography>
-                  <Typography color="text.secondary">
+                  </Typography> */}
+                  <Typography
+                    color="text.secondary"
+                    component="p"
+                    align='justify'
+                  >
                     {item.shortDes} <br />
                   </Typography>
                   <Button

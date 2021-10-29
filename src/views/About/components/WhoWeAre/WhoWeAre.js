@@ -59,7 +59,7 @@ const WhoWeAre = () => {
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Our Vision
             </Typography>
-            <Typography component={'p'} color={'text.secondary'}>
+            <Typography component={'p'} color={'text.secondary'} align='justify'>
               Most startups to enterprises who work on software have a huge
               traditional approach focused on developers i.e cater to developers
               over any staff by promising large salaries or even with equity
@@ -94,7 +94,7 @@ const WhoWeAre = () => {
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Our Mission
             </Typography>
-            <Typography component={'p'} color={'text.secondary'}>
+            <Typography align='justify' component={'p'} color={'text.secondary'}>
               We aim to be a leader in providing technology enabled business
               solutions and services in service-oriented architecture to our
               clients.
@@ -120,7 +120,7 @@ const WhoWeAre = () => {
                     <FiberManualRecordIcon fontSize="small" />
                   </ListItemAvatar>
 
-                  <Typography variant="body1" color="textwhite">
+                  <Typography align='justify' variant="body1" color="textwhite">
                     {item}{' '}
                   </Typography>
                 </ListItem>

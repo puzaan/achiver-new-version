@@ -27,7 +27,7 @@ const Hero = () => {
             component="p"
             color="text.secondary"
             sx={{ fontWeight: 400 }}
-            align={'left'}
+            align='justify'
           >
             Achiever groups were founded by experienced information technology
             professionals and instructors who decided to concentrate in the

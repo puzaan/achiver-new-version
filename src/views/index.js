@@ -11,3 +11,4 @@ export { default as NotFound } from './NotFound';
 export { default as CourseDetail } from './CourseDetails';
 export { default as EnrollForm } from './EnrollForm';
 export { default as ItTraning } from './ItTraning';
+export { default as Webservices } from './WebServices';

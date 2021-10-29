@@ -68,6 +68,7 @@ const Hero = () => {
         <Box>
           <Typography
             variant="h2"
+            
             gutterBottom
             sx={{
               fontWeight: 900,
@@ -80,6 +81,7 @@ const Hero = () => {
           <Typography
             variant="h6"
             component="p"
+            align='justify'
             color="text.primary"
             sx={{
               color: 'common.white',

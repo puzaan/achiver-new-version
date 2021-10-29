@@ -34,6 +34,9 @@ export const light = {
     secondary: '#718096',
     white: '#EEEEEF',
   },
+  icon:{
+    main: '#f9b934',
+  },
   divider: 'rgba(0, 0, 0, 0.12)',
   background: {
     paper: '#ffffff',
@@ -58,6 +61,7 @@ export const dark = {
     white: '#fff',
   },
   mode: 'dark',
+
   primary: {
     // main: '#1976d2',
     // light: '#2196f3',
@@ -81,6 +85,9 @@ export const dark = {
     dark: '#f57c00',
     contrastText: 'rgba(0, 0, 0, 0.87)',
     yellow:'#f9b934'
+  },
+  icon: {
+    main: '#f9b934',
   },
   text: {
     white: '#EEEEEF',

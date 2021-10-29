@@ -16,7 +16,7 @@ import { Contact } from '../ContactPage/components/index';
 const IndexView = () => {
   const theme = useTheme();
   return (
-    <Box sx={{ overflowX: 'hidden' }}>
+    <Box sx={{ overflowX: 'hidden', overflowY: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
         <Hero />
         <Box

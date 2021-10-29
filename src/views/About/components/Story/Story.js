@@ -20,7 +20,7 @@ const Story = () => {
             <Typography variant={'h4'} gutterBottom sx={{ fontWeight: 700 }}>
               Our Commitment
             </Typography>
-            <Typography component={'p'}>
+            <Typography component={'p'} align='justify'>
               We are committed to providing the best professional education to our students and to turn them into knowledgeable and successful information technology professionals. For that reason our company invests in new facilities, the latest software and newest hardware and hires talented developers and assistants.
               <br />
               <br />

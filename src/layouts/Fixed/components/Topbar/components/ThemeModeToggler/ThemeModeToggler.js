@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 
@@ -6,13 +7,14 @@ const ThemeModeToggler = () => {
   const theme = useTheme();
   const { themeToggler } = theme;
   const { mode } = theme.palette;
-
+  //const linkColor = colorInvert ? 'common.white' : 'text.primary';
   return (
     <Button
       variant={'outlined'}
       onClick={() => themeToggler()}
       aria-label="Dark mode toggler"
-      color={mode === 'light' ? 'primary' : 'secondary'}
+      color={mode === 'light'  ? 'primary' : 'secondary' }
+      // color={linkColor}
       sx={{
         borderRadius: 2,
         minWidth: 'auto',
@@ -55,6 +57,9 @@ const ThemeModeToggler = () => {
       )}
     </Button>
   );
+};
+ThemeModeToggler.propTypes = {
+  colorInvert: PropTypes.bool,
 };
 
 export default ThemeModeToggler;

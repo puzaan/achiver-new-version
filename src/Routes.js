@@ -14,6 +14,8 @@ import {
   NotFound as NotFoundView,
   EnrollForm as EnrollFormView,
   ItTraning as ItTraning,
+  //WebService as WebServiceView,
+  Webservices as WebservicesView
 } from './views';
 
 const Routes = () => {
@@ -23,6 +25,7 @@ const Routes = () => {
       <Route exact path="/home" render={() => <HomeView />} />
       <Route exact path="/enroll" render={() => <EnrollFormView />} />
       <Route exact path="/it-traning" render={() => <ItTraning />} />
+      <Route exact path="/web-service" render={() => <WebservicesView />} />
       <Route
         exact
         path="/career-listing"

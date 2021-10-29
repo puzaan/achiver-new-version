@@ -42,6 +42,7 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
           aria-describedby={id}
           sx={{ cursor: 'pointer' }}
           onClick={(e) => handleClick(e, id)}
+          
         >
           <Typography
             fontWeight={openedPopoverId === id || hasActiveLink() ? 700 : 400}
@@ -77,12 +78,13 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
             '.MuiPaper-root': {
               maxWidth: items.length > 12 ? 350 : 250,
               padding: 2,
-              marginTop: 2,
+              marginTop: 5,
               borderTopRightRadius: 0,
               borderTopLeftRadius: 0,
               borderBottomRightRadius: 8,
               borderBottomLeftRadius: 8,
               borderTop: `3px solid ${theme.palette.primary.main}`,
+              // overflowY: 'hidden'
             },
           }}
         >
@@ -107,6 +109,7 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
                         ? alpha(theme.palette.primary.main, 0.1)
                         : 'transparent',
                     fontWeight: activeLink === p.href ? 600 : 400,
+                    
                   }}
                 >
                   {p.title}
