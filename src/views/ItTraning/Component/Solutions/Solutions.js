@@ -76,7 +76,7 @@ const Solutions = () => {
               <CardContent sx={{ padding: 4 }}>
                 <Box
                   display={'flex'}
-                  justifyContent={'left'}
+                  justifyContent={'center'}
                   alignItems={'center'}
                   marginBottom={{ xs: 2, md: 2 }}
                   
