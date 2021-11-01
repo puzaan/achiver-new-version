@@ -30,10 +30,7 @@ const Partners = () => {
           '/html.png',
           '/css.png',
           '/javascript.png',
-          
           '/mysql.png',
-          
-          
           '/react.png',
           '/aws.png',
           '/mongoo.png',

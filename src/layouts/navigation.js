@@ -257,7 +257,7 @@ export const services = [
   {
     id: '02',
     title: 'App Development',
-    link: '/service',
+    link: '/app-service',
   },
   {
     id: '03',

@@ -20,7 +20,7 @@ const MobileApp = () => {
     <Box>
       <Box marginBottom={2}>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
-          Why Choose Achieversgroup
+          Why Choose Achievergroups
         </Typography>
         
       </Box>

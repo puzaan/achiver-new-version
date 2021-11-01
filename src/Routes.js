@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 //, Redirect
 import {
   IndexView,
-  Home as HomeView,
+  
   CareerListing as CareerListingView,
   CareerListingMinimal as CareerListingMinimalView,
   CareerOpening as CareerOpeningView,
@@ -14,7 +14,7 @@ import {
   NotFound as NotFoundView,
   EnrollForm as EnrollFormView,
   ItTraning as ItTraning,
-  //WebService as WebServiceView,
+  AppService as AppServiceView,
   Webservices as WebservicesView
 } from './views';
 
@@ -22,10 +22,11 @@ const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" render={() => <IndexView />} />
-      <Route exact path="/home" render={() => <HomeView />} />
+      
       <Route exact path="/enroll" render={() => <EnrollFormView />} />
       <Route exact path="/it-traning" render={() => <ItTraning />} />
       <Route exact path="/web-service" render={() => <WebservicesView />} />
+      <Route exact path="/app-service" render={() => <AppServiceView />} />
       <Route
         exact
         path="/career-listing"

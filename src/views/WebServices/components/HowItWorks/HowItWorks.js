@@ -110,9 +110,9 @@ const HowItWorks = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} md={12}>
               <Typography align={'justify'} color="text.secondary">
-                Being JavaScript development experts with over ten years of experience, we have created our own top-notch products that help us develop for the web faster so you get a better product sooner.
+                Being JavaScript development experts , we have created our own top-notch products that help us develop for the web faster so you get a better product sooner.
 
-                Both Webix Javascript UI Library and DHTMLX Javascript Framework provide easy customization and integration, unlimited extensibility, and excellent cross-platform and cross-browser compatibility.
+                Both Material UI Library and DHTMLX Javascript Framework provide easy customization and integration, unlimited extensibility, and excellent cross-platform and cross-browser compatibility.
               </Typography>
             </Grid>
             <Grid item xs={12} md={12}>

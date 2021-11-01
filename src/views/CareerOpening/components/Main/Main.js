@@ -5,8 +5,8 @@ import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+//import Card from '@mui/material/Card';
+//import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
@@ -66,10 +66,7 @@ const Main = props  => {
               Requirement
             </Typography>
             <Typography component={'p'}>
-              Aenean gravida est nec diam suscipit iaculis. Praesent urna velit,
-              auctor nec turpis et, vehicula lobortis sem. Vivamus convallis mi
-              sagittis eleifend laoreet. Praesent vitae venenatis enim. Nulla
-              tincidunt felis et lectus rhoncus laoreet.
+              {data.educationRequirement}
             </Typography>
             <Grid container spacing={1} sx={{ marginTop: 1 }}>
               {data.jobReq.map((item, i) => (
@@ -158,13 +155,13 @@ const Main = props  => {
             </Grid>
           </Box>
 
-          <Box>
+          {/* <Box>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Education Requirement
             </Typography>
             <Typography component={'p'}>{data.educationRequirement}</Typography>
-          </Box>
-          <Box marginBottom={3}>
+          </Box> */}
+          {/* <Box marginBottom={3}>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Additional Requirements
             </Typography>
@@ -208,7 +205,7 @@ const Main = props  => {
                 </Grid>
               ))}
             </Grid>
-          </Box>
+          </Box> */}
           <Box>
             <Typography variant={'h5'} fontWeight={700} gutterBottom>
               Salary
@@ -222,7 +219,7 @@ const Main = props  => {
             <Typography component={'p'}>{data.vacancy}</Typography>
           </Box>
         </Grid>
-        <Grid item xs={12} md={4}>
+        {/* <Grid item xs={12} md={4}>
           <Grid container spacing={isMd ? 4 : 2} direction="column">
             <Grid item xs={12} data-aos="fade-up">
               <Box component={Card} bgcolor={'primary.main'}>
@@ -281,7 +278,7 @@ const Main = props  => {
               </Box>
             </Grid>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Grid>
     </Box>
   );

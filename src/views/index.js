@@ -1,4 +1,3 @@
-export { default as Home } from './Home';
 export { default as IndexView } from './IndexView';
 export { default as CareerListing } from './CareerListing';
 export { default as CareerListingMinimal } from './CareerListingMinimal';
@@ -12,3 +11,4 @@ export { default as CourseDetail } from './CourseDetails';
 export { default as EnrollForm } from './EnrollForm';
 export { default as ItTraning } from './ItTraning';
 export { default as Webservices } from './WebServices';
+export { default as AppService } from './AppService';
