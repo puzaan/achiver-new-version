@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/achiver-new-version/static/css/main.09c904e7.chunk.css",
+    "main.js": "/achiver-new-version/static/js/main.db4aa19d.chunk.js",
+    "runtime-main.js": "/achiver-new-version/static/js/runtime-main.77bbe231.js",
+    "static/css/2.9e30c4e1.chunk.css": "/achiver-new-version/static/css/2.9e30c4e1.chunk.css",
+    "static/js/2.7141d717.chunk.js": "/achiver-new-version/static/js/2.7141d717.chunk.js",
+    "static/js/3.1eddc85a.chunk.js": "/achiver-new-version/static/js/3.1eddc85a.chunk.js",
+    "static/js/4.2ab794be.chunk.js": "/achiver-new-version/static/js/4.2ab794be.chunk.js",
+    "index.html": "/achiver-new-version/index.html",
+    "static/js/2.7141d717.chunk.js.LICENSE.txt": "/achiver-new-version/static/js/2.7141d717.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/achiver-new-version/static/media/slick.c94f7671.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.77bbe231.js",
+    "static/css/2.9e30c4e1.chunk.css",
+    "static/js/2.7141d717.chunk.js",
+    "static/css/main.09c904e7.chunk.css",
+    "static/js/main.db4aa19d.chunk.js"
+  ]
+}
