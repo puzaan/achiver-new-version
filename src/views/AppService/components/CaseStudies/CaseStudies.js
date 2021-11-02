@@ -79,7 +79,7 @@ const CaseStudies = () => {
                 <CardContent
                   sx={{
                     position: 'relative',
-                    width: { xs: 1, md: '50%' },
+                    width: { xs: 1, md: '75%' },
                     height: 1,
                     padding: 4,
                     display: 'flex',
@@ -97,18 +97,21 @@ const CaseStudies = () => {
                     >
                       {item.description}
                     </Typography>
-                  </Box>
-                  <Box>
-                    <Box
-                      component={Button}
-                      variant="contained"
-                      color="primary"
-                      size="large"
-                      marginLeft={2}
-                    >
-                      Contact Us
+                    <Box display={'flex'} justifyContent={'center'} paddingTop='10px'>
+                      <Box
+                        component={Button}
+                        variant="contained"
+                        color="primary"
+                        size="large"
+                        marginLeft={2}
+                        
+                      >
+                        Contact Us
+                      </Box>
                     </Box>
+
                   </Box>
+                  
                 </CardContent>
               </Box>
             </Box>
