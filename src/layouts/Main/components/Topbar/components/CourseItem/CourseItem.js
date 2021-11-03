@@ -29,8 +29,9 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
   useEffect(() => {
     setActiveLink(window && window.location ? window.location.pathname : '');
   }, []);
-
-  const hasActiveLink = () => items.find((i) => i.href === activeLink);
+  ///course-detail
+  //const hasActiveLink = () => items.find((i) => i.link === activeLink);
+  const hasActiveLink = () => '/course-detail/:id' === activeLink;
   const linkColor = colorInvert ? 'common.white' : 'text.primary';
 
   return (
@@ -101,14 +102,14 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
                   sx={{
                     justifyContent: 'flex-start',
                     color:
-                      activeLink === p.href
+                      activeLink === p.link
                         ? theme.palette.primary.main
                         : theme.palette.text.primary,
                     backgroundColor:
-                      activeLink === p.href
+                      activeLink === p.link
                         ? alpha(theme.palette.primary.main, 0.1)
                         : 'transparent',
-                    fontWeight: activeLink === p.href ? 600 : 400,
+                    fontWeight: activeLink === p.link ? 600 : 400,
                     
                   }}
                 >

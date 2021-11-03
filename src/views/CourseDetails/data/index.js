@@ -203,6 +203,7 @@ export const Course = [
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
     color: colors.green[200],
+    link: '/course-detail',
   },
   {
     id: '11',
@@ -211,6 +212,7 @@ export const Course = [
       'Full Stack Development is the development of both the Client side (Front end) and the Server side (back end) portions of primarily web based applications, but also mobile applications. A full stack developer can build both the back and front ends of an application. Besides, they are trained to plan and execute flawless Database Integration and deploy debugging tests.',
     ],
     color: colors.green[200],
+    link: '/course-detail',
   },
   {
     id: '03',
@@ -220,6 +222,7 @@ export const Course = [
       'Database Administrators keep the data secure and make sure it keeps fragmented and only authorized users can access the data that they are permitted to access, analyze and use. Our database Administration Training is geared at producing software professionals who can write and install computer programs in order to maintain and secure such information. Besides, we also train you to debug issues.',
     ],
     color: colors.green[200],
+    link: '/course-detail',
   },
   {
     id: '04',
@@ -229,6 +232,7 @@ export const Course = [
       'IOT is used to create information about connected devices, analyze and exchange such data and make smart decisions based on real time data. This has been proven to increase efficiency, reduce cost, minimize waste and control devices connected through IOT without human intervention.',
     ],
     color: colors.green[200],
+    link: '/course-detail',
   },
   {
     id: '05',
@@ -238,6 +242,7 @@ export const Course = [
       'Our User Interface (UI) design and User Experience (UX) design courses bring together knowledge of software engineering, hardware engineering and art and human psychology to create enabling, enriching and enticing applications- on web as well as mobile.',
     ],
     color: colors.green[200],
+    link: '/course-detail',
   },
   {
     id: '06',
@@ -248,6 +253,7 @@ export const Course = [
       'Our Digital Marketing Programs teach our students how to identify, target, attract and retain consumers. It is necessary for companies to be in constant yet impersonal, close yet pleasant contact with their customers. ',
       'It involves using cultural, artistic, timely and economic effects that draw attention, preserve loyalty and use proper use of the right platforms in order to reach target customers.',
     ],
+    link: '/course-detail',
   },
   {
     id: '07',
@@ -257,6 +263,7 @@ export const Course = [
       'They need to be able to collect, analyze and interpret historical and current data about customer behavior and the drivers of such behavior. In order to have an effective decision and strategy which maximizes reach, market share and profitability, there needs to be multiple good sources of data. Furthermore, there needs to be effective data analysis.',
       'For collecting data and analyzing such data, businesses need to use effective data collection, storage, analysis and presentation tools. Our course is designed to give our students knowledge of such tools and their effective use.',
     ],
+    link: '/course-detail',
   },
   {
     id: '015',
@@ -266,6 +273,7 @@ export const Course = [
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
+    link: '/course-detail',
   },
   {
     id: '016',
@@ -275,6 +283,7 @@ export const Course = [
       'React JS is React with JavaScript (ReactJ). It is a JavaScript library that is used to build web pages that can be accessed using a web browser. ',
       'React Native (RN) is a JavaScript based mobile application framework. By using one codebase, a developer who is proficient at React Native can build a natively rendered mobile application for all platforms like IOS, Android, Windows or Linux.',
     ],
+    link: '/course-detail',
   },
 
   //  {
