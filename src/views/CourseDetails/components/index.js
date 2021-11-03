@@ -1,4 +1,3 @@
-export { default as Form } from './Form';
 export { default as Hero } from './Hero';
 export { default as SidebarArticles } from './SidebarArticles';
 export { default as Content } from './Content';
