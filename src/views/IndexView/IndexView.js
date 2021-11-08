@@ -5,11 +5,12 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
   Features,
-  Hero,
+  //Hero,
   Reviews,
   DoNotListion,
   Solutions,
-  Partners
+  Partners,
+  Heros
   
 } from './components';
 import { Contact } from '../ContactPage/components/index';
@@ -18,7 +19,7 @@ const IndexView = () => {
   return (
     <Box sx={{ overflowX: 'hidden', overflowY: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
-        <Hero />
+        <Heros />
         <Box
           sx={{
             backgroundImage: `linear-gradient(to bottom, ${alpha(
@@ -32,6 +33,9 @@ const IndexView = () => {
           <Container>
             <Features />
           </Container>
+          
+          {/* <Heros/> */}
+          
           <Container>
             <Solutions />
           </Container>

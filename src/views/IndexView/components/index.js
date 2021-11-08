@@ -4,3 +4,8 @@ export { default as Reviews } from './Reviews';
 export { default as DoNotListion } from './DoNotListion';
 export { default as Solutions } from './Solutions';
 export { default as Partners } from './Partners';
+export { default as HeroShaped } from './HeroShaped';
+export { default as Sections } from './Sections';
+export { default as SectionHeader } from './SectionHeader';
+export { default as TypedText } from './TypedText';
+export { default as Heros } from './Heros';
