@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import { Divider} from '@mui/material';
+//import { Divider} from '@mui/material';
 import { Sections } from '../../components';
 import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
@@ -13,13 +13,12 @@ const useStyles = makeStyles(theme => ({
   hero: {
     position: 'relative',
     width: '100%',
-    height: '100%',
+    height: '590px',
     display: 'flex',
-    //maxWidth: theme.layout.contentWidth,
-    maxWidth:  'md',
     margin: '0 auto',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
+      alignItem: 'center'
     },
   },
   heroLeftSide: {
@@ -29,6 +28,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('xs')]: {
       padding: theme.spacing(3, 2),
     },
+    
   },
   heroRightSide: {
     maxWidth: '50%',
@@ -43,15 +43,16 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down('md')]: {
       display: 'none'
     },
+    
   },
   heroCover: {
     position: 'relative',
     width: '50vw',
     height: '100%',
-    [theme.breakpoints.down('sm')]: {
-      width: '100%',
-      display: 'none'
-    },
+    // [theme.breakpoints.down('sm')]: {
+    //   width: '100%',
+    //   display: 'none'
+    // },
   },
   heroImageContainer: {
     height: '100%',
@@ -103,7 +104,7 @@ const HeroShaped = props => {
           </div>
         </div>
       </div>
-      <Divider />
+      {/* <Divider /> */}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@mui/styles';
-import { Button, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 import { SectionHeader, TypedText, HeroShaped } from '../../components';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha,useTheme } from '@mui/material/styles';
@@ -142,31 +142,34 @@ const Heros = ({ className, ...rest }) => {
   );
   return (
     <div className={className} {...rest}>
-      <Box
-        sx={{
-          backgroundImage: `linear-gradient(to bottom, ${alpha(
-            theme.palette.background.paper,
-            0,
-          )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
-          backgroundRepeat: 'repeat',
-          backgroundAttachment: 'scroll',
-          position: 'relative',
-          animation: '$slideshow 50s linear infinite',
-        }}
-      >
-        <HeroShaped
-          className={classes.heroShaped}
-          leftSide={leftSideContent}
-          rightSide={
-            <div
-              className={clsx(
-                classes.imageAnimation,
-                theme.palette.mode === 'dark' ? classes.imageAnimationDark : '',
-              )}
-            />
-          }
-        />
-      </Box>
+      <Grid xs={12}>
+        <Box
+          sx={{
+            backgroundImage: `linear-gradient(to bottom, ${alpha(
+              theme.palette.background.paper,
+              0,
+            )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
+            backgroundRepeat: 'repeat',
+            backgroundAttachment: 'scroll',
+            position: 'relative',
+            animation: '$slideshow 50s linear infinite',
+          }}
+        >
+          <HeroShaped
+            className={classes.heroShaped}
+            leftSide={leftSideContent}
+            rightSide={
+              <div
+                className={clsx(
+                  classes.imageAnimation,
+                  theme.palette.mode === 'dark' ? classes.imageAnimationDark : '',
+                )}
+              />
+            }
+          />
+        </Box>
+      </Grid>
+      
     </div>
   );
 };
