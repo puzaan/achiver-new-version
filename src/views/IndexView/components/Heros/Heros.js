@@ -5,9 +5,10 @@ import { makeStyles } from '@mui/styles';
 import { Button, Typography } from '@mui/material';
 import { SectionHeader, TypedText, HeroShaped } from '../../components';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { useTheme } from '@mui/material/styles';
+import { alpha,useTheme } from '@mui/material/styles';
+import { Box } from '@mui/system';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   fontWeight400: {
     fontWeight: 400,
   },
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
           },
         },
       },
-    }
+    },
   },
   heroShaped: {
     '& .hero-shaped__image': {
@@ -51,12 +52,11 @@ const useStyles = makeStyles(theme => ({
     height: '600%',
     backgroundColor: theme.palette.alternate.dark,
     top: '-25%',
-    left: '-100%',
+    //left: '-100%',
     position: 'absolute',
     [theme.breakpoints.up('sm')]: {
       backgroundSize: '800px auto',
-      
-    }
+    },
   },
   imageAnimationDark: {
     background: `url(${'https://assets.maccarianagency.com/the-front/web-screens/home/home-hero-bg-dark.png'})`,
@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Heros = ({  className, ...rest }) => {
+const Heros = ({ className, ...rest }) => {
   const classes = useStyles();
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -83,6 +83,7 @@ const Heros = ({  className, ...rest }) => {
       variant="h2"
       color="text.primary"
       gutterBottom
+      
       sx={{
         fontWeight: 500,
       }}
@@ -90,12 +91,17 @@ const Heros = ({  className, ...rest }) => {
       Software company and Software Training partner .
       <br />
       <TypedText
-        component="span"
+        color={'secondary'}
+        component={'span'}
         variant={isMd ? 'h3' : 'h4'}
-        color="secondary"
-        className={classes.fontWeight400}
+        
         typedProps={{
-          strings: ['Startup.', 'Online course.', 'Enhancing business|.', 'and many more...'],
+          strings: [
+            'Startup.',
+            'Online course.',
+            'Enhancing business|.',
+            'and many more...',
+          ],
           typeSpeed: 80,
           loop: true,
         }}
@@ -127,8 +133,8 @@ const Heros = ({  className, ...rest }) => {
         variant: 'h2',
         color: 'textPrimary',
       }}
-      ctaGroup={[
-        buyButton]}
+      
+      ctaGroup={[buyButton]}
       data-aos="fade-right"
       disableGutter
       className={classes.leftSideContent}
@@ -136,18 +142,31 @@ const Heros = ({  className, ...rest }) => {
   );
   return (
     <div className={className} {...rest}>
-      <HeroShaped
-        className={classes.heroShaped}
-        leftSide={leftSideContent}
-        rightSide={(
-          <div
-            className={clsx(
-              classes.imageAnimation,
-              theme.palette.mode === 'dark' ? classes.imageAnimationDark: '',
-            )}
-          />
-        )}
-      />
+      <Box
+        sx={{
+          backgroundImage: `linear-gradient(to bottom, ${alpha(
+            theme.palette.background.paper,
+            0,
+          )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
+          backgroundRepeat: 'repeat',
+          backgroundAttachment: 'scroll',
+          position: 'relative',
+          animation: '$slideshow 50s linear infinite',
+        }}
+      >
+        <HeroShaped
+          className={classes.heroShaped}
+          leftSide={leftSideContent}
+          rightSide={
+            <div
+              className={clsx(
+                classes.imageAnimation,
+                theme.palette.mode === 'dark' ? classes.imageAnimationDark : '',
+              )}
+            />
+          }
+        />
+      </Box>
     </div>
   );
 };

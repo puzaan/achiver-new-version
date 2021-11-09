@@ -3,6 +3,7 @@ import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
+import SecondContainer from 'components/SecondContainer';
 import {
   Features,
   //Hero,
@@ -19,7 +20,7 @@ const IndexView = () => {
   return (
     <Box sx={{ overflowX: 'hidden', overflowY: 'hidden' }}>
       <Main bgcolor={'background.paper'}>
-        <Heros />
+        
         <Box
           sx={{
             backgroundImage: `linear-gradient(to bottom, ${alpha(
@@ -30,12 +31,19 @@ const IndexView = () => {
             position: 'relative',
           }}
         >
+          <Box bgcolor={'alternate.main'}>
+            <SecondContainer >
+              <Heros />
+            </SecondContainer>
+          
+          </Box>
+          
+
+          
+          
           <Container>
             <Features />
           </Container>
-          
-          {/* <Heros/> */}
-          
           <Container>
             <Solutions />
           </Container>

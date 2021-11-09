@@ -91,8 +91,10 @@ const Hero = () => {
           theme.palette.background.paper,
           0,
         )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
-        backgroundRepeat: 'repeat-x',
+        backgroundRepeat: 'repeat',
+        backgroundAttachment: 'scroll',
         position: 'relative',
+        animation: '$slideshow 50s linear infinite',
       }}
     >
       <Box paddingY={{ xs: 0, sm: '4rem', md: '4rem' }}>
@@ -167,7 +169,12 @@ const Hero = () => {
             left={'50%'}
             top={0}
             position={'absolute'}
-            sx={{ transform: 'translate3d(20%, -50%, 0)' }}
+            sx={{
+              backgroundRepeat: 'repeat',
+              backgroundAttachment: 'scroll',
+              animation: '$slideshow 50s linear infinite',
+              transform: 'translate3d(20%, -50%, 0)'
+            }}
           >
             {images.map((item, i) => (
               <Box key={i} marginTop={{ sm: -(i * 16) }} marginX={1}>
@@ -189,6 +196,12 @@ const Hero = () => {
                       height={1}
                       width={1}
                       maxWidth={320}
+                      sx={{
+                        backgroundRepeat: 'repeat',
+                        backgroundAttachment: 'scroll',
+                        animation: '$slideshow 50s linear infinite',
+                        
+                      }}
                     />
                   </Box>
                 ))}
