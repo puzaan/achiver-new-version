@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-//import { Divider} from '@mui/material';
 import { Sections } from '../../components';
 import { makeStyles } from '@mui/styles';
 const useStyles = makeStyles(theme => ({
@@ -16,6 +15,7 @@ const useStyles = makeStyles(theme => ({
     height: '590px',
     display: 'flex',
     margin: '0 auto',
+    maxWidth: '100%',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column-reverse',
       alignItem: 'center'

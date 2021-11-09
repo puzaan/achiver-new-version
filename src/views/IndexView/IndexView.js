@@ -37,10 +37,6 @@ const IndexView = () => {
             </SecondContainer>
           
           </Box>
-          
-
-          
-          
           <Container>
             <Features />
           </Container>

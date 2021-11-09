@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
       },
       '& .hero-shaped__wrapper': {
         flexDirection: 'column',
+        alignItem: 'center'
       },
     },
   },
