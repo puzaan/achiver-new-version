@@ -51,15 +51,21 @@ const IndexView = () => {
           <Container>
             <Reviews />
           </Container>
+          
+          <Container>
+            <Contact />
+          </Container>
           <Box bgcolor={'primary.main'}>
             <Container paddingX={'0 !important'} maxWidth={1}>
               <Partners />
             </Container>
+            
           </Box>
-          <Container>
-            <Contact />
-          </Container>
+          <Box bgcolor={'alternate.green'} height='2px'>
+            
+          </Box>
         </Box>
+        
       </Main>
     </Box>
   );

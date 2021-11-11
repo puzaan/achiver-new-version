@@ -72,7 +72,6 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         {children}
         <Divider />
       </main>
-
       <Footer />
 
     </Box>

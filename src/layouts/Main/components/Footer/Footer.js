@@ -4,16 +4,21 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { Grid, IconButton, List, ListItem, ListItemText, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { useTheme } from '@emotion/react';
+import { useTheme } from '@mui/material/styles';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import {  Course } from '../../../../views/CourseDetails/data';
+import { services } from '../../../navigation';
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(8, 0),
+    
+    paddingBottom: 60,
+    
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(14, 0),
+      
+      paddingBottom: 60,
     },
     background: theme.palette.background.footer,
   },
@@ -21,24 +26,33 @@ const useStyles = makeStyles(theme => ({
   footerContainer: {
     // maxWidth: theme.layout.contentWidth,
     width: '100%',
-    margin: '0 auto',
-    padding: theme.spacing(0, 2),
+    //margin: '0 auto',
+    display: 'flex',
+    flexDirection: 'colloum',
+    padding: theme.spacing(0,6),
     [theme.breakpoints.up('sm')]: {
-      padding: theme.spacing(0, 8),
+      padding: theme.spacing(0,6)
     },
   },
   logoContainerItem: {
     paddingTop: 0,
+    
 
   },
+  list: {
+    display: 'flex',
+    alignContent: 'center',
+    alignItems: 'center',
+    flexDirection:'column'
+  },
   logoContainer: {
-    width: 200,
-    height: 50,
+    width: 300,
+    height: 100,
   },
   logoImage: {
-    marginTop: '50px',
-    width: '200px',
-    height: '50',
+    //marginTop: '50px',
+    width: '280px',
+    height: '100',
   },
   groupTitle: {
     textTransform: 'uppercase',
@@ -46,10 +60,10 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(1),
   },
   socialIcon: {
-    marginTop: '50px',
-    paddingTop: '20px',
-    padding: 0,
-    marginRight: theme.spacing(1),
+    //marginTop: '20px',
+    //paddingTop: '20px',
+    //padding: 0,
+    //marginRight: theme.spacing(1),
 
     color: 'rgba(255,255,255,.6)',
     '&:hover': {
@@ -60,7 +74,7 @@ const useStyles = makeStyles(theme => ({
     },
   },
   icon: {
-    fontSize: 24,
+    fontSize: 50,
     color: 'white'
 
   },
@@ -107,6 +121,10 @@ const Footer = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
+  const themes = useTheme();
+  const isMd = useMediaQuery(themes.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
   const MenuGroup = props => {
     const { item } = props;
     return (
@@ -132,16 +150,42 @@ const Footer = props => {
     // const { course } = traningPages.children;
     return <MenuGroup item={Course} />;
   };
+
+  const MenuService = props => {
+    const { item } = props;
+    return (
+      <List>
+
+        {item.map((page, i) => (
+          <ListItem disableGutters key={i} className={classes.menuGroupItem}>
+            <Typography
+              style={{ textDecoration: 'none' }}
+              component={Link}
+              to={`/course-detail/${page.id}`}
+              className={clsx(classes.navLink, 'submenu-item')}
+            >
+              {page.title}
+            </Typography>
+          </ListItem>
+        ))}
+      </List>
+    );
+  };
+
+  const MenuPages = () => {
+    // const { course } = traningPages.children;
+    return <MenuService item={services} />;
+  };
   const theme = useTheme();
   const { mode } = theme.palette;
   return (
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.footerContainer}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} paddingTop= '35px'>
           <Grid item xs={12} md={3}>
-            <List>
-              <ListItem disableGutters className={classes.logoContainerItem}>
-                <div className={classes.logoContainer}>
+            <List >
+              <ListItem disableGutters className={classes.ogoContainerItem}>
+                <div alignItems = 'center' className={classes.logoContainer}>
                   <a href="/" title="Achievers Groups">
                     <img
                       src={
@@ -151,12 +195,30 @@ const Footer = props => {
                       }
                       alt="Acheiver"
                       className={classes.logoImage}
+                      alignItems='center'
                     />
                   </a>
                 </div>
               </ListItem>
-              <ListItem disableGutters alignItems='center'>
-                <IconButton className={classes.socialIcon}>
+              
+              <ListItem sx={isMd ? {
+                
+                display: 'flex',
+                flexDirection:'column'
+              
+              } : ''}
+              
+              >
+
+
+                
+
+
+
+                <IconButton sx={{
+                  
+                  marginLeft:'0px'
+                }}>
                   <a
                     href="https://www.facebook.com/achievergroups"
                     target="_blank"
@@ -170,8 +232,10 @@ const Footer = props => {
                     <FacebookIcon className={classes.icon} />
                   </a>
                 </IconButton>
+                <IconButton sx={{
 
-                <IconButton className={classes.socialIcon}>
+                  marginLeft: '0px'
+                }}>
                   <a
                     href=" https://www.instagram.com/achievergroups/"
                     target="_blank"
@@ -185,8 +249,10 @@ const Footer = props => {
                     <InstagramIcon className={classes.icon} />
                   </a>
                 </IconButton>
+                <IconButton sx={{
 
-                <IconButton className={classes.socialIcon}>
+                  marginLeft: '0px'
+                }}>
                   <a
                     href="https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021308,85.3203425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312"
                     target="_blank"
@@ -211,52 +277,8 @@ const Footer = props => {
                   color="textPrimary"
                   className={classes.menuGroupTitle}
                 >
-                  Usefull Links
+                  Career Accelerating Program
                 </Typography>
-                <ListItem
-                  className={classes.menuGroupItem}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <Typography
-                    style={{ textDecoration: 'none' }}
-                    className={clsx(classes.navLink, 'submenu-item')}
-                    component={Link}
-                    to="/about"
-                  >
-                    About
-                  </Typography>
-                </ListItem>
-                <ListItem
-                  className={classes.menuGroupItem}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <Typography
-                    style={{ textDecoration: 'none' }}
-                    className={clsx(classes.navLink, 'submenu-item')}
-                    component={Link}
-                    to="/service"
-                  >
-                    Services
-                  </Typography>
-                </ListItem>
-
-                <ListItem
-                  className={classes.menuGroupItem}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <Typography
-                    style={{ textDecoration: 'none' }}
-                    color="textPrimary"
-                    className={clsx(classes.navLink, 'submenu-item')}
-                    component={Link}
-                    to="/career-list"
-                  >
-                    Career
-                  </Typography>
-                </ListItem>
                 <ListItem
                   className={classes.menuListContainer}
                   disableGutters
@@ -267,6 +289,77 @@ const Footer = props => {
               </List>
             </Grid>
           </Grid>
+          <Grid item xs={12} md={3} className={classes.menuListContainer}>
+            <Grid container spacing={0}>
+              <List disablePadding>
+                <Typography
+                  color="textPrimary"
+                  className={classes.menuGroupTitle}
+                >
+                  Career Accelerating Program
+                </Typography>
+                <ListItem
+                  className={classes.menuListContainer}
+                  disableGutters
+                  data-aos="fade-up"
+                >
+                  <MenuPages />
+                </ListItem>
+              </List>
+            </Grid>
+          </Grid>
+
+          {/* <Grid item xs={12} md={3} className={classes.menuListContainer}>
+            <Grid container spacing={0}>
+              <List disablePadding>
+                <Typography
+                  color="textPrimary"
+                  className={classes.menuGroupTitle}
+                >
+                  Our Services
+                </Typography>
+                <ListItem
+                  className={classes.menuListContainer}
+                  disableGutters
+                  data-aos="fade-up"
+                >
+                  <ListItemText
+                    primary="App Development"
+                    primaryTypographyProps={{
+                      variant: 'subtitle1',
+                      color: 'textSecondary',
+                    }}
+                  />
+                </ListItem>
+                <ListItem
+                  className={classes.menuListContainer}
+                  disableGutters
+                  data-aos="fade-up"
+                >
+                  <ListItemText
+                    primary="Web Devlopment"
+                    primaryTypographyProps={{
+                      variant: 'subtitle1',
+                      color: 'textSecondary',
+                    }}
+                  />
+                </ListItem>
+                <ListItem
+                  className={classes.menuListContainer}
+                  disableGutters
+                  data-aos="fade-up"
+                >
+                  <ListItemText
+                    primary="Research"
+                    primaryTypographyProps={{
+                      variant: 'subtitle1',
+                      color: 'textSecondary',
+                    }}
+                  />
+                </ListItem>
+              </List>
+            </Grid>
+          </Grid> */}
 
           <Grid item xs={12} md={3} className={classes.menuListContainer}>
             <Grid container spacing={0}>
@@ -411,57 +504,6 @@ const Footer = props => {
                       />
                     </a>
                   </div>
-                </ListItem>
-              </List>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} md={3} className={classes.menuListContainer}>
-            <Grid container spacing={0}>
-              <List disablePadding>
-                <Typography
-                  color="textPrimary"
-                  className={classes.menuGroupTitle}
-                >
-                  Our Services
-                </Typography>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <ListItemText
-                    primary="App Development"
-                    primaryTypographyProps={{
-                      variant: 'subtitle1',
-                      color: 'textSecondary',
-                    }}
-                  />
-                </ListItem>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <ListItemText
-                    primary="Web Devlopment"
-                    primaryTypographyProps={{
-                      variant: 'subtitle1',
-                      color: 'textSecondary',
-                    }}
-                  />
-                </ListItem>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <ListItemText
-                    primary="Research"
-                    primaryTypographyProps={{
-                      variant: 'subtitle1',
-                      color: 'textSecondary',
-                    }}
-                  />
                 </ListItem>
               </List>
             </Grid>
