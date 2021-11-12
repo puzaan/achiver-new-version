@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageAnimation: {
-    background: `url(${'https://assets.maccarianagency.com/the-front/web-screens/home/home-hero-bg-light.png'})`,
+    background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624956030599188/Achiever_Website_Scrolling.png'})`,
     backgroundRepeat: 'repeat',
     backgroundAttachment: 'scroll',
     backgroundSize: '400px auto',
@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageAnimationDark: {
-    background: `url(${'https://assets.maccarianagency.com/the-front/web-screens/home/home-hero-bg-dark.png'})`,
+    background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624965463601152/Achiever_Website_Scrolling_Dark.png'})`,
   },
   '@keyframes slideshow': {
     '0%': {

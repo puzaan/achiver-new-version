@@ -42,7 +42,7 @@ const IndexView = () => {
           </Container>
           <Box bgcolor={'alternate.main'}>
             <Container>
-              <Solutions />
+              <Solutions />yarn 
             </Container>
           </Box>
           <Container>
