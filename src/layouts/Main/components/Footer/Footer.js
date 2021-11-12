@@ -13,12 +13,18 @@ import {  Course } from '../../../../views/CourseDetails/data';
 import { services } from '../../../navigation';
 const useStyles = makeStyles(theme => ({
   root: {
+    marginTop: '-1px',
     
-    paddingBottom: 60,
     
+    padding: theme.spacing(6, 0),
     [theme.breakpoints.up('md')]: {
+      padding: theme.spacing(6, 0),
+      //paddingBottom: 60,
+    },
+    [theme.breakpoints.down('md')]: {
+      padding: theme.spacing(8, 5),
       
-      paddingBottom: 60,
+      //paddingBottom: 60,
     },
     background: theme.palette.background.footer,
   },
@@ -26,12 +32,13 @@ const useStyles = makeStyles(theme => ({
   footerContainer: {
     // maxWidth: theme.layout.contentWidth,
     width: '100%',
-    //margin: '0 auto',
+    
     display: 'flex',
+    alignItems: 'center',
     flexDirection: 'colloum',
-    padding: theme.spacing(0,6),
+    //padding: theme.spacing(0,6),
     [theme.breakpoints.up('sm')]: {
-      padding: theme.spacing(0,6)
+      //padding: theme.spacing(0,6)
     },
   },
   logoContainerItem: {
@@ -57,14 +64,9 @@ const useStyles = makeStyles(theme => ({
   groupTitle: {
     textTransform: 'uppercase',
     color: theme.palette.primary.dark,
-    marginBottom: theme.spacing(1),
+    //marginBottom: theme.spacing(1),
   },
   socialIcon: {
-    //marginTop: '20px',
-    //paddingTop: '20px',
-    //padding: 0,
-    //marginRight: theme.spacing(1),
-
     color: 'rgba(255,255,255,.6)',
     '&:hover': {
       background: 'transparent',
@@ -79,7 +81,7 @@ const useStyles = makeStyles(theme => ({
 
   },
   menuListContainer: {
-    padding: '0 !important',
+    // padding: '0 !important',
   },
   menu: {
     display: 'flex',
@@ -147,7 +149,7 @@ const Footer = props => {
   };
 
   const TraningPages = () => {
-    // const { course } = traningPages.children;
+    
     return <MenuGroup item={Course} />;
   };
 
@@ -159,7 +161,7 @@ const Footer = props => {
         {item.map((page, i) => (
           <ListItem disableGutters key={i} className={classes.menuGroupItem}>
             <Typography
-              style={{ textDecoration: 'none' }}
+              style={{ textDecoration: 'none', align:'justify'}}
               component={Link}
               to={`/course-detail/${page.id}`}
               className={clsx(classes.navLink, 'submenu-item')}
@@ -173,7 +175,7 @@ const Footer = props => {
   };
 
   const MenuPages = () => {
-    // const { course } = traningPages.children;
+    
     return <MenuService item={services} />;
   };
   const theme = useTheme();
@@ -181,11 +183,12 @@ const Footer = props => {
   return (
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.footerContainer}>
-        <Grid container spacing={2} paddingTop= '35px'>
+        <Grid container spacing={2} >
           <Grid item xs={12} md={3}>
             <List >
-              <ListItem disableGutters className={classes.ogoContainerItem}>
-                <div alignItems = 'center' className={classes.logoContainer}>
+              <ListItem sx={{ display: 'flex', alignItems : 'center' }}>
+                <div
+                >
                   <a href="/" title="Achievers Groups">
                     <img
                       src={
@@ -195,30 +198,17 @@ const Footer = props => {
                       }
                       alt="Acheiver"
                       className={classes.logoImage}
-                      alignItems='center'
+                      // alignItems='center'
                     />
                   </a>
                 </div>
               </ListItem>
               
               <ListItem sx={isMd ? {
-                
                 display: 'flex',
                 flexDirection:'column'
-              
-              } : ''}
-              
-              >
-
-
-                
-
-
-
-                <IconButton sx={{
-                  
-                  marginLeft:'0px'
-                }}>
+              } : ''}>
+                <IconButton >
                   <a
                     href="https://www.facebook.com/achievergroups"
                     target="_blank"
@@ -232,10 +222,7 @@ const Footer = props => {
                     <FacebookIcon className={classes.icon} />
                   </a>
                 </IconButton>
-                <IconButton sx={{
-
-                  marginLeft: '0px'
-                }}>
+                <IconButton>
                   <a
                     href=" https://www.instagram.com/achievergroups/"
                     target="_blank"
@@ -249,10 +236,7 @@ const Footer = props => {
                     <InstagramIcon className={classes.icon} />
                   </a>
                 </IconButton>
-                <IconButton sx={{
-
-                  marginLeft: '0px'
-                }}>
+                <IconButton>
                   <a
                     href="https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021308,85.3203425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312"
                     target="_blank"
@@ -270,7 +254,7 @@ const Footer = props => {
             </List>
           </Grid>
 
-          <Grid item xs={12} md={3} className={classes.menuListContainer}>
+          <Grid item xs={12} md={3} >
             <Grid container spacing={0}>
               <List disablePadding>
                 <Typography
@@ -308,62 +292,13 @@ const Footer = props => {
               </List>
             </Grid>
           </Grid>
-
-          {/* <Grid item xs={12} md={3} className={classes.menuListContainer}>
-            <Grid container spacing={0}>
-              <List disablePadding>
-                <Typography
-                  color="textPrimary"
-                  className={classes.menuGroupTitle}
-                >
-                  Our Services
-                </Typography>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <ListItemText
-                    primary="App Development"
-                    primaryTypographyProps={{
-                      variant: 'subtitle1',
-                      color: 'textSecondary',
-                    }}
-                  />
-                </ListItem>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <ListItemText
-                    primary="Web Devlopment"
-                    primaryTypographyProps={{
-                      variant: 'subtitle1',
-                      color: 'textSecondary',
-                    }}
-                  />
-                </ListItem>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <ListItemText
-                    primary="Research"
-                    primaryTypographyProps={{
-                      variant: 'subtitle1',
-                      color: 'textSecondary',
-                    }}
-                  />
-                </ListItem>
-              </List>
-            </Grid>
-          </Grid> */}
-
           <Grid item xs={12} md={3} className={classes.menuListContainer}>
-            <Grid container spacing={0}>
-              <List disablePadding>
+            <Grid
+              container spacing={0}
+            >
+              <List
+                disablePadding
+              >
                 <Typography
                   style={{ textDecoration: 'none' }}
                   color="textPrimary"

@@ -71,67 +71,63 @@ const Hero = () => {
           zIndex: 1,
         }}
       />
-      <Container position={'relative'} zIndex={2}>
-        <Box>
-          {/* <Typography
-            variant="h3"
-            sx={{
-              fontWeight: 400,
-              color: 'common.white',
-              marginBottom: 2,
-            }}
-          >
-            Remote work is the future, but should you go remote?
-          </Typography> */}
-          <Box display={'flex'} alignItems={'center'}>
-            <Box maxWidth={100} marginTop={2} marginRight={4}>
-              <Box
-                component="img"
-                height='10 px'
-                width='100%'
-                src={'/reacts.png'}
-                alt="..."
-                sx={{
-                  filter:
-                    theme.palette.mode === 'dark'
-                      ? 'brightness(0) invert(0.7)'
-                      : 'none',
+      <Container position={'relative'} zIndex={1}>
+        <Box display={'flex'} alignItems={'center'} flexDirection={'column'} alignContent={'center'}>
+          <Box>
+            <Box display={'flex'} alignItems={'center'} >
+              <Box maxWidth={100} marginTop={2} marginRight={4}>
+                <Box
+                  component="img"
+                  height='10 px'
+                  width='100%'
+                  src={'/reacts.png'}
+                  alt="..."
+                  sx={{
+                    filter:
+                      theme.palette.mode === 'dark'
+                        ? 'brightness(0) invert(0.7)'
+                        : 'none',
+                  }}
+                />
+              </Box>
+              <ListItemText
+                sx={{ margin: 0 }}
+                primary={'React JS'}
+
+                secondary={'Duration: 2.5 months'}
+
+                primaryTypographyProps={{
+                  variant: 'h3',
+                  sx: {
+                    fontWeight: 400,
+                    color: 'common.white',
+
+                  },
                 }}
+                secondaryTypographyProps={{
+                  variant: 'h6',
+                  sx: { color: alpha('#ffffff', 0.8) },
+                }}
+
               />
             </Box>
-            <ListItemText
-              sx={{ margin: 0 }}
-              primary={'React JS'}
-              
-              secondary={'Duration: 2.5 months'}
-              
-              primaryTypographyProps={{
-                variant: 'h3',
-                sx: {
-                  fontWeight: 400,
+            <Box >
+              <Typography
+                variant="h6"
+                sx={{
+                  fontWeight: 500,
                   color: 'common.white',
-                  
-                },
-              }}
-              secondaryTypographyProps={{
-                variant: 'h6',
-                sx: { color: alpha('#ffffff', 0.8) },
-              }}
-              
-            />
-            
-            
+                  //marginBottom: 2,
+                }}
+              >
+                Remote work is the future, but should you go remote?
+              </Typography>
+
+            </Box>
           </Box>
-          <Typography
-            variant="h6"
-            sx={{
-              fontWeight: 500,
-              color: 'common.white',
-              marginBottom: 2,
-            }}
-          >
-            Remote work is the future, but should you go remote?
-          </Typography>
+          
+          
+          
         </Box>
       </Container>
     </Box>

@@ -40,18 +40,19 @@ const IndexView = () => {
           <Container>
             <Features />
           </Container>
-          <Container>
-            <Solutions />
-          </Container>
           <Box bgcolor={'alternate.main'}>
             <Container>
-              <DoNotListion />
+              <Solutions />
             </Container>
           </Box>
           <Container>
-            <Reviews />
+            <DoNotListion />
           </Container>
-          
+          <Box bgcolor={'alternate.main'}>
+            <Container>
+              <Reviews />
+            </Container>
+          </Box>
           <Container>
             <Contact />
           </Container>
@@ -61,7 +62,7 @@ const IndexView = () => {
             </Container>
             
           </Box>
-          <Box bgcolor={'alternate.green'} height='2px'>
+          <Box bgcolor={'alternate.green'} height='3px'>
             
           </Box>
         </Box>
