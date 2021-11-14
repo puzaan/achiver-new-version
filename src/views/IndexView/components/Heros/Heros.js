@@ -7,6 +7,7 @@ import { SectionHeader, TypedText, HeroShaped } from '../../components';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha,useTheme } from '@mui/material/styles';
 import { Box } from '@mui/system';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   fontWeight400: {
@@ -44,16 +45,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageAnimation: {
+    //background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624965463601152/Achiever_Website_Scrolling_Dark.png'})`,
+
     background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624956030599188/Achiever_Website_Scrolling.png'})`,
     backgroundRepeat: 'repeat',
     backgroundAttachment: 'scroll',
     backgroundSize: '400px auto',
     animation: '$slideshow 50s linear infinite',
-    width: '600%',
+    width: '900%',
     height: '600%',
     backgroundColor: theme.palette.alternate.dark,
-    top: '-25%',
-    //left: '-100%',
+    top: '30%',
+    left: '60%',
+    right:'10%',
     position: 'absolute',
     [theme.breakpoints.up('sm')]: {
       backgroundSize: '800px auto',
@@ -114,12 +118,12 @@ const Heros = ({ className, ...rest }) => {
 
   const buyButton = (
     <Button
-      component={'a'}
+      component={Link}
       variant="contained"
       color="primary"
       size="large"
       fullWidth={isMd ? false : true}
-      href={'/'}
+      to={'/'}
     >
       Read More
     </Button>
@@ -148,7 +152,7 @@ const Heros = ({ className, ...rest }) => {
           sx={{
             backgroundImage: `linear-gradient(to bottom, ${alpha(
               theme.palette.background.paper,
-              0,
+              1,
             )}, ${alpha(theme.palette.alternate.main, 1)} 100%)`,
             backgroundRepeat: 'repeat',
             backgroundAttachment: 'scroll',

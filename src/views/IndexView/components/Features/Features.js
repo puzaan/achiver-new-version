@@ -282,7 +282,7 @@ const Features = () => {
   );
 
   return (
-    <Grid container spacing={4}>
+    <Grid container spacing={4} paddingBottom={3}>
       <Grid
         item
         xs={12}

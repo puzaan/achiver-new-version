@@ -39,7 +39,7 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
     <Box>
       <Box bgcolor={bgcolor} position={'relative'} zIndex={theme.zIndex.appBar}>
         <Container
-          paddingTop={'8px !important'}
+          paddingTop={'0px !important'}
           paddingBottom={'0 !important'}
         >
           <Box display={'flex'} justifyContent={'flex-end'} alignItems={'center'}>

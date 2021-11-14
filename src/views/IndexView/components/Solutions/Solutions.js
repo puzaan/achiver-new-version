@@ -61,7 +61,7 @@ const Solutions = () => {
   });
 
   return (
-    <Box>
+    <Box marginBottom={4}>
       <Box marginBottom={4}>
         <Typography
           sx={{

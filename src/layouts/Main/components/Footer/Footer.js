@@ -11,35 +11,31 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {  Course } from '../../../../views/CourseDetails/data';
 import { services } from '../../../navigation';
+import Box from '@mui/material/Box';
 const useStyles = makeStyles(theme => ({
   root: {
+    
     marginTop: '-1px',
-    
-    
-    padding: theme.spacing(6, 0),
+
+    padding: theme.spacing(8, 0),
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(6, 0),
-      //paddingBottom: 60,
+      padding: theme.spacing(13, 0),
     },
     [theme.breakpoints.down('md')]: {
-      padding: theme.spacing(8, 5),
-      
-      //paddingBottom: 60,
+      paddingLeft: '30px',
     },
     background: theme.palette.background.footer,
   },
 
   footerContainer: {
-    // maxWidth: theme.layout.contentWidth,
+    
     width: '100%',
     
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'colloum',
-    //padding: theme.spacing(0,6),
-    [theme.breakpoints.up('sm')]: {
-      //padding: theme.spacing(0,6)
-    },
+    marginTop: '-50px'
+    
   },
   logoContainerItem: {
     paddingTop: 0,
@@ -117,6 +113,11 @@ const useStyles = makeStyles(theme => ({
   middle: {
     alignContent: 'center',
   },
+  img: {
+    display: 'flex',
+    alignItems: 'center'
+
+  }
 }));
 
 const Footer = props => {
@@ -185,25 +186,28 @@ const Footer = props => {
       <div className={classes.footerContainer}>
         <Grid container spacing={2} >
           <Grid item xs={12} md={3}>
-            <List >
-              <ListItem sx={{ display: 'flex', alignItems : 'center' }}>
-                <div
+            <List>
+              <ListItem sx={isMd ? { display: 'flex', alignItems: 'center', flexDirection: 'column' }: ''}>
+                <Box
+                  component={Link}
+                  to='/'
                 >
-                  <a href="/" title="Achievers Groups">
-                    <img
-                      src={
-                        mode === 'light'
-                          ? '/Achiever_Groups_LIGHT.png'
-                          : '/Achiever_Groups_LIGHT.png'
-                      }
-                      alt="Acheiver"
-                      className={classes.logoImage}
-                      // alignItems='center'
-                    />
-                  </a>
-                </div>
+                  <img
+                    src={
+                      mode === 'light'
+                        ? '/Achiever_Groups_LIGHT.png'
+                        : '/Achiever_Groups_LIGHT.png'
+                    }
+                    alt="Acheiver"
+                    className={classes.logoImage}
+                    alignItems='center'
+                    componrnt={Link}
+                    to='/'
+                  />
+
+                </Box>
+                
               </ListItem>
-              
               <ListItem sx={isMd ? {
                 display: 'flex',
                 flexDirection:'column'

@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     
   },
   heroRightSide: {
-    maxWidth: '50%',
+    maxWidth: '90%',
     flex: '0 0 50%',
     position: 'relative',
     [theme.breakpoints.down('sm')]: {

@@ -9,6 +9,7 @@ import { useTheme } from '@mui/material/styles';
 import Container from 'components/Container';
 //import { ListItem, ListItemAvatar } from '@mui/material';
 //import ImageIcon from '@mui/icons-material/Image';
+import Card from '@mui/material/Card';
 
 const Hero = () => {
   const theme = useTheme();
@@ -72,14 +73,68 @@ const Hero = () => {
         }}
       />
       <Container position={'relative'} zIndex={1}>
-        <Box display={'flex'} alignItems={'center'} flexDirection={'column'} alignContent={'center'}>
+        <Box
+          display={'flex'}
+          alignItems={'center'}
+          flexDirection={'column'}
+          alignContent={'center'}
+        >
           <Box>
-            <Box display={'flex'} alignItems={'center'} >
+            <Box
+              // width={1}
+              // height={1}
+              data-aos={'fade-up'}
+              data-aos-delay={100}
+              data-aos-offset={100}
+              data-aos-duration={600}
+              component={Card}
+              boxShadow={1}
+              variant={'outlined'}
+              borderRadius={3}
+              sx={{
+                background: alpha('#161c2d', 0.6),
+              }}
+            >
+              <Box display={'flex'} alignItems={'center'}>
+                <Box maxWidth={100} marginTop={2} marginRight={4}>
+                  <Box
+                    component="img"
+                    height="10 px"
+                    width="100%"
+                    src={'/reacts.png'}
+                    alt="..."
+                    sx={{
+                      filter:
+                        theme.palette.mode === 'dark'
+                          ? 'brightness(0) invert(0.7)'
+                          : 'none',
+                    }}
+                  />
+                </Box>
+                <ListItemText
+                  sx={{ margin: 0 }}
+                  primary={'React JS'}
+                  secondary={'Duration: 2.5 months'}
+                  primaryTypographyProps={{
+                    variant: 'h3',
+                    sx: {
+                      fontWeight: 400,
+                      color: 'common.white',
+                    },
+                  }}
+                  secondaryTypographyProps={{
+                    variant: 'h6',
+                    sx: { color: alpha('#ffffff', 0.8) },
+                  }}
+                />
+              </Box>
+            </Box>
+            {/* <Box display={'flex'} alignItems={'center'}>
               <Box maxWidth={100} marginTop={2} marginRight={4}>
                 <Box
                   component="img"
-                  height='10 px'
-                  width='100%'
+                  height="10 px"
+                  width="100%"
                   src={'/reacts.png'}
                   alt="..."
                   sx={{
@@ -93,25 +148,21 @@ const Hero = () => {
               <ListItemText
                 sx={{ margin: 0 }}
                 primary={'React JS'}
-
                 secondary={'Duration: 2.5 months'}
-
                 primaryTypographyProps={{
                   variant: 'h3',
                   sx: {
                     fontWeight: 400,
                     color: 'common.white',
-
                   },
                 }}
                 secondaryTypographyProps={{
                   variant: 'h6',
                   sx: { color: alpha('#ffffff', 0.8) },
                 }}
-
               />
-            </Box>
-            <Box >
+            </Box> */}
+            <Box>
               <Typography
                 variant="h6"
                 sx={{
@@ -122,12 +173,8 @@ const Hero = () => {
               >
                 Remote work is the future, but should you go remote?
               </Typography>
-
             </Box>
           </Box>
-          
-          
-          
         </Box>
       </Container>
     </Box>

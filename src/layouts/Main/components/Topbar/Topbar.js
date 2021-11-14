@@ -23,6 +23,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
+      padding={2}
     >
       <Box
         display={'flex'}
@@ -43,14 +44,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        {/* <Box marginLeft={4}>
-          <NavItem
-            title={'About'}
-            id={'About-pages'}
-            items={about}
-            colorInvert={colorInvert}
-          />
-        </Box> */}
+        
         <Box marginLeft={4}>
           <Typography
             style={{ textDecoration: 'none' }}
