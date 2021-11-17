@@ -48,7 +48,7 @@ const SidebarArticles = () => {
                     display: 'flex !important',
                   },
                 }}
-                //maxWidth={100}
+                
               >
                 <Box
                   component={LazyLoadImage}
@@ -66,17 +66,7 @@ const SidebarArticles = () => {
                         ? 'brightness(0.7)'
                         : 'none',
                   }}
-                  // component="img"
-                  // height='50 px'
-                  // width='50px'
-                  // src={'/react.png'}
-                  // alt="..."
-                  // sx={{
-                  //   filter:
-                  //     theme.palette.mode === 'dark'
-                  //       ? 'brightness(0) invert(0.7)'
-                  //       : 'none',
-                  // }}
+                  
                 />
               </Box>
               <CardContent
@@ -103,7 +93,8 @@ const SidebarArticles = () => {
         
         variant="outlined"
         color="primary"
-        //size="small"
+        size="large"
+        fullWidth = {true}
         to={'/it-traning'}>
         
         See More..
