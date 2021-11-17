@@ -20,7 +20,8 @@ const CourseDetail = () => {
       maxHeight={'100vh'}
       position={'sticky'}
       
-      top={0}
+      
+      top={10}
       bgcolor={'alternate.main'}
     >
       <Box

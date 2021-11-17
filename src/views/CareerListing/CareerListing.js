@@ -1,25 +1,30 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import Divider from '@mui/material/Divider';
+//import Divider from '@mui/material/Divider';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-import { Hero, Jobs,  About, CompanyValues } from './components';
+import {
+  //Hero,
+  Jobs,
+  About,
+  // CompanyValues
+} from './components';
 
 const CareerListing = () => {
   const theme = useTheme();
   return (
     <Main>
       <Box>
-        <Hero />
+        {/* <Hero />
         <Container>
           <CompanyValues />
         </Container>
         <Container>
           <Divider />
-        </Container>
+        </Container> */}
         <Container>
           <About />
         </Container>

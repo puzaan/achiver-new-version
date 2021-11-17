@@ -81,8 +81,6 @@ const Hero = () => {
         >
           <Box>
             <Box
-              // width={1}
-              // height={1}
               data-aos={'fade-up'}
               data-aos-delay={100}
               data-aos-offset={100}
@@ -95,13 +93,15 @@ const Hero = () => {
                 background: alpha('#161c2d', 0.6),
               }}
             >
+              
               <Box display={'flex'} alignItems={'center'}>
-                <Box maxWidth={100} marginTop={2} marginRight={4}>
+                
+                <Box maxWidth={100} marginTop={2} marginRight={4} alignItems={'center'}>
                   <Box
                     component="img"
                     height="10 px"
                     width="100%"
-                    src={'/reacts.png'}
+                    src={'/react.png'}
                     alt="..."
                     sx={{
                       filter:
@@ -128,6 +128,8 @@ const Hero = () => {
                   }}
                 />
               </Box>
+              
+              
             </Box>
             {/* <Box display={'flex'} alignItems={'center'}>
               <Box maxWidth={100} marginTop={2} marginRight={4}>

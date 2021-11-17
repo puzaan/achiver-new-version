@@ -264,35 +264,30 @@ export const services = [
     title: 'IT Traning',
     link: '/it-traning',
   },
-  {
-    id: '04',
-    title: 'Job Placement',
-    link: '/service',
-  },
-  {
-    id: '05',
-    title: 'Career Guidance',
-    link: '/service',
-  },
-  {
-    id: '06',
-    title: 'Internship',
-    link: '/service',
-  },
+  // {
+  //   id: '04',
+  //   title: 'Job Placement',
+  //   link: '/service',
+  // },
+  // {
+  //   id: '05',
+  //   title: 'Career Guidance',
+  //   link: '/service',
+  // },
+  // {
+  //   id: '06',
+  //   title: 'Internship',
+  //   link: '/service',
+  // },
 ];
 export const career = [
   {
     id: '01',
-    title: 'Remote Vacancies',
+    title: 'Job Vacancies',
     link: '/career-listing',
   },
   {
     id: '02',
-    title: 'On-Site Offers',
-    link: '/career-listing',
-  },
-  {
-    id: '03',
     title: 'Internship',
     link: '/career-listing',
   },

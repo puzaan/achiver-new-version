@@ -187,7 +187,7 @@ const Footer = props => {
         <Grid container spacing={2} >
           <Grid item xs={12} md={3}>
             <List>
-              <ListItem sx={isMd ? { display: 'flex', alignItems: 'center', flexDirection: 'column' }: ''}>
+              <ListItem sx={isMd ? { display: 'flex', alignItems: 'center', flexDirection: 'column', marginTop: '-12px' }: ''}>
                 <Box
                   component={Link}
                   to='/'

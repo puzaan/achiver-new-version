@@ -45,19 +45,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   imageAnimation: {
-    //background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624965463601152/Achiever_Website_Scrolling_Dark.png'})`,
-
     background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624956030599188/Achiever_Website_Scrolling.png'})`,
     backgroundRepeat: 'repeat',
     backgroundAttachment: 'scroll',
-    backgroundSize: '400px auto',
+    backgroundSize: '200px auto',
     animation: '$slideshow 50s linear infinite',
-    width: '900%',
+    width: '600%',
     height: '600%',
     backgroundColor: theme.palette.alternate.dark,
-    top: '30%',
-    left: '60%',
-    right:'10%',
+    // top: '30%',
+    // left: '50%',
+    top: '-25%',
+    left: '-200%',
+    right:'50%',
     position: 'absolute',
     [theme.breakpoints.up('sm')]: {
       backgroundSize: '800px auto',
@@ -65,6 +65,11 @@ const useStyles = makeStyles((theme) => ({
   },
   imageAnimationDark: {
     background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624965463601152/Achiever_Website_Scrolling_Dark.png'})`,
+    left: '-100%',
+    top: '20%',
+    width: '600%',
+    height: '600%',
+    //backgroundSize: '200px auto',
   },
   '@keyframes slideshow': {
     '0%': {
