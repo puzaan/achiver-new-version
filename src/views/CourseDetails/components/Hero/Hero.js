@@ -3,12 +3,8 @@ import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
-//import Avatar from '@mui/material/Avatar';
 import { useTheme } from '@mui/material/styles';
-//import Avatar from '@mui/material/Avatar';
 import Container from 'components/Container';
-//import { ListItem, ListItemAvatar } from '@mui/material';
-//import ImageIcon from '@mui/icons-material/Image';
 import Card from '@mui/material/Card';
 
 const Hero = () => {
@@ -81,6 +77,8 @@ const Hero = () => {
         >
           <Box>
             <Box
+              display={'flex'}
+              alignItems={'center'}
               data-aos={'fade-up'}
               data-aos-delay={100}
               data-aos-offset={100}
@@ -91,32 +89,41 @@ const Hero = () => {
               borderRadius={3}
               sx={{
                 background: alpha('#161c2d', 0.6),
+
               }}
             >
+              <Box paddingLeft={'80px'}>
+                <Box
+                  maxWidth={100}
+
+
+                  component="img"
+                  height="10 px"
+                  width="100%"
+                  src={'/react.png'}
+                  alt="..."
+                  sx={{
+                    filter:
+                      theme.palette.mode === 'dark'
+                        ? 'brightness(0) invert(0.7)'
+                        : 'none',
+
+                  }}
+                />
+              </Box>
               
-              <Box display={'flex'} alignItems={'center'}>
-                
-                <Box maxWidth={100} marginTop={2} marginRight={4} alignItems={'center'}>
-                  <Box
-                    component="img"
-                    height="10 px"
-                    width="100%"
-                    src={'/react.png'}
-                    alt="..."
-                    sx={{
-                      filter:
-                        theme.palette.mode === 'dark'
-                          ? 'brightness(0) invert(0.7)'
-                          : 'none',
-                    }}
-                  />
-                </Box>
+              
+
+              <Box paddingLeft={'20px'}>
                 <ListItemText
+                  //align={'center'}
                   sx={{ margin: 0 }}
+                  
                   primary={'React JS'}
                   secondary={'Duration: 2.5 months'}
                   primaryTypographyProps={{
                     variant: 'h3',
+
                     sx: {
                       fontWeight: 400,
                       color: 'common.white',
@@ -124,53 +131,20 @@ const Hero = () => {
                   }}
                   secondaryTypographyProps={{
                     variant: 'h6',
+
                     sx: { color: alpha('#ffffff', 0.8) },
                   }}
                 />
               </Box>
-              
-              
             </Box>
-            {/* <Box display={'flex'} alignItems={'center'}>
-              <Box maxWidth={100} marginTop={2} marginRight={4}>
-                <Box
-                  component="img"
-                  height="10 px"
-                  width="100%"
-                  src={'/reacts.png'}
-                  alt="..."
-                  sx={{
-                    filter:
-                      theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
-                        : 'none',
-                  }}
-                />
-              </Box>
-              <ListItemText
-                sx={{ margin: 0 }}
-                primary={'React JS'}
-                secondary={'Duration: 2.5 months'}
-                primaryTypographyProps={{
-                  variant: 'h3',
-                  sx: {
-                    fontWeight: 400,
-                    color: 'common.white',
-                  },
-                }}
-                secondaryTypographyProps={{
-                  variant: 'h6',
-                  sx: { color: alpha('#ffffff', 0.8) },
-                }}
-              />
-            </Box> */}
+
             <Box>
               <Typography
                 variant="h6"
                 sx={{
                   fontWeight: 500,
                   color: 'common.white',
-                  //marginBottom: 2,
+                  
                 }}
               >
                 Remote work is the future, but should you go remote?
