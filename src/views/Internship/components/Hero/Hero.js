@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-//import Typography from '@mui/material/Typography';
+
 import ListItemText from '@mui/material/ListItemText';
-//import { useTheme } from '@mui/material/styles';
+
 import Container from 'components/Container';
 import Card from '@mui/material/Card';
 
 const Hero = () => {
-  //const theme = useTheme();
   useEffect(() => {
     const jarallaxInit = async () => {
       const jarallaxElems = document.querySelectorAll('.jarallax');
@@ -52,7 +51,7 @@ const Hero = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundImage:
-            'url(https://assets.maccarianagency.com/backgrounds/img3.jpg)',
+            'url(https://cdn.discordapp.com/attachments/879992345968377866/908624965463601152/Achiever_Website_Scrolling_Dark.png)',
         }}
       />
       <Box
@@ -99,7 +98,7 @@ const Hero = () => {
                 align={'center'}
                 sx={{ margin: 0 }}
 
-                primary={'Job Openings'}
+                primary={'Internship'}
 
                 primaryTypographyProps={{
                   variant: 'h3',

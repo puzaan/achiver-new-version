@@ -12,3 +12,4 @@ export { default as EnrollForm } from './EnrollForm';
 export { default as ItTraning } from './ItTraning';
 export { default as Webservices } from './WebServices';
 export { default as AppService } from './AppService';
+export { default as Internship } from './Internship';

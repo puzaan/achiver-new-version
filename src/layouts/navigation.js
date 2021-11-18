@@ -289,6 +289,6 @@ export const career = [
   {
     id: '02',
     title: 'Internship',
-    link: '/career-listing',
+    link: '/internship',
   },
 ];

@@ -1,33 +1,18 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-//import Divider from '@mui/material/Divider';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 
-import {
-  Hero,
-  Jobs,
-  About,
-  // CompanyValues
-} from './components';
+import { Hero, Jobs } from './components';
 
-const CareerListing = () => {
+const Internship = () => {
   const theme = useTheme();
   return (
     <Main colorInvert={true}>
       <Box>
         <Hero />
-        {/* <Container>
-          <CompanyValues />
-        </Container>
-        <Container>
-          <Divider />
-        </Container> */}
-        <Container>
-          <About />
-        </Container>
         <Box
           component={'svg'}
           preserveAspectRatio="none"
@@ -47,7 +32,7 @@ const CareerListing = () => {
         </Box>
       </Box>
       <Box bgcolor={'alternate.main'}>
-        <Container maxWidth={1000} id='jobs'>
+        <Container maxWidth={1000} id="jobs">
           <Jobs />
         </Container>
         <Box
@@ -72,4 +57,4 @@ const CareerListing = () => {
   );
 };
 
-export default CareerListing;
+export default Internship;

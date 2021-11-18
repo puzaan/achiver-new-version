@@ -17,6 +17,7 @@ import {
   AppService as AppServiceView,
   Webservices as WebservicesView,
   CourseDetail as CourseDetailView,
+  Internship as InternshipView,
 } from './views';
 
 const Routes = () => {
@@ -29,6 +30,7 @@ const Routes = () => {
       <Route exact path="/web-service" render={() => <WebservicesView />} />
       <Route exact path="/app-service" render={() => <AppServiceView />} />
       <Route exact path="/course-detail/:id" render={() => <CourseDetailView />} />
+      <Route exact path="/internship" render={() => <InternshipView />} />
       <Route
         exact
         path="/career-listing"

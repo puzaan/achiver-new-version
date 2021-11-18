@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     // left: '50%',
     top: '-25%',
     left: '-200%',
-    right:'50%',
+    right:'-40%',
     position: 'absolute',
     [theme.breakpoints.up('sm')]: {
       backgroundSize: '800px auto',
@@ -65,11 +65,12 @@ const useStyles = makeStyles((theme) => ({
   },
   imageAnimationDark: {
     background: `url(${'https://cdn.discordapp.com/attachments/879992345968377866/908624965463601152/Achiever_Website_Scrolling_Dark.png'})`,
-    left: '-100%',
-    top: '20%',
-    width: '600%',
-    height: '600%',
-    //backgroundSize: '200px auto',
+    //top: '-25%',
+    left: '-85%',
+    //right: '-10%',
+    // width: '600%',
+    // height: '600%',
+    //backgroundSize: '1000px auto',
   },
   '@keyframes slideshow': {
     '0%': {

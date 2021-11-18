@@ -38,7 +38,7 @@ const CourseDetail = () => {
         }}
       >
         
-        <Box 
+        <Box padding={1}
           
           
         >
@@ -52,7 +52,7 @@ const CourseDetail = () => {
     <Main colorInvert={true}>
       <Box>
         <Hero />
-        <Box position={'relative'} minHeight={'100vh'} display={'flex'} padding={3} >
+        <Box position={'relative'} minHeight={'100vh'} display={'flex'} padding={1} >
           {isMd ? <Sidebar /> : null}
           <Box
             flex={{ xs: '1 1 100%', md: '1 1 70%' }}

@@ -67,6 +67,7 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
           open={openedPopoverId === id}
           anchorEl={anchorEl}
           onClose={handleClose}
+
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'center',
@@ -77,15 +78,15 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
           }}
           sx={{
             '.MuiPaper-root': {
-              maxWidth: items.length > 12 ? 350 : 250,
-              padding: 2,
-              marginTop: 5,
+              maxWidth: items.length > 12 ? 350 : 350,
+              padding: 1,
+              marginTop: {md : 5, lg: 5, xl: 2},
               borderTopRightRadius: 0,
               borderTopLeftRadius: 0,
               borderBottomRightRadius: 8,
               borderBottomLeftRadius: 8,
               borderTop: `3px solid ${theme.palette.primary.main}`,
-              // overflowY: 'hidden'
+              overflowY: 'hidden'
             },
           }}
         >
@@ -97,7 +98,7 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
                   size={'large'}
                   component={Link}
                   to={`${p.link}/${p.id}`}
-                  //   to={`${p.link}`}
+                  
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',

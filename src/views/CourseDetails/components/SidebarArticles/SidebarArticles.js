@@ -16,7 +16,7 @@ const SidebarArticles = () => {
   const shuffle = arr => [...arr].sort(() => Math.random() - 0.5);
   const newList = shuffle(Course);
   return (
-    <Box component={Card} variant={'outlined'} padding={1}>
+    <Box component={Card} variant={'outlined'} padding={1} >
       <Typography
         variant="h6"
         data-aos={'fade-up'}
@@ -27,8 +27,8 @@ const SidebarArticles = () => {
       >
         Related Courses
       </Typography>
-      <Grid container spacing={0.5}>
-        {newList.slice(0, 5).map((item, i) => (
+      <Grid container spacing={1}>
+        {newList.slice(0, 4).map((item, i) => (
           <Grid key={i} item xs={12}>
             <Box
               component={Card}
@@ -70,10 +70,10 @@ const SidebarArticles = () => {
                 />
               </Box>
               <CardContent
-                sx={{ padding: 0.5, '&:last-child': { paddingBottom: 1 } }}
+                sx={{ padding: 1, '&:last-child': { paddingBottom: 1 } }}
               >
                 <Typography fontWeight={500}>{item.title}</Typography>
-                <Box marginY={1 / 6}>
+                <Box marginY={1 / 5}>
                   <Typography
                     variant={'caption'}
                     color={'text.secondary'}
