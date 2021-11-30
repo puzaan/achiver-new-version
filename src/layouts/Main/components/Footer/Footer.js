@@ -9,7 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import {  Course } from '../../../../views/CourseDetails/data';
+import {  Course } from 'views/Store/AllData';
 import { services } from '../../../navigation';
 import Box from '@mui/material/Box';
 const useStyles = makeStyles(theme => ({

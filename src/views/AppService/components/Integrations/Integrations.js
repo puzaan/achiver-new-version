@@ -2,24 +2,11 @@
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-//import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { AppTools } from 'views/Store/AllData';
 
-const mock = [
-  {
-    icon: '/reacts.png',
-    title:'React Native'
-  },
-  {
-    icon: '/flutter.png',
-    title: 'Flutter'
-  }
-  
-  
-  
-];
 
 const Integrations = () => {
   const theme = useTheme();
@@ -54,7 +41,7 @@ const Integrations = () => {
             flexWrap="wrap"
             justifyContent={isMd ? 'space-around' : 'flex-start'}
           >
-            {mock.map((item, i) => (
+            {AppTools.map((item, i) => (
               <Box
                 key={i}
                 display="flex"

@@ -3,18 +3,7 @@ import Slider from 'react-slick';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
-
-const mock = [
-  'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/hubspot-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/mapbox-original.svg',
-  'https://assets.maccarianagency.com/svg/logos/slack-original.svg',
-];
+import { patnerImg } from 'views/Store/AllData';
 
 const Partners = () => {
   const theme = useTheme();
@@ -59,7 +48,7 @@ const Partners = () => {
   return (
     <Box>
       <Slider {...sliderOpts}>
-        {mock.map((item, i) => (
+        {patnerImg.map((item, i) => (
           <Box maxWidth={120} key={i} marginX={3}>
             <Box
               component="img"

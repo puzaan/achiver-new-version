@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 //, Redirect
 import {
   IndexView,
@@ -51,7 +51,7 @@ const Routes = () => {
       <Route exact path="/job-listing" render={() => <JobListingView />} />
       <Route exact path="/about" render={() => <AboutView />} />
       <Route exact path="/not-found" render={() => <NotFoundView />} />
-      {/* <Redirect to="/not-found" /> */}
+      <Redirect to="/not-found" />
     </Switch>
   );
 };

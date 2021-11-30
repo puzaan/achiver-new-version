@@ -4,82 +4,7 @@ import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-
-const data = [
-  {
-    title: 'Account Billing',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img47.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img47--dark.png',
-  },
-  {
-    title: 'Signup Simple',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img37.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img37--dark.png',
-  },
-  {
-    title: 'Signup Cover',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img38.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img38--dark.png',
-  },
-  {
-    title: 'Signin Simple',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img39.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img39--dark.png',
-  },
-  {
-    title: 'Signin Cover',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img40.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img40--dark.png',
-  },
-  {
-    title: 'Password Reset Simple',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img41.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img41--dark.png',
-  },
-  {
-    title: 'Password Reset Cover',
-    href: '/password-reset-cover',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img42.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img42--dark.png',
-  },
-  {
-    title: 'Error Simple',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img43.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img43--dark.png',
-  },
-  {
-    title: 'Error Cover',
-    href: '/web-service',
-    cover:
-      'https://assets.maccarianagency.com/screenshots/the-front/img44.png',
-    coverDark:
-      'https://assets.maccarianagency.com/screenshots/the-front/img44--dark.png',
-  },
-
-];
+import { webWorks } from 'views/Store/AllData';
 
 const PageReferences = () => {
   const theme = useTheme();
@@ -99,7 +24,7 @@ const PageReferences = () => {
           </Typography>
         </Box>
         <Grid container spacing={4}>
-          {data.map((p, j) => (
+          {webWorks.map((p, j) => (
             <Grid
               key={j}
               item

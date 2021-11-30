@@ -1,14 +1,11 @@
 import React, { useEffect } from 'react';
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-//import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
-//import { useTheme } from '@mui/material/styles';
 import Container from 'components/Container';
 import Card from '@mui/material/Card';
 
 const Hero = () => {
-  //const theme = useTheme();
   useEffect(() => {
     const jarallaxInit = async () => {
       const jarallaxElems = document.querySelectorAll('.jarallax');

@@ -2,6 +2,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
+import { tools } from 'views/Store/AllData';
 
 const Partners = () => {
   const theme = useTheme();
@@ -26,17 +27,7 @@ const Partners = () => {
         </Typography>
       </Box>
       <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
-        {[
-          '/html.png',
-          '/css.png',
-          '/javascript.png',
-          '/mysql.png',
-          '/react.png',
-          '/aws.png',
-          '/mongoo.png',
-          '/api.png',
-          '/nodejs.png',
-        ].map((item, i) => (
+        {tools.map((item, i) => (
           <Box maxWidth={100} marginTop={2} marginRight={4} key={i}>
             <Box
               component="img"

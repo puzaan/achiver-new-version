@@ -7,12 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
-//import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-//import Avatar from '@mui/material/Avatar';
-//import ListItem from '@mui/material/ListItem';
-//import ListItemText from '@mui/material/ListItemText';
-//import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Button from '@mui/material/Button';
 import LaptopSkeletonIllustration from 'svg/illustrations/LaptopSkeleton';
 

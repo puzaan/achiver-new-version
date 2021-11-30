@@ -24,7 +24,6 @@ const JobListing = () => {
       <Container paddingTop={'0 !important'}>
         <CaseStudies />
       </Container>
-      {/* <Partners /> */}
       <Container>
         <Folio />
       </Container>

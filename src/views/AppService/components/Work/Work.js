@@ -3,28 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
-
-const mock = [
-  {
-    title: 'IOS APP DEVELOPMENT',
-    description:
-      'Our IOS Apps are built to increase user base, revenues, maximize brand reach, enhance employee productivity, or increase conversion rates.Whether you have an idea, or a running business or you are an enterprise, we build IOS applications that can solve real business problems.',
-    illustration:
-      '/iso.png',
-    illustrationDark:
-      '/iso.png',
-  },
-  {
-    title: 'ANDROID APP DEVELOPMENT',
-    description:
-      'we build custom android apps to take advantage of various characteristics of Android OS that makes it the most preferred mobile OS - that run flawlessly across all Android Devices. Flexible pricing options and FTE rates, dynamic app development process for complete client satisfaction Professional Android developers.',
-    illustration:
-      '/android.png',
-    illustrationDark:
-      '/android.png',
-  },
-  
-];
+import {MobWork } from 'views/Store/AllData';
 
 const Work = () => {
   const theme = useTheme();
@@ -47,7 +26,7 @@ const Work = () => {
         
       </Box>
       <Grid container spacing={4}>
-        {mock.map((item, i) => (
+        {MobWork.map((item, i) => (
           <Grid
             data-aos="fade-up"
             data-aos-delay={i * 100}

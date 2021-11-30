@@ -10,7 +10,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-
+import { chooseAchiever } from 'views/Store/AllData';
 import PhoneSkeletonIllustration from 'svg/illustrations/PhoneSkeleton';
 
 const MobileApp = () => {
@@ -25,12 +25,7 @@ const MobileApp = () => {
         
       </Box>
       <Grid container spacing={1}>
-        {[
-          'We have extensive experience in single-page applications development.',
-          'We offer a web host that offers reliable security measures to guarantee your app security.',
-          'We can create a Web app from scratch and ensure that it follows the needs of your business.',
-          'We provide QA testing to make sure your app works flawlessly on all modern devices.',
-        ].map((item, i) => (
+        {chooseAchiever.map((item, i) => (
           <Grid item xs={12} sm={6} key={i}>
             <Box component={ListItem} disableGutters width={'auto'} padding={0}>
               <Box

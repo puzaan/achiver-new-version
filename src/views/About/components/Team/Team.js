@@ -9,30 +9,8 @@ import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
+import { teams } from 'views/Store/AllData';
 
-
-const mock = [
-  {
-    name: 'Suresh Lama',
-    title: 'Senior Flutter Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
-  },
-  {
-    name: 'Sujan Neupane',
-    title: 'Senior Frontend Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
-  },
-  {
-    name: 'Gorakh Raj Joshi',
-    title: 'Senior JavaScript and React Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
-  },
-  {
-    name: 'Raj Shukla',
-    title: 'Senior Database Administrator',
-    avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
-  },
-];
 
 const Team = () => {
   const theme = useTheme();
@@ -40,17 +18,6 @@ const Team = () => {
   return (
     <Box>
       <Box marginBottom={4}>
-        {/* <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 700,
-          }}
-          gutterBottom
-          color={'text.secondary'}
-          align={'center'}
-        >
-          Our team
-        </Typography> */}
         <Typography
           variant="h4"
           align={'center'}
@@ -68,7 +35,7 @@ const Team = () => {
         </Typography>
       </Box>
       <Grid container spacing={2}>
-        {mock.map((item, i) => (
+        {teams.map((item, i) => (
           <Grid item xs={12} md={4} key={i}>
             <Box
               width={1}

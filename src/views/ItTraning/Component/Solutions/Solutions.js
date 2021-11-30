@@ -8,7 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha, useTheme } from '@mui/material/styles';
 import { Avatar, colors } from '@mui/material';
-import { Course } from '../../../CourseDetails/data/index';
+import { Course } from 'views/Store/AllData';
 
 const Solutions = () => {
   const theme = useTheme();
@@ -114,13 +114,6 @@ const Solutions = () => {
                   
                 </Box>
                 <Box>
-                  {/* <Typography
-                    variant={'h6'}
-                    gutterBottom
-                    sx={{ fontWeight: 700 }}
-                  >
-                    {item.title}
-                  </Typography> */}
                   <Typography
                     color="text.secondary"
                     component="p"

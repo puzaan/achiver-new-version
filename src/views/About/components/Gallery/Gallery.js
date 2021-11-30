@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Button from '@mui/material/Button';
+import { gallery } from 'views/Store/AllData';
 
 const Gallery = () => {
   const theme = useTheme();
@@ -28,53 +29,8 @@ const Gallery = () => {
     defaultMatches: true,
   });
 
-  const photos = [
-    {
-      src: 'https://cdn.discordapp.com/attachments/879992345968377866/879998355151941672/IMG_20210407_080020.jpg',
-      source: 'https://cdn.discordapp.com/attachments/879992345968377866/879998355151941672/IMG_20210407_080020.jpg',
-      rows: 3,
-      cols: 4,
-    },
-    {
-      src: 'https://cdn.discordapp.com/attachments/879992345968377866/879998652892979200/IMG_20210407_094912.jpg',
-      source: 'https://cdn.discordapp.com/attachments/879992345968377866/879998652892979200/IMG_20210407_094912.jpg',
-      rows: 1,
-      cols: 2,
-    },
-    {
-      src: 'https://cdn.discordapp.com/attachments/879992345968377866/879998645360013352/IMG_20210407_081138.jpg',
-      source: 'https://cdn.discordapp.com/attachments/879992345968377866/879998645360013352/IMG_20210407_081138.jpg',
-      rows: 1,
-      cols: 1,
-    },
-    {
-      src: 'https://cdn.discordapp.com/attachments/879992345968377866/879998652184162344/IMG_20210407_094826.jpg',
-      source: 'https://cdn.discordapp.com/attachments/879992345968377866/879998652184162344/IMG_20210407_094826.jpg',
-      rows: 1,
-      cols: 1,
-    },
-    {
-      src: ' https://cdn.discordapp.com/attachments/879992345968377866/879998666922917919/IMG_20210407_104021.jpg',
-      source: ' https://cdn.discordapp.com/attachments/879992345968377866/879998666922917919/IMG_20210407_104021.jpg',
-      rows: 2,
-      cols: 2,
-    },
-    {
-      src: ' https://cdn.discordapp.com/attachments/879992345968377866/879998660975427614/IMG_20210407_094924.jpg',
-      source: ' https://cdn.discordapp.com/attachments/879992345968377866/879998660975427614/IMG_20210407_094924.jpg',
-      rows: 1,
-      cols: 2,
-    },
-    {
-      src: ' https://cdn.discordapp.com/attachments/879992345968377866/879998671389863956/IMG_20210407_104059.jpg',
-      source: ' https://cdn.discordapp.com/attachments/879992345968377866/879998671389863956/IMG_20210407_104059.jpg',
-      rows: 1,
-      cols: 2,
-    },
-    
-  ];
 
-  const photosToShow = isMd ? photos : photos.slice(0, photos.length - 1);
+  const photosToShow = isMd ? gallery : gallery.slice(0, gallery.length - 1);
 
   return (
     <Box>
@@ -154,12 +110,12 @@ const Gallery = () => {
       </Box>
       {viewerIsOpen && (
         <Lightbox
-          mainSrc={photos[currentImage].src}
-          nextSrc={photos[(currentImage + 1) % photos.length].src}
-          prevSrc={photos[(currentImage + photos.length - 1) % photos.length].src}
+          mainSrc={gallery[currentImage].src}
+          nextSrc={gallery[(currentImage + 1) % gallery.length].src}
+          prevSrc={gallery[(currentImage + gallery.length - 1) % gallery.length].src}
           onCloseRequest={() => closeLightbox()}
-          onMovePrevRequest={() => setCurrentImage((currentImage + photos.length - 1) % photos.length)}
-          onMoveNextRequest={() => setCurrentImage((currentImage + 1) % photos.length)}
+          onMovePrevRequest={() => setCurrentImage((currentImage + gallery.length - 1) % gallery.length)}
+          onMoveNextRequest={() => setCurrentImage((currentImage + 1) % gallery.length)}
           reactModalStyle={{ overlay: { zIndex: 1500 } }}
         />
       )}

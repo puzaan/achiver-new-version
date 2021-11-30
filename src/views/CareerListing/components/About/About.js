@@ -9,20 +9,6 @@ const About = () => {
   const theme = useTheme();
   return (
     <Box>
-      {/* <Box marginBottom={4}>
-        <Typography
-          align={'center'}
-          color={'text.secondary'}
-          sx={{ textTransform: 'uppercase' }}
-          variant={'subtitle2'}
-          fontWeight={600}
-        >
-          About
-        </Typography>
-        <Typography fontWeight={700} variant={'h4'} align={'center'}>
-          About our company
-        </Typography>
-      </Box> */}
       <Grid container spacing={4}>
         <Grid item container xs={12} md={6}
         >

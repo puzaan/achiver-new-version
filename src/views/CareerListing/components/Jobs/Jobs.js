@@ -4,66 +4,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { jobs } from '../../data/index';
+import { jobs } from 'views/Store/AllData';
 import { Link } from 'react-router-dom';
-export const mock = [
-  {
-    title: 'Front-End Developer',
-    location: 'Madrid',
-    type: 'Remote',
-    team: 'Consumer',
-    subtitle: 'Responsible for design systems and brand management.',
-  },
-  {
-    title: 'Community Manager',
-    location: 'Paris',
-    type: 'Full time',
-    team: 'Consulting',
-    subtitle: 'Responsible for creating life in our apps.',
-  },
-  {
-    title: 'UX/UI Designer',
-    location: 'Yerevan',
-    type: 'Part time',
-    team: 'Internal tools',
-    subtitle: 'Help us make the best decisions with qualitative experiments.',
-  },
-  {
-    title: 'Front-End Developer',
-    location: 'Madrid',
-    type: 'Remote',
-    team: 'Internal tools',
-    subtitle: 'Responsible for design systems and brand management.',
-  },
-  {
-    title: 'Community Manager',
-    location: 'Paris',
-    type: 'Full time',
-    team: 'Consulting',
-    subtitle: 'Responsible for creating life in our apps.',
-  },
-  {
-    title: 'UX/UI Designer',
-    location: 'Yerevan',
-    type: 'Part time',
-    team: 'Consumer',
-    subtitle: 'Help us make the best decisions with qualitative experiments.',
-  },
-  {
-    title: 'Front-End Developer',
-    location: 'Madrid',
-    type: 'Remote',
-    team: 'Consumer',
-    subtitle: 'Responsible for design systems and brand management.',
-  },
-  {
-    title: 'Community Manager',
-    location: 'Paris',
-    type: 'Full time',
-    team: 'Consulting',
-    subtitle: 'Responsible for creating life in our apps.',
-  },
-];
 
 const Jobs = () => {
   const theme = useTheme();

@@ -3,10 +3,9 @@ import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Application, Main as MainSection} from './components';
-import { jobs } from 'views/CareerListing/data';
+import { jobs } from 'views/Store/AllData';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
-
 const CareerOpening = () => {
   const { jobList } = useParams();
   const data = jobList;
