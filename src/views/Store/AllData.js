@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const Course = [
   {
-    id: '01',
+    id: 'React',
     title: 'Front End Development with React',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
@@ -15,7 +15,7 @@ export const Course = [
     link: '/course-detail',
   },
   {
-    id: '02',
+    id: 'MERN',
     title: 'Full Stack Development with MERN ',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
@@ -27,7 +27,7 @@ export const Course = [
   },
 
   {
-    id: '04',
+    id: 'Enterprise-Software ',
     title: 'Enterprise Software ',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
@@ -38,7 +38,7 @@ export const Course = [
   },
 
   {
-    id: '05',
+    id: 'jAVA',
     title: 'Development with JAVA',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
@@ -48,7 +48,7 @@ export const Course = [
     link: '/course-detail',
   },
   {
-    id: '06',
+    id: '.NET',
     title: 'Development with .NET ',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
@@ -59,7 +59,7 @@ export const Course = [
   },
 
   {
-    id: '015',
+    id: 'Quality-Assurance',
     title: 'Quality Assurance',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
@@ -69,7 +69,7 @@ export const Course = [
     link: '/course-detail',
   },
   {
-    id: '0107',
+    id: 'Digital-Marketing',
     title: 'Digital Marketing ',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
@@ -79,7 +79,7 @@ export const Course = [
     link: '/course-detail',
   },
   {
-    id: '0120',
+    id: 'Business-Intelligence',
     title: 'Business Intelligence with MSBI ',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
@@ -90,7 +90,7 @@ export const Course = [
     isNew: true,
   },
   {
-    id: '11',
+    id: 'Django',
     title: 'Full Stact Development with Python Django',
     shortDes: [
       'Full Stack Development is the development of both the Client side (Front end) and the Server side (back end) portions of primarily web based applications, but also mobile applications. A full stack developer can build both the back and front ends of an application. Besides, they are trained to plan and execute flawless Database Integration and deploy debugging tests.',
@@ -100,7 +100,7 @@ export const Course = [
   },
 
   {
-    id: '10',
+    id: 'Flutter',
     title: 'Mobile App Development with Flutter',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
@@ -323,7 +323,7 @@ export const Course = [
     ],
   },
   {
-    id: '017',
+    id: 'Web-Foundation',
     title: 'Web Development Foundation ',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
@@ -334,7 +334,7 @@ export const Course = [
     isNew: true,
   },
   {
-    id: '03',
+    id: 'SQL',
     title: 'SQL Database Administration',
     shortDes: [
       'There is nothing on the internet without a database. Any company that runs any kind of service like e-commerce or keeps a record of its’ employees and customers needs to keep a database. Technology and the type and amount of data available to companies keep growing every day. The knowledge and skillsets of Database Administrators needs to grow with the logarithmic growth of data. ',
@@ -857,6 +857,189 @@ export const Course = [
   //      },
   //    ],
   //  },
+];
+
+export const syllabusDetails = [
+  {
+    title: 'JavaScript Concepts Before Learning React',
+    topics: [
+      {
+        topicName: 'Modern JS Operator',
+        day: 'Day 1',
+        description: 'Destructuring, Spread Operator & Rest Pattern and Parameters, Short Circuiting, The Nullish Coalescing Operator, Optional Chaining & Manipulating strings in JavaScript'
+      },
+      {
+        topicName: 'Advanced Array & Function Concepts in JS',
+        day: 'Day 2',
+        description: 'Higher Order Functions & Callback Function, forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
+      },
+      {
+        topicName: 'Advanced Array & Function Concepts in JS',
+        day: 'Day 3, Day 4 & Day 5',
+        description: 'CallbackHell, Promises, Event Loop, async await, Parallel Promises & Promise Combinators'
+      },
+      {
+        topicName: 'Modern JS & Functional Programming',
+        day: 'Day 6 & Day 7',
+        description: 'ES6 Modules, Module Pattern, CommonJS Modules, NPM, Parcel, Babel, Polyfilling & Declarative with Functional JS Principles'
+      },
+    ]
+  },
+  {
+    title: 'Basic React',
+    topics: [
+      {
+        topicName: 'Basic JavaScript-rendered Hello World',
+        day: 'day 8',
+        description: 'nteracting with DOM nodes using JavaScript'
+      },
+      {
+        topicName: 'Advanced Array & Function Concepts in JS',
+        day: 'day2',
+        description: 'Higher Order Functions & Callback Function, forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
+      },
+      {
+        topicName: 'Advanced Array & Function Concepts in JS',
+        day: 'Day 9',
+        description: 'Using React in single .html file without JSX'
+      },
+      {
+        topicName: 'Using JSX',
+        day: 'Day 10',
+        description: 'Using JSX with React in single .html file'
+      },
+      {
+        topicName: 'Creating custom components',
+        day: 'day 11',
+        description: 'Writing custom React components'
+      },
+      {
+        topicName: 'Styling in React',
+        day: 'day 12',
+        description: 'Methods for styling react components.'
+      },
+      {
+        topicName: 'Forms in React',
+        day: 'Day 3',
+        description: 'Forms in React beyond DOM APIs'
+      },
+      {
+        topicName: 'Rendering Arrays',
+        day: 'Day 14',
+        description: 'Render a list of elements in React'
+      },
+    ]
+  },
+  {
+    title: 'Intermediate React',
+    topics: [
+      {
+        topicName: 'useState Hook',
+        day: 'Day 15',
+        description: 'State in react using useState hook'
+      },
+      {
+        topicName: 'useEffect: persistent state',
+        day: 'Day 16',
+        description: 'Built in hook for React renders (and re-renders), forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
+      },
+      {
+        topicName: 'Lifting state',
+        day: 'Day 17',
+        description: 'shaing state between two sibling components'
+      },
+      {
+        topicName: 'useRef and useEffect: DOM interaction',
+        day: 'Day 18',
+        description: 'Integrating React with UI libraries'
+      },
+
+    ]
+  },
+  {
+    title: 'Advanced React',
+    topics: [
+      {
+        topicName: 'useReducer Hook',
+        day: 'Day 19',
+        description: 'Interacting with DOM nodes using JavaScript'
+      },
+      {
+        topicName: 'useCallback Hook',
+        day: 'Day 20',
+        description: 'Using React in single .html file without JSX'
+      },
+      {
+        topicName: 'useContext Hook',
+        day: 'Day 21',
+        description: 'Real world project with React Hooks'
+      },
+      {
+        topicName: 'useImperativeHandle Hook',
+        day: 'Day 22',
+        description: 'Debuggine with useDebug value'
+      },
+      {
+        topicName: 'useDebugValue Hook',
+        day: 'Day 22',
+        description: 'Debuggine with useDebug value'
+      },
+
+    ]
+  },
+  {
+    title: 'Real World React Patterns',
+    topics: [
+      {
+        topicName: 'Context Module Functions',
+        day: 'Day 23',
+        description: 'Advanced state management with useReducer Hook'
+      },
+      {
+        topicName: 'Compound Components',
+        day: 'Day 24',
+        description: 'Memoization in React'
+      },
+      {
+        topicName: 'Flexible Compound Components',
+        day: 'Day 25',
+        description: 'Sharing state between components'
+      },
+      {
+        topicName: 'Prop Collections and Getters',
+        day: 'Day 26',
+        description: 'Using useLayoutEffect instead of useEffect'
+      },
+      {
+        topicName: 'State Reducer',
+        day: 'Day 27',
+        description: 'Real world project with React Hooks'
+      },
+      {
+        topicName: 'Control Props',
+        day: 'Day 28',
+        description: 'Advanced state management with useReducer Hook'
+      },
+
+
+    ]
+  },
+  {
+    title: 'Most Popular Libraries with React',
+    topics: [
+      {
+        topicName: 'React Router',
+        day: 'Day 29',
+        description: 'Standard library for routing in React'
+      },
+      {
+        topicName: 'Redux',
+        day: 'Day 30 & 31',
+        description: 'Centralizing complex application state in React'
+      },
+
+    ]
+  },
 ];
 export const jobs = [
   {

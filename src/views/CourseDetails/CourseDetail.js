@@ -5,7 +5,10 @@ import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import { Hero, SidebarArticles, Content, Syllabus } from './components';
+import {
+  Hero, SidebarArticles,
+  Syllabus
+} from './components';
 
 const CourseDetail = () => {
   const theme = useTheme();
@@ -59,12 +62,7 @@ const CourseDetail = () => {
             maxWidth={{ xs: '100%', md: '100%' }}
             
           >
-            <Container>
-              <Content />
-            </Container>
-            <Box>
-              
-            </Box>
+
             <Box bgcolor={theme.palette.alternate.main}>
               <Container>
                 <Syllabus />
