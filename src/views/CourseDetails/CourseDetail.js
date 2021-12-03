@@ -23,32 +23,14 @@ const CourseDetail = () => {
       maxHeight={'100vh'}
       position={'sticky'}
       
+      top={90}
       
-      top={10}
       bgcolor={'alternate.main'}
+      padding={1}
+      marginTop = '-30px'
     >
-      <Box
-        display={'flex'}
-        alignItems={'center'}
-        height={1}
-        width={1}
-        
-        sx={{
-          '& .lazy-load-image-loaded': {
-            height: 1,
-            width: 1,
-          },
-        }}
-      >
-        
-        <Box padding={1}
-          
-          
-        >
-          <SidebarArticles />
-
-        </Box>
-      </Box>
+      <SidebarArticles />
+      
     </Box>
   );
   return (
@@ -56,7 +38,7 @@ const CourseDetail = () => {
       <Box>
         <Hero />
         <Box position={'relative'} minHeight={'100vh'} display={'flex'} padding={1} >
-          {isMd ? <Sidebar /> : null}
+          
           <Box
             flex={{ xs: '1 1 100%', md: '1 1 70%' }}
             maxWidth={{ xs: '100%', md: '100%' }}
@@ -65,7 +47,12 @@ const CourseDetail = () => {
 
             <Box bgcolor={theme.palette.alternate.main}>
               <Container>
-                <Syllabus />
+                <Box display='flex'>
+                  {isMd ? <Sidebar /> : null}
+                  <Syllabus />
+                  
+                </Box>
+                
               </Container>
             </Box>
           </Box>
