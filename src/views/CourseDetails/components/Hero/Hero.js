@@ -6,8 +6,10 @@ import ListItemText from '@mui/material/ListItemText';
 import { useTheme } from '@mui/material/styles';
 import Container from 'components/Container';
 import Card from '@mui/material/Card';
-
-const Hero = () => {
+import PropTypes from 'prop-types';
+const Hero = props => {
+  const { headder } = props;
+  console.log(headder);
   const theme = useTheme();
   useEffect(() => {
     const jarallaxInit = async () => {
@@ -119,7 +121,7 @@ const Hero = () => {
                   //align={'center'}
                   sx={{ margin: 0 }}
                   
-                  primary={'React JS'}
+                  primary={headder.id}
                   secondary={'Duration: 2.5 months'}
                   primaryTypographyProps={{
                     variant: 'h3',
@@ -147,7 +149,7 @@ const Hero = () => {
                   
                 }}
               >
-                Remote work is the future, but should you go remote?
+                Remote work in the future, but should you go remote?
               </Typography>
             </Box>
           </Box>
@@ -158,3 +160,8 @@ const Hero = () => {
 };
 
 export default Hero;
+Hero.propTypes = {
+  headder: PropTypes.any,
+  
+  
+};

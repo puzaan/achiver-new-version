@@ -9,12 +9,19 @@ import {
   Hero, SidebarArticles,
   Syllabus
 } from './components';
-
+import Typography from '@mui/material/Typography';
+import { useParams } from 'react-router-dom';
+import { Course } from 'views/Store/AllData';
 const CourseDetail = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+  const { id } = useParams();
+  const data = id;
+  console.log(data);
+  const courseData = Course.find((p) => p.id === data);
+  console.log(courseData);
 
   const Sidebar = () => (
     <Box
@@ -36,7 +43,7 @@ const CourseDetail = () => {
   return (
     <Main colorInvert={true}>
       <Box>
-        <Hero />
+        <Hero headder={courseData }/>
         <Box position={'relative'} minHeight={'100vh'} display={'flex'} padding={1} >
           
           <Box
@@ -49,7 +56,17 @@ const CourseDetail = () => {
               <Container>
                 <Box display='flex'>
                   {isMd ? <Sidebar /> : null}
-                  <Syllabus />
+                  {courseData.syllabus.length > 0
+                    ? <Syllabus data={courseData} />
+                    :
+                    <Box display='flex'>
+                      <Box>
+                        <Typography fontWeight={700} variant={'h4'} gutterBottom>
+                          Content will update soon...
+                        </Typography>
+                      </Box>
+                    </Box>}
+                  
                   
                 </Box>
                 

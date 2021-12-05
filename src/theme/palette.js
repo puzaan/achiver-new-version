@@ -2,7 +2,8 @@ export const light = {
   alternate: {
     main: '#f7faff',
     dark: '#edf1f7',
-    green: '#8FBC8F'
+    green: '#8FBC8F',
+    yellow: '#f9b934',
   },
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
@@ -55,7 +56,8 @@ export const dark = {
 
     main: '#2D3748',
     dark: '#24242b',
-    green: '#8fbc8f'
+    green: '#8fbc8f',
+    yellow: '#2D3748',
     
   },
   cardShadow: 'rgba(0, 0, 0, .11)',

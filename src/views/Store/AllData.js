@@ -6,13 +6,195 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export const Course = [
   {
     id: 'React',
-    title: 'Front End Development with React',
+    title: 'React JS',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
     color: colors.green[200],
     link: '/course-detail',
+    syllabus: [
+      {
+        title: 'JavaScript Concepts Before Learning React',
+        topics: [
+          {
+            topicName: 'Modern JS Operator',
+            day: 'Day 1',
+            description: 'Destructuring, Spread Operator & Rest Pattern and Parameters, Short Circuiting, The Nullish Coalescing Operator, Optional Chaining & Manipulating strings in JavaScript'
+          },
+          {
+            topicName: 'Advanced Array & Function Concepts in JS',
+            day: 'Day 2',
+            description: 'Higher Order Functions & Callback Function, forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
+          },
+          {
+            topicName: 'Advanced Array & Function Concepts in JS',
+            day: 'Day 3, Day 4 & Day 5',
+            description: 'CallbackHell, Promises, Event Loop, async await, Parallel Promises & Promise Combinators'
+          },
+          {
+            topicName: 'Modern JS & Functional Programming',
+            day: 'Day 6 & Day 7',
+            description: 'ES6 Modules, Module Pattern, CommonJS Modules, NPM, Parcel, Babel, Polyfilling & Declarative with Functional JS Principles'
+          },
+        ]
+      },
+      {
+        title: 'Basic React',
+        topics: [
+          {
+            topicName: 'Basic JavaScript-rendered Hello World',
+            day: 'day 8',
+            description: 'nteracting with DOM nodes using JavaScript'
+          },
+          {
+            topicName: 'Advanced Array & Function Concepts in JS',
+            day: 'day2',
+            description: 'Higher Order Functions & Callback Function, forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
+          },
+          {
+            topicName: 'Advanced Array & Function Concepts in JS',
+            day: 'Day 9',
+            description: 'Using React in single .html file without JSX'
+          },
+          {
+            topicName: 'Using JSX',
+            day: 'Day 10',
+            description: 'Using JSX with React in single .html file'
+          },
+          {
+            topicName: 'Creating custom components',
+            day: 'day 11',
+            description: 'Writing custom React components'
+          },
+          {
+            topicName: 'Styling in React',
+            day: 'day 12',
+            description: 'Methods for styling react components.'
+          },
+          {
+            topicName: 'Forms in React',
+            day: 'Day 3',
+            description: 'Forms in React beyond DOM APIs'
+          },
+          {
+            topicName: 'Rendering Arrays',
+            day: 'Day 14',
+            description: 'Render a list of elements in React'
+          },
+        ]
+      },
+      {
+        title: 'Intermediate React',
+        topics: [
+          {
+            topicName: 'useState Hook',
+            day: 'Day 15',
+            description: 'State in react using useState hook'
+          },
+          {
+            topicName: 'useEffect: persistent state',
+            day: 'Day 16',
+            description: 'Built in hook for React renders (and re-renders), forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
+          },
+          {
+            topicName: 'Lifting state',
+            day: 'Day 17',
+            description: 'shaing state between two sibling components'
+          },
+          {
+            topicName: 'useRef and useEffect: DOM interaction',
+            day: 'Day 18',
+            description: 'Integrating React with UI libraries'
+          },
+
+        ]
+      },
+      {
+        title: 'Advanced React',
+        topics: [
+          {
+            topicName: 'useReducer Hook',
+            day: 'Day 19',
+            description: 'Interacting with DOM nodes using JavaScript'
+          },
+          {
+            topicName: 'useCallback Hook',
+            day: 'Day 20',
+            description: 'Using React in single .html file without JSX'
+          },
+          {
+            topicName: 'useContext Hook',
+            day: 'Day 21',
+            description: 'Real world project with React Hooks'
+          },
+          {
+            topicName: 'useImperativeHandle Hook',
+            day: 'Day 22',
+            description: 'Debuggine with useDebug value'
+          },
+          {
+            topicName: 'useDebugValue Hook',
+            day: 'Day 22',
+            description: 'Debuggine with useDebug value'
+          },
+
+        ]
+      },
+      {
+        title: 'Real World React Patterns',
+        topics: [
+          {
+            topicName: 'Context Module Functions',
+            day: 'Day 23',
+            description: 'Advanced state management with useReducer Hook'
+          },
+          {
+            topicName: 'Compound Components',
+            day: 'Day 24',
+            description: 'Memoization in React'
+          },
+          {
+            topicName: 'Flexible Compound Components',
+            day: 'Day 25',
+            description: 'Sharing state between components'
+          },
+          {
+            topicName: 'Prop Collections and Getters',
+            day: 'Day 26',
+            description: 'Using useLayoutEffect instead of useEffect'
+          },
+          {
+            topicName: 'State Reducer',
+            day: 'Day 27',
+            description: 'Real world project with React Hooks'
+          },
+          {
+            topicName: 'Control Props',
+            day: 'Day 28',
+            description: 'Advanced state management with useReducer Hook'
+          },
+
+
+        ]
+      },
+      {
+        title: 'Most Popular Libraries with React',
+        topics: [
+          {
+            topicName: 'React Router',
+            day: 'Day 29',
+            description: 'Standard library for routing in React'
+          },
+          {
+            topicName: 'Redux',
+            day: 'Day 30 & 31',
+            description: 'Centralizing complex application state in React'
+          },
+
+        ]
+      },
+    ]
   },
   {
     id: 'MERN',
@@ -22,6 +204,7 @@ export const Course = [
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
     color: colors.green[200],
+    syllabus: [],
     link: '/course-detail',
     isNew: true,
   },
@@ -34,6 +217,7 @@ export const Course = [
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
     color: colors.green[200],
+    syllabus: [],
     link: '/course-detail',
   },
 
@@ -46,6 +230,395 @@ export const Course = [
     ],
     color: colors.green[200],
     link: '/course-detail',
+    syllabus: [
+      {
+        title: 'Highlights',
+        topics: [
+          {
+            topicName: 'reverse engineering approach of learning',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Learn by doing. We will work together to build project as a colleague.',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Enterprise level project as per your choice. We will choose project where we can implement all your learning',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Code reviews and Suggestions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bonus contents',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Recap to Java Fundamentals',
+        topics: [
+          {
+            topicName: 'JDK and JRE',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Java Basics',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Data Structures(Map, set, List, tree)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Generics',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'OOP concepts(classes, interface, polymorphism, Solid principles...)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exception handling',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Files and I/O',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Entity, Model, DTO, DAO & POJO. What are they?',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Getting Started',
+        topics: [
+          {
+            topicName: 'Overview of Spring framework',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Spring vs Spring MVC vs Spring Boot',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Getting Familiar with Intellij',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Dependency Injection and IOC',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Build tools(Maven/Gradle)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Git and Github for source control',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Spring Boot',
+        topics: [
+          {
+            topicName: 'Spring Initializer',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Folder Structure',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Spring Boot Annotations',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Auto-configuration',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Aspect Oriented Programming',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Externalized Configuration',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Concurrency and Job Scheduling',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mini-Project 1: First Spring Boot Application',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'JPA, ORM , Hibernate and Spring Data JPA',
+        topics: [
+          {
+            topicName: 'Overview of JPA and Spring Data JPA',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Overview of ORM and Hibernate',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Entitity Manager',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Entity Relationships',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Defining JPA Entities',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Repository Interfaces and Custom Repository',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'JPA Entity Life cycle Events',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'H2 - In memory Database',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Connect & Persist data on PostgreSQL',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mini-Project 2: First CRUD Application',
+            day: null,
+            description: null
+          },
+
+
+        ]
+      },
+      {
+        title: 'Logging And Debugging',
+        topics: [
+          {
+            topicName: 'Log Format',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Log to Console',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Log to File',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Log Levels',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Debugger and Break points',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Real Time Project : Phase 2',
+        topics: [
+          {
+            topicName: 'Writing business logic',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating restful APIs',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Testing APIs using postman',
+            day: null,
+            description: null
+          },
+    
+          
+        ]
+      },
+      {
+        title: 'Security',
+        topics: [
+          {
+            topicName: 'Basic Authentication',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Cross Site Request Forgery',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Role Based Access',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Password Encryption',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Authentication Attempts',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'session management',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mini-project 4: Registration and Login(login,logout,remember,redirect)',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Testing',
+        topics: [
+          {
+            topicName: 'Introduction to JUnit, Mockito & Spring Boot Test',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Unit testing & Integration testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'When to write Test?',
+            day: null,
+            description: null
+          },
+          
+
+        ]
+      },
+      {
+        title: 'Real Time Project: Phase 3',
+        topics: [
+          {
+            topicName: 'Completion of project',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Writing Test Cases',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Deployment',
+            day: null,
+            description: null
+          },
+          
+
+        ]
+      },
+      {
+        title: 'Bonus Content',
+        topics: [
+          {
+            topicName: 'Working with JSON',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Caching Mechanism',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Sending Emails & Forget Password',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Swagger for Rest Api',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'React for UI development',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Tips & Best practices',
+            day: null,
+            description: null
+          },
+        ]
+      },
+    ]
   },
   {
     id: '.NET',
@@ -54,6 +627,7 @@ export const Course = [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
+    syllabus: [],
     color: colors.green[200],
     link: '/course-detail',
   },
@@ -66,6 +640,7 @@ export const Course = [
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
+    syllabus: [],
     link: '/course-detail',
   },
   {
@@ -76,6 +651,7 @@ export const Course = [
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
+    syllabus: [],
     link: '/course-detail',
   },
   {
@@ -86,6 +662,7 @@ export const Course = [
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
+    syllabus: [],
     link: '/course-detail',
     isNew: true,
   },
@@ -95,6 +672,7 @@ export const Course = [
     shortDes: [
       'Full Stack Development is the development of both the Client side (Front end) and the Server side (back end) portions of primarily web based applications, but also mobile applications. A full stack developer can build both the back and front ends of an application. Besides, they are trained to plan and execute flawless Database Integration and deploy debugging tests.',
     ],
+    syllabus: [],
     color: colors.green[200],
     link: '/course-detail',
   },
@@ -109,6 +687,7 @@ export const Course = [
       'With Flutter, a developer does not need to use one codebase for Android devices and another for IOS devices. A developer can just write one codebase in any programming language and be able to build an application that runs on both IOS and Android. It is also supported on Windows and Linux devices.',
       'With Flutter, the UI is more elegant, development is faster, and a developer simply needs to write less code.',
     ],
+    syllabus: [],
     link: '/course-detail',
 
     subtitle: [
@@ -330,6 +909,7 @@ export const Course = [
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
+    syllabus: [],
     link: '/course-detail',
     isNew: true,
   },
@@ -340,523 +920,10 @@ export const Course = [
       'There is nothing on the internet without a database. Any company that runs any kind of service like e-commerce or keeps a record of its’ employees and customers needs to keep a database. Technology and the type and amount of data available to companies keep growing every day. The knowledge and skillsets of Database Administrators needs to grow with the logarithmic growth of data. ',
       'Database Administrators keep the data secure and make sure it keeps fragmented and only authorized users can access the data that they are permitted to access, analyze and use. Our database Administration Training is geared at producing software professionals who can write and install computer programs in order to maintain and secure such information. Besides, we also train you to debug issues.',
     ],
+    syllabus: [],
     color: colors.green[200],
     link: '/course-detail',
   },
-
-  //  {
-  //    id: '08',
-  //    title: 'MERN Course',
-  //    time: '1 hour class daily',
-  //    class: 'Offline/Online Class',
-  //    shortDes: '',
-  //    link: '/course-detail',
-  //    isNew: false,
-  //    subtitle: [
-  //      'MERN Stack (MongoDB, ExpressJs, Reactjs and Nodejs) is a very popular programming technology used for developing web apps as well as mobile Apps. Since this technology is user- friendly, interactive, and swift, it has become well accepted in a short period of time. MERN Stack Training in Achiever Groups Software and Research Center is a career-oriented and high-paying job-oriented course which can be done by anyone who wants to build a solid career in the IT sector.',
-  //      'The MERN architecture allows you to easily construct a 3-tier architecture (frontend, backend, database) entirely using JavaScript and JSON.',
-  //      'Like any web stack, you can build whatever you want in MERN - though it’s ideally suited for cases that are JSON-heavy, cloud-native, and that have dynamic web interfaces.',
-  //      'A few examples might be: - Workflow management - News aggregation - Todo apps and Calendars - Interactive forums / social products. And whatever else you can dream up.',
-  //      'The MERN architecture allows you to easily construct a 3-tier architecture (frontend, backend, database) entirely using JavaScript and JSON.',
-  //    ],
-  //    icon: 'fas fa-user',
-  //    color: colors.amber,
-  //    iternship: '100% Internship after course complet',
-  //    location: 'Putalisadak, Kathmandu, Nepal',
-  //    duration: ' Duration: 2.5 Months ',
-  //    courseImage: '/mern.jpg',
-  //    alt: 'MERN',
-
-  //    authorPhoto: {
-  //      src:
-  //        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
-  //      srcSet:
-  //        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
-  //    },
-  //    sylabus: [
-  //      {
-  //        id: 'faq-1',
-  //        title: 'Syllabus Outline',
-  //        text: [
-  //          'Introduction to Python',
-  //          'Understanding of variables and identifiers, standard types and operators',
-  //          'Decision making, sequential data types, dictionaries, loops and functions',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-2',
-  //        title: 'Benefits of python Training in Nepal',
-  //        text: [
-  //          'High demand of Python developers',
-  //          'Environment to prove oneself in a competitive environment',
-  //          'Quick results for projects that are popular in Nepal',
-  //        ],
-  //        des:
-  //          'Achievers Groups is the best institution to learn C# at as it offers trained instructor to run its classes. The demand of C# developers is soaring around the world; however the companies are struggling to hire the qualified C# programmers. Therefore reserve your seat at the earliest in order to appear in upcoming C# training sessions and enhance your C# skills.',
-  //      },
-
-  //      {
-  //        id: 'faq-3',
-  //        title: 'Benefits of python Training at Achievers Groups',
-  //        text: [
-  //          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!',
-  //          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!',
-  //          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!',
-  //        ],
-  //        des:
-  //          'As the leading companies around the world have started using Python for their projects the developers with Python skills can expect plenty of opportunities to work in innovative and high paying projects. Please register yourself for our upcoming Python training session to expand your programming portfolio. Our instructors are excited to guide you along the journey of Python Programming.',
-  //      },
-  //    ],
-
-  //    items: [
-  //      {
-  //        id: 'faq-1',
-  //        title: 'Introduction: ',
-  //        text: [
-  //          'Welcome to the Course',
-  //          'Project Demonstration',
-  //          'Environment Setup',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-2',
-
-  //        title: 'Frontend ',
-  //        text: [
-  //          'Application setup with React',
-  //          'React and bootstrap setup with fixed Header and Footer Components List Home Screen Products',
-  //          'Implementation of React Router',
-  //          'Adding Product Detail Screen',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-3',
-  //        title: 'Backend - Frontend Workflow',
-
-  //        text: [
-  //          ' Working of backend server with frontend and dataflow Serve Product Data from backend ',
-  //          'Display fetched products into frontend ',
-  //          'Auto restart on save feature (via Nodemon) ',
-  //          'Concurrently tools - run backend and frontend at the same time Environmental Variables and Use of ES6 modules in Node.js ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-4',
-  //        title: 'MongoDB as a Database ',
-
-  //        text: [
-  //          'Free database hosting using Mongo atlas setup ',
-  //          'MongoDb admin GUI app - Compass Setup',
-  //          'Connecting to Remote Database ',
-  //          'Data Modeling ',
-  //          'Data Seeding Script - and Populating Sample data into database API testing tool - Postman installation ',
-  //          'API error handlin',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-5',
-  //        title: 'State Management with Redux ',
-
-  //        text: [
-  //          'Introduction to Redux state management ',
-  //          'Creation of Redux store ',
-  //          'Reducer and Actions - Redux Terms - For Products ',
-  //          'Using Redux State Management into home screen/Product Detail  Screen ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-6',
-  //        title: 'Adding Shopping Cart ',
-
-  //        text: [
-  //          ' Quantity Selection and Add to Cart Button ',
-  //          ' Use of Redux to Dispatch Action ',
-  //          'Add to Cart Feature ',
-  //          ' Showing Cart Screen ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-7',
-  //        title: 'Backend Authentication',
-
-  //        text: [
-  //          'Implementation of MVC architecture ',
-  //          'Protected Route for authenticated user ',
-  //          'Working of JWT Authentication ',
-  //          'Generating JWT token ',
-  //          'Authentication Middleware ',
-  //          'Postman Save Token for Automatic Logged in request Password Encryption and save into database',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-8',
-  //        title: ' Frontend Authentication ',
-
-  //        text: [
-  //          'User Login ',
-  //          'Login Screen ',
-  //          'Show User in Navbar and Show Logout ',
-  //          'User Registration ',
-  //          'Get User Profile ',
-  //          ' Update User Profile',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-9',
-  //        title: ' Checkout',
-
-  //        text: [
-  //          'Shipping Screen and Add Address ',
-  //          'Checkout Steps Component ',
-  //          'Payment Screen and Save Payment Method ',
-  //          'Place Order Screen ',
-  //          ' Handling Order in backend with Order Controller and route Get order by ID Endpoint ',
-  //          'Order Details ',
-  //          'Order Screen',
-  //          'Show Orders on User’s Profile ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-10',
-  //        title:
-  //          ' Admin dashboard Design and Backend Implementation Get User and User Management (CRUD Operation) Admin Screen Access Security',
-
-  //        text: [
-  //          'Product Management (CRUD Operation) ',
-  //          'Image upload configuration and api endpoint ',
-  //          'Frontend Image upload implementation ',
-  //          'Order Management ',
-  //          'Mark Order as Delivered ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-11',
-  //        title: ' Bonus',
-
-  //        text: [
-  //          'Creating Reviews (Endpoint/Frontend Implementation) Product Search ',
-  //          'Product Pagination ',
-  //          'Top Products Carousel ',
-  //          'Website Metadata ',
-  //        ],
-  //      },
-  //    ],
-  //    outcome: [
-  //      {
-  //        title: 'Course Outcome',
-  //        text: [
-  //          'Full Stack Development Using MERN/MEVN ',
-  //          'Learn how to build backend API using node and express 3. Learn about authentication (Login and Registration)',
-  //          'JWT token-based authentication and Authorization ',
-  //          'Store image in AWS directly rather than in hosted server 7. Basic git features and upload code to private git repository 8. Testing API using Postman ',
-  //          'Context API for state management ',
-  //          'Protecting routes or endpoints ',
-  //          'An actual real-world project built in a linear and progressive manner ',
-  //          ' Full featured shopping cart with PayPal & credit/debit payments ',
-  //        ],
-  //        desc:
-  //          'Welcome to MERN Stack Front To Back. In this course we will build an in-depth full stack E-commerce application using Node.js, Express, React, Redux and MongoDB along with ES6+. We will start with a blank text editor and end with a deployed full stack application. This course includes... ',
-  //      },
-  //    ],
-  //    feature: [
-  //      {
-  //        title: 'Course Features',
-  //        text: [
-  //          'Let’s start with MongoDB, the document database at the root of the MERN stack. MongoDB was designed to store JSON data natively (it technically uses a binary version of JSON called BSON), and everything from its command line interface to its query language (MQL, or MongoDB Query Language) is built on JSON and JavaScript.',
-  //          'MongoDB works extremely well with Node.js, and makes storing, manipulating, and representing JSON data at every tier of your application incredibly easy. For cloud-native applications, MongoDB Atlas makes it even easier, by giving you an auto-scaling MongoDB cluster on the cloud provider of your choice, as easy as a few button clicks.',
-  //          'Express.js (running on Node.js) and React.js make the JavaScript/JSON application MERN full stack, well, full. Express.js is a server-side application framework that wraps HTTP requests and responses, and makes it easy to map URLs to server-side functions. React.js is a frontend JavaScript framework for building interactive user interfaces in HTML, and communicating with a remote server.',
-  //          'The combination means that JSON data flows naturally from front to back, making it fast to build on and reasonably simple to debug. Plus, you only have to know one programming language, and the JSON document structure, to understand the whole system!',
-  //          'MERN is the stack of choice for today’s web developers looking to move quickly, particularly for those with React.js experience.',
-  //        ],
-  //      },
-  //    ],
-  //  },
-
-  //  {
-  //    id: '09',
-  //    title: 'Python Course',
-  //    time: '1 hour class daily',
-  //    class: 'Offline/Online Class',
-  //    shortDes: '',
-  //    link: '/course-detail',
-  //    isNew: true,
-  //    subtitle: [
-  //      'Python is a powerful programming language used in a variety of professions, ranging from data science to web development. Its in the top 10 for "Most Popular" and "Most Loved" technologies (according to StackOverflows 2016 Developer Survey), making it a relatively friendly language for beginners. Learning Python will enable you to program pretty much anything.',
-  //      'This course provides an introduction to programming and the Python language.  Students are introduced to core programming concepts like data structures, conditionals, loops, variables, and functions.  This course includes an overview of the various tools available for writing and running Python, and gets students coding quickly.  It also provides hands-on coding exercises using commonly used data structures, writing custom functions, and reading and writing to files. This course may be more robust than some other introductory python courses, as it delves deeper into certain essential programming topics.',
-  //    ],
-  //    icon: 'fas fa-user',
-  //    color: colors.amber,
-  //    iternship: '100% Internship after course complet',
-  //    location: 'Putalisadak, Kathmandu, Nepal',
-  //    duration: ' Duration: 2.5 Months',
-  //    courseImage: '',
-  //    alt: 'Python',
-
-  //    authorPhoto: {
-  //      src:
-  //        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
-  //      srcSet:
-  //        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
-  //    },
-  //    sylabus: [
-  //      {
-  //        id: 'faq-1',
-  //        title: 'Syllabus Outline',
-  //        text: [
-  //          'Introduction to Python',
-  //          'Understanding of variables and identifiers, standard types and operators',
-  //          'Decision making, sequential data types, dictionaries, loops and functions',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-2',
-  //        title: 'Benefits of python Training in Nepal',
-  //        text: [
-  //          'High demand of Python developers',
-  //          'Environment to prove oneself in a competitive environment',
-  //          'Quick results for projects that are popular in Nepal',
-  //        ],
-  //        des:
-  //          'Achievers Groups is the best institution to learn C# at as it offers trained instructor to run its classes. The demand of C# developers is soaring around the world; however the companies are struggling to hire the qualified C# programmers. Therefore reserve your seat at the earliest in order to appear in upcoming C# training sessions and enhance your C# skills.',
-  //      },
-
-  //      {
-  //        id: 'faq-3',
-  //        title: 'Benefits of python Training at Achievers Groups',
-  //        text: [
-  //          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!',
-  //          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!',
-  //          'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!',
-  //        ],
-  //        des:
-  //          'As the leading companies around the world have started using Python for their projects the developers with Python skills can expect plenty of opportunities to work in innovative and high paying projects. Please register yourself for our upcoming Python training session to expand your programming portfolio. Our instructors are excited to guide you along the journey of Python Programming.',
-  //      },
-  //    ],
-
-  //    items: [
-  //      {
-  //        id: 'faq-1',
-  //        title: 'Getting Started ',
-  //        text: [
-  //          'Introduction ',
-  //          'Why learn Django? ',
-  //          'MVC vs MVT ',
-  //          'Setting up a development environment',
-  //          'Application Types ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-2',
-
-  //        title: 'Python Fundamentals ',
-  //        text: [
-  //          'Data Types and Variables ',
-  //          'Data Structures (List, Tuples, Dictionary)',
-  //          'Methods and Functions ',
-  //          'Object-Oriented Programming ',
-  //          'Errors and Exception Handling ',
-  //          'Python Decorators ',
-  //          'Python Modules ',
-  //          'Web Scraping using Python ',
-  //          'Working with Images in Python ',
-  //          'Working with PDFs and CSV using Python ',
-  //          'Project 1: Building rock, paper, and scissor game with Python ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-3',
-  //        title: 'Django Fundamentals ',
-
-  //        text: [
-  //          'Introduction to Django ',
-  //          'Install and Configure Django Components',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-4',
-  //        title: 'Create Django Views ',
-
-  //        text: [
-  //          'About View Functions ',
-  //          'Using Django’s HttpResponse Class ',
-  //          'Understanding HttpRequest Objects ',
-  //          ' Using QueryDict Objects ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-5',
-  //        title: 'Configuring URLConf’s ',
-
-  //        text: [
-  //          'About URLconf',
-  //          'Regular Expressions ',
-  //          'Expression Examples ',
-  //          'Simple URLConf Examples ',
-  //          'Using Multiple URLConfs',
-  //          'Passing URL Arguments ',
-  //          'Django Project: Extending blog using URLs - II',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-6',
-  //        title: 'Django Templates ',
-
-  //        text: [
-  //          'Template Fundamentals ',
-  //          'Creating Template Objects ',
-  //          'Loading Template Files ',
-  //          'Filling in Template Content (Context Objects) ',
-  //          'Template Tags',
-  //          'Template Filters ',
-  //          ' More on For Loops ',
-  //          'Template Inheritance ',
-  //          'Easy Rendering of Templates ',
-  //          'RequestContext Processors ',
-  //          'Global Context Processors ',
-  //          'Django Project: Extending blog by introducing templates - III (We will also see how front-end components are used along with Django)',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-7',
-  //        title: 'Django Forms ',
-
-  //        text: [
-  //          'Form classes ',
-  //          'Validation ',
-  //          'Authentication ',
-  //          'Advanced Forms processing techniques ',
-  //          'Django Project: Extending blog by using forms to allow the user to enter data - IV',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-8',
-  //        title: 'Working with Database Models',
-
-  //        text: [
-  //          'About Database Models ',
-  //          'Configuring Django for Database Access ',
-  //          'Understanding Django Apps ',
-  //          'About Django Models ',
-  //          'Defining Django Models ',
-  //          'Understanding Model Fields & Options ',
-  //          'Creating A Django Model ',
-  //          'Adding the App to Your Project ',
-  //          'Validating the App ',
-  //          'Adding Data to the Model ',
-  //          'Primary Keys and the Model ',
-  //          'Simple Data Retrieval Using a Model ',
-  //          'Understanding QuerySets ',
-  //          'Specifying Ordering in QuerySets ',
-  //          'Common QuerySet Methods ',
-  //          'Deleting Records ',
-  //          'Retrieving Related Records ',
-  //          'Creating Forms from Models ',
-  //          'Django Project: Extending blog by introducing database - V',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-9',
-  //        title: 'Authentication ',
-
-  //        text: [
-  //          'Cookies & Django ',
-  //          'The Django Session Framework ',
-  //          'Sessions in Views ',
-  //          'Installing Django User Authentication ',
-  //          'Using Authentication in Views ',
-  //          'Login and Logout ',
-  //          'Building your Own Login/Logout Views ',
-  //          'Authentication Decorators ',
-  //          'Django Project: Adding signup/login functionality - V ',
-  //          'Django Project: Extending blog by using forms to allow the user to enter data - IV',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-10',
-  //        title: 'Generic Views ',
-
-  //        text: [
-  //          'Simple Generic Views',
-  //          'Using Generic Redirects ',
-  //          'Other Generic Views ',
-  //          'Create/Update/Delete Generic views ',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-11',
-  //        title: 'Django Email Functionality ',
-
-  //        text: [
-  //          'Form classes ',
-  //          'Configuring Mail Settings ',
-  //          'Sending Email ',
-  //          'Other Email Functions',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-12',
-  //        title: 'Using Django Rest Framework for API Development  ',
-
-  //        text: [''],
-  //      },
-  //      {
-  //        id: 'faq-13',
-  //        title:
-  //          'Project: Using Django to build a hospital application that allows patients to book a consultation and appointment. ',
-
-  //        text: [
-  //          'Taking appointment ',
-  //          'Registering for consultation',
-  //          'Admin panel to add/remove users ',
-  //          'Form-based signup/login ',
-  //          'Email functionality',
-  //        ],
-  //      },
-  //      {
-  //        id: 'faq-14',
-  //        title: 'Deploying Django Applications',
-
-  //        text: [''],
-  //      },
-  //      {
-  //        id: 'faq-15',
-  //        title: 'Bonus',
-
-  //        text: [
-  //          'Postman – API development Tool',
-  //          'Git and Github for source control',
-  //        ],
-  //      },
-  //    ],
-  //    outcome: [
-  //      {
-  //        title: 'Course Outcome',
-  //        text: [
-  //          'Python is a powerful programming language used in a variety of professions, ranging from data science to web development. Its in the top 10 for "Most Popular" and "Most Loved" technologies (according to StackOverflow"s 2016 Developer Survey), making it a relatively friendly language for beginners. Learning Python will enable you to program pretty much anything.',
-  //          'This course provides an introduction to programming and the Python language.  Students are introduced to core programming concepts like data structures, conditionals, loops, variables, and functions.  This course includes an overview of the various tools available for writing and running Python, and gets students coding quickly.  It also provides hands-on coding exercises using commonly used data structures, writing custom functions, and reading and writing to files. This course may be more robust than some other introductory python courses, as it delves deeper into certain essential programming topics.',
-  //        ],
-  //        desc: '',
-  //      },
-  //    ],
-  //    feature: [
-  //      {
-  //        title: 'Course Features',
-  //        text: [
-  //          'Understand the core construction of Python',
-  //          'Realise the status of Python as the best scripting language',
-  //          'Explain the structure and applications of python',
-  //          'Knowing how Python as the best object-oriented programming language',
-  //          'Understanding the fundamental concepts like Flow control and conditions, File handling, OOPs and Python modules.',
-  //          'Learn how to handle exception and error',
-  //          'Understand and create maps and websites in Django',
-  //          'Handle Django models, REST framework, AJAX and Django jQuery for creating websites and its other applications.',
-  //          'dentify Django template system',
-  //          'Learn the required processes to function class inheritance that helps in reusability',
-  //          'Indexing and slicing of data in python',
-  //        ],
-  //      },
-  //    ],
-  //  },
 ];
 
 export const syllabusDetails = [
@@ -1581,6 +1648,42 @@ export const tools = [
   '/mongoo.png',
   '/api.png',
   '/nodejs.png',
+];
+
+export const usefullLink = [
+  {
+    title: 'Home',
+    link:'/'
+  },
+  {
+    title: 'About',
+    link: '/about'
+  },
+  {
+    title: 'Web Development',
+    link: '/web-service'
+  },
+  {
+    title: 'App Developmentt',
+    link: '/app-service'
+  },
+  {
+    title: 'It Traning',
+    link: '/it-traning'
+  },
+  {
+    title: 'Job Vavancies',
+    link: '/job-listing'
+  },
+  {
+    title: 'Internship',
+    link: '/internship'
+  },
+  {
+    title: 'Contact Ust',
+    link: '/contact-page'
+  },
+  
 ];
 
 export const workFlow = [

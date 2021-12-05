@@ -10,7 +10,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {  Course } from 'views/Store/AllData';
-import { services } from '../../../navigation';
+import { usefullLink } from 'views/Store/AllData';
 import Box from '@mui/material/Box';
 const useStyles = makeStyles(theme => ({
   root: {
@@ -164,7 +164,7 @@ const Footer = props => {
             <Typography
               style={{ textDecoration: 'none', align:'justify'}}
               component={Link}
-              to={`/course-detail/${page.id}`}
+              to={page.link}
               className={clsx(classes.navLink, 'submenu-item')}
             >
               {page.title}
@@ -177,7 +177,7 @@ const Footer = props => {
 
   const MenuPages = () => {
     
-    return <MenuService item={services} />;
+    return <MenuService item={usefullLink} />;
   };
   const theme = useTheme();
   const { mode } = theme.palette;
@@ -257,7 +257,25 @@ const Footer = props => {
               </ListItem>
             </List>
           </Grid>
-
+          <Grid item xs={12} md={3} className={classes.menuListContainer}>
+            <Grid container spacing={0}>
+              <List disablePadding>
+                <Typography
+                  color="textPrimary"
+                  className={classes.menuGroupTitle}
+                >
+                  Usefull Links
+                </Typography>
+                <ListItem
+                  className={classes.menuListContainer}
+                  disableGutters
+                  data-aos="fade-up"
+                >
+                  <MenuPages />
+                </ListItem>
+              </List>
+            </Grid>
+          </Grid>
           <Grid item xs={12} md={3} >
             <Grid container spacing={0}>
               <List disablePadding>
@@ -273,25 +291,6 @@ const Footer = props => {
                   data-aos="fade-up"
                 >
                   <TraningPages />
-                </ListItem>
-              </List>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} md={3} className={classes.menuListContainer}>
-            <Grid container spacing={0}>
-              <List disablePadding>
-                <Typography
-                  color="textPrimary"
-                  className={classes.menuGroupTitle}
-                >
-                  Career Accelerating Program
-                </Typography>
-                <ListItem
-                  className={classes.menuListContainer}
-                  disableGutters
-                  data-aos="fade-up"
-                >
-                  <MenuPages />
                 </ListItem>
               </List>
             </Grid>

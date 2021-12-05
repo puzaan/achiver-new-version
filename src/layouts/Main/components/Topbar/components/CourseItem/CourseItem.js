@@ -7,7 +7,7 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const CourseItem = ({ title, id, items, colorInvert = false }) => {
   const theme = useTheme();
@@ -96,9 +96,8 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
                 <Button
                   style={{ textDecoration: 'none' }}
                   size={'large'}
-                  component={Link}
-                  to={`${p.link}/${p.id}`}
-                  
+                  component={'a'}
+                  href={`${p.link}/${p.id}`}
                   fullWidth
                   sx={{
                     justifyContent: 'flex-start',

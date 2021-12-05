@@ -11,14 +11,14 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 import Container from 'components/Container';
-import { syllabusDetails } from 'views/Store/AllData';
+//import { syllabusDetails } from 'views/Store/AllData';
 //import { alpha } from '@mui/material/styles';
 import Card from '@mui/material/Card';
+import PropTypes from 'prop-types';
 
-
-const Syllabus = () => {
+const Syllabus = props => {
   //const [syllabusName, setSyllabusName] = React.useState(notFond);
-
+  const { data } = props;
 
   const theme = useTheme();
   return (
@@ -37,7 +37,9 @@ const Syllabus = () => {
           <Box
             display={'flex'}
             alignItems={'center'}
-            flexDirection={'column'}>
+            flexDirection={'column'}
+            
+          >
             <Box
               display={'flex'}
               alignItems={'center'}
@@ -51,11 +53,9 @@ const Syllabus = () => {
               variant={'outlined'}
               borderRadius={3}
               width={500}
-              sx={{
-                background: 'alternate.main',
-
-
-              }}
+              padding={'10px'}
+              bgcolor="alternate.yellow"
+              
             >
 
 
@@ -64,14 +64,15 @@ const Syllabus = () => {
                 <ListItemText
                   align={'center'}
                   sx={{ margin: 0 }}
+                  padding={'10px'}
 
                   primary={'Syllabus'}
 
                   primaryTypographyProps={{
                     variant: 'h3',
-                    color: 'primary',
+                    color: 'white',
                     sx: {
-                      fontWeight: 400,
+                      fontWeight: 600,
 
                     },
                   }}
@@ -83,7 +84,7 @@ const Syllabus = () => {
           </Box>
 
           
-          {syllabusDetails.map((item, i) => (
+          {data.syllabus.map((item, i) => (
             <Grid sx={{ alignItems: 'unset', padding: 2 }} key={i}>
               <Box>
                 <Typography
@@ -195,3 +196,9 @@ const Syllabus = () => {
 };
 
 export default Syllabus;
+
+Syllabus.propTypes = {
+  data: PropTypes.any,
+
+
+};
