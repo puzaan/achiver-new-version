@@ -7,12 +7,11 @@ import SecondContainer from 'components/SecondContainer';
 import {
   Features,
   //Hero,
-  Reviews,
+  // Reviews,
   DoNotListion,
   Solutions,
   Partners,
-  Heros
-  
+  Heros,
 } from './components';
 import { Contact } from '../ContactPage/components/index';
 const IndexView = () => {
@@ -35,7 +34,6 @@ const IndexView = () => {
             <SecondContainer >
               <Heros />
             </SecondContainer>
-          
           </Box>
           <Container>
             <Features />
@@ -48,11 +46,11 @@ const IndexView = () => {
           <Container>
             <DoNotListion />
           </Container>
-          <Box bgcolor={'alternate.main'}>
+          {/* <Box bgcolor={'alternate.main'}>
             <Container>
               <Reviews />
             </Container>
-          </Box>
+          </Box> */}
           <Container>
             <Contact />
           </Container>
@@ -60,10 +58,8 @@ const IndexView = () => {
             <Container paddingX={'0 !important'} maxWidth={1}>
               <Partners />
             </Container>
-            
           </Box>
           <Box bgcolor={'alternate.green'} height='3px'>
-            
           </Box>
         </Box>
         

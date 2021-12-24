@@ -8,7 +8,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import { alpha } from '@mui/material/styles';
 import { Feature } from 'views/Store/AllData';
@@ -59,7 +58,7 @@ const Features = () => {
                 </Typography>
                 <Typography color="text.secondary">{item.subtitle}</Typography>
                 <Box sx={{ flexGrow: 1 }} />
-                <Box marginTop={2} display={'flex'} justifyContent={'flex-end'}>
+                {/* <Box marginTop={2} display={'flex'} justifyContent={'flex-end'}>
                   <Button
                     endIcon={
                       <Box
@@ -82,7 +81,7 @@ const Features = () => {
                   >
                     Learn more
                   </Button>
-                </Box>
+                </Box> */}
               </Box>
             </Box>
           </Box>
@@ -107,20 +106,19 @@ const Features = () => {
       </Box>
       <Box marginBottom={2}>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
-          The powerful and flexible theme for all kinds of businesses
+          Professional Job Ready Career Oriented Software Development & Traning Programs.
         </Typography>
         <Typography color="text.secondary" variant={'h6'}>
-          Send one-off and automated email, push, and in-app messages to people.
-          <br />
-          Create better stories.
+          We are Proud to Collaborate with top Silicon Vally Software Ventures.
+          
         </Typography>
       </Box>
       <Grid container spacing={1}>
         {[
-          'Lifetime updates & introduction and working',
-          'Tech support & mutual funds',
-          'Tons of assets & lifetime updates',
-          'Integration ready & tech support',
+          'Industry standard and job Ready Software Training.',
+          'Remotr Job Placement in USA.',
+          'Get Hired Directly in Top Software Firms in Nepal.',
+          'Free Internship with Professional Software Devopers.',
         ].map((item, i) => (
           <Grid item xs={12} key={i}>
             <Box component={ListItem} disableGutters width={'auto'} padding={0}>
@@ -155,7 +153,7 @@ const Features = () => {
           </Grid>
         ))}
       </Grid>
-      <Box marginTop={4}>
+      {/* <Box marginTop={4}>
         <Button
           variant={'contained'}
           size={'large'}
@@ -180,7 +178,7 @@ const Features = () => {
         >
           Get started
         </Button>
-      </Box>
+      </Box> */}
     </Box>
   );
 

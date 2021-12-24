@@ -27,22 +27,21 @@ const DoNotListion = () => {
                 fontWeight: 700,
               }}
             >
-              Don't listen to what they say{' '}
+              Build your dream{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
                 
               >
-                go and see
+                Mobile App
               </Typography>
             </Typography>
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Travelling with our app is easy.
-              <br />
-              Join the biggest community of travellers.
+              We build Mobile App for all stakeholders of your business in Native of X-platform
+              
             </Typography>
           </Box>
           <Box display="flex" marginTop={1}>

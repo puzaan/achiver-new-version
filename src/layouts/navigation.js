@@ -73,6 +73,7 @@ const pages = {
       href: '/e-commerce',
     },
   ],
+
   company: [
     {
       title: 'Career Lising',
@@ -122,6 +123,7 @@ const pages = {
       href: '/contact-page',
     },
   ],
+
   account: [
     {
       title: 'General Settings',
@@ -164,6 +166,8 @@ const pages = {
       href: '/password-reset-cover',
     },
   ],
+
+
   secondary: [
     {
       title: 'Help Center: Overview',
@@ -191,6 +195,7 @@ const pages = {
       href: '/career-listing-minimal',
     },
   ],
+
   blog: [
     {
       title: 'Reach View',
@@ -209,6 +214,7 @@ const pages = {
       href: '/blog-article',
     },
   ],
+  
   portfolio: [
     {
       title: 'Grid View',
@@ -231,23 +237,7 @@ const pages = {
 
 export default pages;
 
-export const about = [
-  {
-    id: '01',
-    title: 'Our Missions',
-    link: '/about',
-  },
-  {
-    id: '02',
-    title: 'Our Visions',
-    link: '/about',
-  },
-  {
-    id: '03',
-    title: 'Our Teams',
-    link: '/about',
-  },
-];
+
 export const services = [
   {
     id: '01',

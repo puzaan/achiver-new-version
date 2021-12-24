@@ -7,6 +7,7 @@ export const Course = [
   {
     id: 'React',
     title: 'React JS',
+    logo: '/react.png',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
@@ -199,31 +200,290 @@ export const Course = [
   {
     id: 'MERN',
     title: 'Full Stack Development with MERN ',
+    logo: '/javascript.png',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
     color: colors.green[200],
-    syllabus: [],
+    syllabus: [
+      {
+        title: ' NODEJS Fundamental ',
+        topics: [
+          {
+            topicName: 'JS Runtime & Rise of Node.js in 2009 ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Setting up Environment: Node.js REPL ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Node.js VS JavaScript / BackEnd VS FrontEnd',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Synchronous vs Asynchronous',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'The Event Loop',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Node.js Module System',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Node.js Package Management',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Practice Prject',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Web Servers',
+        topics: [
+          {
+            topicName: 'HTTP Responses and Requests ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTTP APIs abd Routing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Cross Origin Resource Sharing (CORS)',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Exress.js API',
+        topics: [
+          {
+            topicName: ' Express Vs Next.js vs Koa ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Postman and Isomnia',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Middleware',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Model View Cntroller (MVC)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'RESTfull APIs',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create Read Update and Delete (CRUD)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Templating Engines',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Pratical Project with REACT',
+            day: null,
+            description: null
+          }
+
+        ]
+      },
+      {
+        title: 'MongoDb mongoDB Atlas Mongoose',
+        topics: [
+          {
+            topicName: 'Database Schemas & Schemaless Database ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Setting u MingoDB Atlas',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mongoose',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mongoose Models vs MVC Models',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CRUD with mongoDB Atlast',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Aggregation Pipeling',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Aggregation Middleware',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Practical project with Rest APIs',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Node Security & Authentication',
+        topics: [
+          {
+            topicName: 'Encrypted Connections with SSL and TLS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTTPS With Node & Cryptography',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Authentication vs Authorization',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'API Keys & JWT Tokens',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'OAuth 2.0 Authorization Code Flow',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Registering with Google Authorization Seerver',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Passport.js & Dotenv',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'AuthenticationWith Google And OAuth',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Cookie Based Authentication',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Sessions & Session Middleware in Express',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Restricting Access to Endpoint',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exprimenting with fake sessions',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Continous Integration and Delivery',
+        topics: [
+          {
+            topicName: 'Untroduction to CI and CD',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Pipelines',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'GitHub Actions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mocking Out Database',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Databases with continuous integration',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Populating Data Fr Continous Integration',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Deploying A & Wrapping Up!',
+            day: null,
+            description: null
+          },
+
+
+          
+
+        ]
+      },
+    ],
     link: '/course-detail',
     isNew: true,
   },
-
-  {
-    id: 'Enterprise-Software ',
-    title: 'Enterprise Software ',
-    shortDes: [
-      'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
-      'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
-    ],
-    color: colors.green[200],
-    syllabus: [],
-    link: '/course-detail',
-  },
-
   {
     id: 'jAVA',
     title: 'Development with JAVA',
+    logo: '/java.png',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
@@ -543,7 +803,7 @@ export const Course = [
         title: 'Testing',
         topics: [
           {
-            topicName: 'Introduction to JUnit, Mockito & Spring Boot Test',
+            topicName: 'Introduction to Unit, Mockito & Spring Boot Test',
             day: null,
             description: null
           },
@@ -618,16 +878,373 @@ export const Course = [
           },
         ]
       },
-    ]
+    ],
   },
   {
-    id: '.NET',
+    id: 'dotNET',
     title: 'Development with .NET ',
+    logo: '/dotNet.png',
     shortDes: [
       'Java is the workhorse of the internet. Currently, tens of billions of devices, across platforms and over the world run on Java. It is generally referred to as the Write once, run everywhere programming language.',
       'We train our students on Java- The Programming Language and Java- The Runtime Environment. Java is a programming language that is used to build both mobile and desktop applications. It is concurrent, object oriented, multiplatform and considered very secure. Most developers who want to develop modular applications normally choose Java. ',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: 'Getting Started',
+        topics: [
+          {
+            topicName: 'Introduction',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Why to learn ASP.NET?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'ASP.NET MVC vs ASP.NET Core',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Setting up development environment',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Application Types',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Getting Familiar with Visual Studio Interface',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'C# Fundamentals',
+        topics: [
+          {
+            topicName: 'Data Types and Variables',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Control Statements',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Classes and Objects',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Interfaces',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Enums',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Collection and Generics',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exception Handling',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Build Console Application – TicTacToe',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Live Interactive session with Industry Expert',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'ASP.NET MVC Fundamentals',
+        topics: [
+          {
+            topicName: 'What is MVC pattern?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Folder Structure',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Architecture',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Life cycle of ASP.Net MVC application',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Conventional vs Attribute Routing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Configuration files',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Razor Syntax',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Layout View and Partial View',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'ViewBag vs ViewData vs TempData',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'View Models',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML Helpers',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Project 2 : Build CRUD MVC Application: Book Shop',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Working With Database',
+        topics: [
+          {
+            topicName: 'Introduction to MSSQL and tools',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Store Procedures',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Entity Framework',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'DbContext',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Database First vs Code First vs Model First Approach',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Working with Packages- Nuget Package Manager',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'LINQ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Project 3 : Upgrade Book Shop app to persist information in Database',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Live Interactive session with Industry Expert',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Validation',
+        topics: [
+          {
+            topicName: 'Validation using Data Annotations',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Custom Validations',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Styling Validation Messages',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSRF Attacks and Antiforgery token',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Project 4: User input validation and prevent CSRF attacks on Book Shop',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Security, Authentication and Authorization',
+        topics: [
+          {
+            topicName: 'ASP.NET Identity',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Oauth2 and Social Login(twitter/github)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Project 5: Login/Register for Book Shop',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Real Time Project',
+        topics: [
+          {
+            topicName: 'Book Store APIs',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'GET, POST, PUT and DELETE APIs',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Token based authentication',
+            day: null,
+            description: null
+          },
+
+
+        ]
+      },
+      {
+        title: 'Real Time Project 2',
+        topics: [
+          {
+            topicName: 'E commerce Web Application – Book Store',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Add to Cart',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Add to Wishlist',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Admin panel to add/remove user and products',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Form based Register/Login',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Social Login',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Email Verification and Forget Password Features',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Interactive UIs',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Bonus Contents',
+        topics: [
+          {
+            topicName: 'Dependency Injection',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Logging',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'JQuery and Ajax',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Postman – API development Tool',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Git and Github for source control',
+            day: null,
+            description: null
+          },
+
+
+        ]
+      },
+      
+    ],
     color: colors.green[200],
     link: '/course-detail',
   },
@@ -635,28 +1252,504 @@ export const Course = [
   {
     id: 'Quality-Assurance',
     title: 'Quality Assurance',
+    logo: '/AQ.png',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: 'Manual Testing',
+        topics: [
+          {
+            topicName: 'Fundamental Testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'SDLC',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Static Testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Dynamic Testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'White Box Testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Grey BOx Testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Verification And Validation',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Miscellaneous Types of Testing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Test Cases',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Test Management',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bug Reporting And Tracking ',
+            day: null,
+            description: null
+          }
+        ]
+      },
+      {
+        title: 'Automation Testing(Cypress)',
+        topics: [
+          {
+            topicName: 'What is cypress?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Understanding the cypress Architecture',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Cypress Installation and its prerequisite',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Introduction to the cypress test runner ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Basic cypress commands',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Getting Started and handling web ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Controls UI:Alert,popups,child windows,frames using cypress Fixtures,custom commands,configuration,Environment variable',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Asynchronous Nature',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Cypress Limitations',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mocking Requests and Response',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Selectorshub',
+        topics: [
+          {
+            topicName: 'What are Locators?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Understanding Selectors Hub',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Installing and Locating Elements using Selectors Hub',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Selectors Hub Features',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'JMETER',
+        topics: [
+          {
+            topicName: 'What is Performance Testing?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'JMETER Installation ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'First Jmeter Test with a different type of listeners',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Recording Test using Blazemeter',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Run test from Command Line and generate HTML reports',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Test Parameterization using CSV Data Set Config and making use of Regular Expression Extractor',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Analyzing reports and Distributed Load Testing',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Postman',
+        topics: [
+          {
+            topicName: 'What are API and API Testing?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Understanding different HTTP Methods',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Understanding Postman for API Testing',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Version Controlling',
+        topics: [
+          
+          
+        ]
+      },
+      {
+        title: 'Project management tools',
+        topics: [
+          
+          
+        ]
+      },
+      {
+        title: 'Interview Preparation',
+        topics: [
+         
+        ]
+      },
+      {
+        title: 'Mock Interviews',
+        topics: [
+          
+        ]
+      },
+      {
+        title: 'CV Making',
+        topics: [
+          
+        ]
+      },
+      
+    ],
     link: '/course-detail',
   },
   {
     id: 'Digital-Marketing',
     title: 'Digital Marketing ',
+    logo:'/DigitalMarketing.png',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: 'Introduction',
+        topics: [
+          {
+            topicName: 'What is Digital Marketing?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Types of Digital Marketing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Trends in Digital Marketing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'How to build a Digital Marketing Strategy?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Tools for Digital Marketing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Content Marketing',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Email Marketing',
+        topics: [
+          {
+            topicName: 'Introduction to Email Marketing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Building Email Marketing Strategy',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Email Marketing Tools and Software',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Mailchimp Overview',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Designing Email Marketing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Building Subscriber Lists',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Campaign setup and running',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Reports and Analysis',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Search Engine Optimization',
+        topics: [
+          {
+            topicName: 'Introduction to SEO',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Tools for Website Optimization',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Google Webmasters Tools',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Keyword Research Process',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Competition Analysis',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'On page Optimization Strategies',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Off Page Optimization Strategies',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Local SEO',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Search Engine Marketing',
+        topics: [
+          {
+            topicName: 'Introduction to Search Engine Marketing (Paid Marketing)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'PPC (Pay per Click) Overview',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Google Ads',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Keyword Research & Setup',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bidding Strategies',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Dynamic search Campaigns',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Display Ads',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Youtube Marketing',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Social Media Marketing',
+        topics: [
+          {
+            topicName: 'Introduction to Social Media Marketing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Social Media Platforms',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Facebook, Instagram & LinkedIn Overview',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Social Media Optimization',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Social Media Advertising',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Analytics',
+        topics: [
+          {
+            topicName: 'Introduction to Web Analytics',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Tools for website analytics',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Google Analytics',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Reporting and Analysis',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Conversion Tracking and Optimization',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      
+    ],
     link: '/course-detail',
   },
   {
     id: 'Business-Intelligence',
     title: 'Business Intelligence with MSBI ',
+    logo:'/BusinessIntelligence.png',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
@@ -669,17 +1762,563 @@ export const Course = [
   {
     id: 'Django',
     title: 'Full Stact Development with Python Django',
+    logo:'/Django.png',
     shortDes: [
       'Full Stack Development is the development of both the Client side (Front end) and the Server side (back end) portions of primarily web based applications, but also mobile applications. A full stack developer can build both the back and front ends of an application. Besides, they are trained to plan and execute flawless Database Integration and deploy debugging tests.',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: ' Getting Started ',
+        topics: [
+          {
+            topicName: 'Introduction ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Why learn Django? ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' MVC vs MVT ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Setting up a development environment ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Application Types ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Python Fundamentals',
+        topics: [
+          {
+            topicName: 'Data Types and Variables ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Data Structures (List, Tuples, Dictionary)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Methods and Functions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Object-Oriented Programming',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Errors and Exception Handling ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Python Decorators',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Python Modules ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Web Scraping using Python ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Working with Images in Python',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Working with PDFs and CSV using Python ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Project 1: Building rock, paper, and scissor game with Python ',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Django Fundamentals',
+        topics: [
+          {
+            topicName: ' Introduction to Django ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Install and Configure Django Components ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Create Django Views',
+        topics: [
+          {
+            topicName: 'About View Functions ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Using Django’s HttpResponse Class ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Understanding HttpRequest Objects ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Using QueryDict Objects ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Django Project: Building blog website using Django - I ',
+            day: null,
+            description: null
+          },
+         
+        ]
+      },
+      {
+        title: 'Configuring URLConf ',
+        topics: [
+          {
+            topicName: 'About URLconf ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Regular Expressions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Expression Examples',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Simple URLConf Examples ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Using Multiple URLConf',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Passing URL Arguments',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Django Project: Extending blog using URLs - II',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Django Templates  ',
+        topics: [
+          {
+            topicName: 'Template Fundamentals',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating Template Objects',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Loading Template Files ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Filling in Template Content (Context Objects)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Template Tags',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Template Filters',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'More on For Loops ',
+            day: null,
+            description: null
+          },
+
+
+          {
+            topicName: 'Template Inheritance ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Easy Rendering of Templates',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'RequestContext Processors ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Global Context Processors',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Django Project: Extending blog by introducing templates - III (We will also see how front-end components are used along with Django)',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Django Forms',
+        topics: [
+          {
+            topicName: 'Form classes',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Validation ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Authentication ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Advanced Forms processing techniques ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Django Project: Extending blog by using forms to allow the user to enter data - IV ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Working with Database Models',
+        topics: [
+          {
+            topicName: 'About Database Models',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Configuring Django for Database Access ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Understanding Django Apps',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'About Django Models',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Defining Django Models ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Understanding Model Fields & Options',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating A Django Model',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Adding the App to Your Project ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Validating the App ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Adding Data to the Model',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Primary Keys and the Model ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Simple Data Retrieval Using a Model',
+            day: null,
+            description: null
+          },
+
+
+          {
+            topicName: 'Understanding QuerySets ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Specifying Ordering in QuerySets ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Validating the App ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Common QuerySet Methods ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Deleting Records',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Retrieving Related Records ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' Creating Forms from Models ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Authentication ',
+        topics: [
+          {
+            topicName: 'Cookies & Django ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' The Django Session Framework',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Sessions in Views ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Installing Django User Authentication ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Using Authentication in Views ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: ' . Login and Logout',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Building your Own Login/Logout Views',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Authentication Decorators',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Django Project: Adding signup/login functionality - V ',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Generic Views',
+        topics: [
+          {
+            topicName: 'Simple Generic Views',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Using Generic Redirects ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Other Generic Views ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create/Update/Delete Generic views ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Django Email Functionality',
+        topics: [
+          {
+            topicName: 'Configuring Mail Settings',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Sending Email',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Other Email Functions',
+            day: null,
+            description: null
+          },
+          
+
+        ]
+      },
+      {
+        title: 'Using Django Rest Framework for API Development ',
+        topics: [
+          
+        ]
+      },
+      {
+        title: ' Project: Using Django to build a hospital application that allows patients to book a consultation and appointment. ',
+        topics: [
+          {
+            topicName: 'Taking appointment ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Registering for consultation ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Admin panel to add/remove users ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Form-based signup/login ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Email functionality',
+            day: null,
+            description: null
+          },
+
+
+        ]
+      },
+      {
+        title: 'Deploying Django Applications',
+        topics: [
+
+        ]
+      },
+      
+
+
+      {
+        title: 'Bonus: ',
+        topics: [
+          {
+            topicName: 'Postman – API development Tool ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Git and Github for source control',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      
+
+    ],
     color: colors.green[200],
     link: '/course-detail',
   },
-
   {
     id: 'Flutter',
     title: 'Mobile App Development with Flutter',
+    logo:'/flutter.png',
     time: '1 hour class daily',
     class: 'Offline/Online Class',
     shortDes: [
@@ -687,7 +2326,299 @@ export const Course = [
       'With Flutter, a developer does not need to use one codebase for Android devices and another for IOS devices. A developer can just write one codebase in any programming language and be able to build an application that runs on both IOS and Android. It is also supported on Windows and Linux devices.',
       'With Flutter, the UI is more elegant, development is faster, and a developer simply needs to write less code.',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: 'Chapter I: Introduction to Dart and Flutter ',
+        topics: [
+          {
+            topicName: 'Flutter and Dart intro: Presentation ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Dart and DartPad Overview ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Flutter and Dart Introduction Quiz ',
+            day: null,
+            description: null
+          },
+         
+        ]
+      },
+      {
+        title: 'Chapter II: Dart part 1 ',
+        topics: [
+          {
+            topicName: 'Dart Part 1: Presentation ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Write a Dart Program to display Bill Receipt of Restaurant.',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Write a Dart Program to calculate BMI. ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Write a program for Pet Management. ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Chapter III: Dart par 2',
+        topics: [
+          {
+            topicName: 'Dart Part 2: Presentation?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Write a program to display the highest selling product of current month and predict the highest selling product for upcoming month.',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Write a program for an online wallet syste',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Write a program for a manufacturing company to manage a device functionality that shared same component.',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Live Session Classes ',
+            day: null,
+            description: null
+          },
+          
+          
+        ]
+      },
+      {
+        title: 'Chapter IV: Building First App with Flutter ',
+        topics: [
+          {
+            topicName: 'Flutter first Day ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exploring widgets and create a simple app',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create an app that display summary about the book/novel you recently read',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create an app that display the best picture you ever took. ',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Chapter V: Exploring Container, Single Child and Multiple Children ',
+        topics: [
+          {
+            topicName: 'Exploring Container and Row/Column: Presentation ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Row and Column Challenge ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating a simple Business Card ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Row column challenge part 2 ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating a Simple Card Game ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Challenge 1 Dice Game Challenge ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating a Simple Piano App ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Live Session Classes',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Chapter VI: Flutter organizing widgets and Dart Code',
+        topics: [
+          {
+            topicName: 'Creating Quiz App ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Build a Jung Bahadur Rana story boarding app',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Chapter VII: Flutter Network Request and Navigation ',
+        topics: [
+          {
+            topicName: 'Exploring a Navigation of Flutter ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exploring Network Request by creating a Cat App',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Develop a weather app with current user location (use of GPS) ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Live Corona Update app ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Live Session Classes ',
+            day: null,
+            description: null
+          },
+
+
+
+        ]
+      },
+      {
+        title: 'Chapter VIII: Flutter Advance UI ',
+        topics: [
+          {
+            topicName: 'Creating a BMI App 8.2 Create a UI for Food D',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create a UI for Food Delivery App ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create an App UI from Dribble Inspired ',
+            day: null,
+            description: null
+          },
+         
+        ]
+      },
+      {
+        title: 'Offline Storage and Shared Preferences ',
+        topics: [
+          {
+            topicName: 'Creating a simple Record Keeping App',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exploring a Shared Preferences of Flutter',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create a Wedding Invitation App ',
+            day: null,
+            description: null
+          },
+          
+
+
+        ]
+      },
+      {
+        title: 'Chapter X: Flutter State Management and Firebase ',
+        topics: [
+          {
+            topicName: 'Exploring State Management in Flutter ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Exploring Firebase in Flutter',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Creating an Inventory Management System for Jewelry Shop',
+            day: null,
+            description: null
+          },
+
+
+
+        ]
+      },
+      {
+        title: 'Chapter XI: Miscellaneous',
+        topics: [
+          {
+            topicName: 'Implementing Push Notification ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Implementing Google Maps ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Publishing App',
+            day: null,
+            description: null
+          },
+
+
+
+        ]
+      },
+
+    ],
     link: '/course-detail',
 
     subtitle: [
@@ -904,210 +2835,790 @@ export const Course = [
   {
     id: 'Web-Foundation',
     title: 'Web Development Foundation ',
+    logo:'/WebFoundation.png',
     shortDes: [
       'Any software needs to be continuously and repeatedly tested for security vulnerabilities, bugs that affect runtime and user experience before being released to the market as well as after release.',
       'Most companies these days deploy automated software to check for such vulnerabilities as well as user acceptance. A QA Personnel performs tests both on the Graphical User Interface (GUI) and Application Programming Interface (API) levels.',
       'We train our students on both Cypress and Selenium Automation Testing tools.',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: 'Getting Started:',
+        topics: [
+          {
+            topicName: 'Introduction',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'How Internet works',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Client-side and server-side ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Web Development Process',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Fundamental of web development',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Introduction to HTMl:',
+        topics: [
+          {
+            topicName: 'Introduction to html',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML tag',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML personal-site building',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML Boilerplat',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Structuring text in html',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML Lists',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML image elements',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML links and anchor tags',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Challenge problems',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Intermediate HTML:',
+        topics: [
+          {
+            topicName: 'HTML tables',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Using HTML Tables for layout',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML Forms',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Forms in practices',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Challenge problems',
+            day: null,
+            description: null
+          },
+
+
+        ]
+      },
+      {
+        title: 'Introduction to css:',
+        topics: [
+          {
+            topicName: 'Introduction to CSS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Inline CSS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Internal CSS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'External CSS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'How to Debug CSS Code',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'The Anatomy of CSS Syntax',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS Selectors',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Classes vs. Ids',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS Quiz',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Intermediate TO CSS',
+        topics: [
+          {
+            topicName: 'Favicons',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'HTML divs',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS box model',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS Display Property ',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS static and relative positioning',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Absolute positioning',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS sizing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CSS Float and Clear',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Challenge problems',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Introduction to Bootstrap 4',
+        topics: [
+          {
+            topicName: 'What is Bootstrap?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Installing Bootstrap',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Web Design 101 - Wireframing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'The Bootstrap Navigation Bar',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Setting Up Our New Project',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bootstrap Grid Layout System',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Adding Grid Layouts',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'A Note About CSS Link Order',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bootstrap Buttons & Font Awesome',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Styling Our Website Challenges and Solutions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bootstrap Challenge 1',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Intermediate Bootstrap',
+        topics: [
+          {
+            topicName: 'The Bootstrap Carousel Part 1',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'The Bootstrap Carousel Part 2',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bootstrap Cards',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'The CSS Z-Index and Stacking Order',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Media Query Breakpoints',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bootstrap Challenge 2',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Bootstrap Challenge 2 Solution',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'How to become a Better Programmer - Code Refactoring',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Put it into Practice - Refactor our Website Part 1',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Advanced CSS - Combining Selectors',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Refactoring our Website Part 2',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Advanced CSS - Selector Priority',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Completing the Website',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Download the Completed Website',
+            day: null,
+            description: null
+          },
+
+
+
+        ]
+      },
+      {
+        title: 'Javascript Fundamental part-2',
+        topics: [
+          {
+            topicName: 'Section Intro',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Activating Strict Mode',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Functions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Function Declarations vs. Expressions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Arrow Functions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Functions Calling Other Functions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Reviewing Functions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Coding Challenge #1',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Preview',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Coding Challenge #1',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Basic Array Operations (Methods)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Coding Challenge #2',
+            day: null,
+            description: null
+          },
+
+          {
+            topicName: 'Introduction to Objects',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Dot vs. Bracket Notation',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Object Methods',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Coding Challenge #3',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Iteration: The for Loop',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Looping Arrays, Breaking and Continuing',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Looping Backwards and Loops in Loops',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'The while Loop',
+            day: null,
+            description: null
+          },
+          
+
+
+
+        ]
+      },
+      {
+        title: 'Final Project and Delyment',
+        topics:[]
+      }
+
+
+    ],
     link: '/course-detail',
     isNew: true,
   },
   {
     id: 'SQL',
     title: 'SQL Database Administration',
+    logo:'/mysql.png',
     shortDes: [
       'There is nothing on the internet without a database. Any company that runs any kind of service like e-commerce or keeps a record of its’ employees and customers needs to keep a database. Technology and the type and amount of data available to companies keep growing every day. The knowledge and skillsets of Database Administrators needs to grow with the logarithmic growth of data. ',
       'Database Administrators keep the data secure and make sure it keeps fragmented and only authorized users can access the data that they are permitted to access, analyze and use. Our database Administration Training is geared at producing software professionals who can write and install computer programs in order to maintain and secure such information. Besides, we also train you to debug issues.',
     ],
-    syllabus: [],
+    syllabus: [
+      {
+        title: 'Getting Started',
+        topics: [
+          {
+            topicName: 'Introduction',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Why to learn about databases?',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Opportunities(DBA, Data engineer, Business Intelligence, ETL engineer, etc)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Types of databases (Relational and Non-Relational)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Database Applications',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Linux Basic',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Installing MySQL server and client (Linux based OS/Windows)',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'DBMS Concepts',
+        topics: [
+          {
+            topicName: 'Data Models',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'ER Diagram',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Database Languages(DDL, DCL, DML, TCL)',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Types of Constraint',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Cardinality in DBMS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Keys in DBMS',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Normalization',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'ACID properties',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'OLAP VS OLTP database',
+            day: null,
+            description: null
+          },
+        ]
+      },
+      {
+        title: 'Basic SQL',
+        topics: [
+          {
+            topicName: 'Getting Started with SQL',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'SQL data types and associated functions',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'SQL constraints',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Life cycle of ASP.Net MVC application',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Querying Data',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Sorting Data',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Filtering Data',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Grouping Data',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Set Operators',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Intermediate SQL',
+        topics: [
+          {
+            topicName: 'Joining Tables',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Subqueries',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Rank and Window Function',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'CTE and recursive CTE',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Wildcards and Regex operators',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Transaction, save points and commit/rollback',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+      {
+        title: 'Modifying data in SQL',
+        topics: [
+          {
+            topicName: 'Inset, insert ignore and aru variants',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Create table as select statements haru',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Update',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Delete',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Truncate',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'Advanced SQL',
+        topics: [
+          {
+            topicName: 'Triggers',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Views',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Index',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Query optimization',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Stored Procedure',
+            day: null,
+            description: null
+          },
+
+        ]
+      },
+      {
+        title: 'MySQL Administration',
+        topics: [
+          {
+            topicName: 'Backup and restore',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'User creation and descriptions of various roles',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Role based user',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Granting and revoking privileges',
+            day: null,
+            description: null
+          },
+
+
+        ]
+      },
+      {
+        title: 'Bonus Lecture:',
+        topics: [
+          {
+            topicName: 'Basics of Pentaho',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'Replication and Cluster',
+            day: null,
+            description: null
+          },
+          {
+            topicName: 'DB Monitoring Tools',
+            day: null,
+            description: null
+          },
+          
+        ]
+      },
+    ],
     color: colors.green[200],
     link: '/course-detail',
   },
 ];
 
-export const syllabusDetails = [
-  {
-    title: 'JavaScript Concepts Before Learning React',
-    topics: [
-      {
-        topicName: 'Modern JS Operator',
-        day: 'Day 1',
-        description: 'Destructuring, Spread Operator & Rest Pattern and Parameters, Short Circuiting, The Nullish Coalescing Operator, Optional Chaining & Manipulating strings in JavaScript'
-      },
-      {
-        topicName: 'Advanced Array & Function Concepts in JS',
-        day: 'Day 2',
-        description: 'Higher Order Functions & Callback Function, forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
-      },
-      {
-        topicName: 'Advanced Array & Function Concepts in JS',
-        day: 'Day 3, Day 4 & Day 5',
-        description: 'CallbackHell, Promises, Event Loop, async await, Parallel Promises & Promise Combinators'
-      },
-      {
-        topicName: 'Modern JS & Functional Programming',
-        day: 'Day 6 & Day 7',
-        description: 'ES6 Modules, Module Pattern, CommonJS Modules, NPM, Parcel, Babel, Polyfilling & Declarative with Functional JS Principles'
-      },
-    ]
-  },
-  {
-    title: 'Basic React',
-    topics: [
-      {
-        topicName: 'Basic JavaScript-rendered Hello World',
-        day: 'day 8',
-        description: 'nteracting with DOM nodes using JavaScript'
-      },
-      {
-        topicName: 'Advanced Array & Function Concepts in JS',
-        day: 'day2',
-        description: 'Higher Order Functions & Callback Function, forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
-      },
-      {
-        topicName: 'Advanced Array & Function Concepts in JS',
-        day: 'Day 9',
-        description: 'Using React in single .html file without JSX'
-      },
-      {
-        topicName: 'Using JSX',
-        day: 'Day 10',
-        description: 'Using JSX with React in single .html file'
-      },
-      {
-        topicName: 'Creating custom components',
-        day: 'day 11',
-        description: 'Writing custom React components'
-      },
-      {
-        topicName: 'Styling in React',
-        day: 'day 12',
-        description: 'Methods for styling react components.'
-      },
-      {
-        topicName: 'Forms in React',
-        day: 'Day 3',
-        description: 'Forms in React beyond DOM APIs'
-      },
-      {
-        topicName: 'Rendering Arrays',
-        day: 'Day 14',
-        description: 'Render a list of elements in React'
-      },
-    ]
-  },
-  {
-    title: 'Intermediate React',
-    topics: [
-      {
-        topicName: 'useState Hook',
-        day: 'Day 15',
-        description: 'State in react using useState hook'
-      },
-      {
-        topicName: 'useEffect: persistent state',
-        day: 'Day 16',
-        description: 'Built in hook for React renders (and re-renders), forEach, map, filter, reduce, find, findIndex, flat and flatMap methods'
-      },
-      {
-        topicName: 'Lifting state',
-        day: 'Day 17',
-        description: 'shaing state between two sibling components'
-      },
-      {
-        topicName: 'useRef and useEffect: DOM interaction',
-        day: 'Day 18',
-        description: 'Integrating React with UI libraries'
-      },
-
-    ]
-  },
-  {
-    title: 'Advanced React',
-    topics: [
-      {
-        topicName: 'useReducer Hook',
-        day: 'Day 19',
-        description: 'Interacting with DOM nodes using JavaScript'
-      },
-      {
-        topicName: 'useCallback Hook',
-        day: 'Day 20',
-        description: 'Using React in single .html file without JSX'
-      },
-      {
-        topicName: 'useContext Hook',
-        day: 'Day 21',
-        description: 'Real world project with React Hooks'
-      },
-      {
-        topicName: 'useImperativeHandle Hook',
-        day: 'Day 22',
-        description: 'Debuggine with useDebug value'
-      },
-      {
-        topicName: 'useDebugValue Hook',
-        day: 'Day 22',
-        description: 'Debuggine with useDebug value'
-      },
-
-    ]
-  },
-  {
-    title: 'Real World React Patterns',
-    topics: [
-      {
-        topicName: 'Context Module Functions',
-        day: 'Day 23',
-        description: 'Advanced state management with useReducer Hook'
-      },
-      {
-        topicName: 'Compound Components',
-        day: 'Day 24',
-        description: 'Memoization in React'
-      },
-      {
-        topicName: 'Flexible Compound Components',
-        day: 'Day 25',
-        description: 'Sharing state between components'
-      },
-      {
-        topicName: 'Prop Collections and Getters',
-        day: 'Day 26',
-        description: 'Using useLayoutEffect instead of useEffect'
-      },
-      {
-        topicName: 'State Reducer',
-        day: 'Day 27',
-        description: 'Real world project with React Hooks'
-      },
-      {
-        topicName: 'Control Props',
-        day: 'Day 28',
-        description: 'Advanced state management with useReducer Hook'
-      },
-
-
-    ]
-  },
-  {
-    title: 'Most Popular Libraries with React',
-    topics: [
-      {
-        topicName: 'React Router',
-        day: 'Day 29',
-        description: 'Standard library for routing in React'
-      },
-      {
-        topicName: 'Redux',
-        day: 'Day 30 & 31',
-        description: 'Centralizing complex application state in React'
-      },
-
-    ]
-  },
-];
 export const jobs = [
   {
     id: '1',
@@ -1232,8 +3743,8 @@ export const jobs = [
 export const Feature = [
   {
     color: colors.lightBlue[500],
-    title: 'Web design',
-    subtitle: 'Choose thousands of Web design online course.',
+    title: 'Web App Development',
+    subtitle: 'We make Robust, fast and scalable system designs powered by microservices architecture',
     icon: (
       <svg
         height={24}
@@ -1254,8 +3765,8 @@ export const Feature = [
   },
   {
     color: colors.yellow[500],
-    title: 'Photography',
-    subtitle: 'Choose thousands of Web design online course.',
+    title: 'Mobile App Development',
+    subtitle: 'We will build App for all stackholders of your business in Native X-platform.',
     icon: (
       <svg
         height={24}
@@ -1283,8 +3794,8 @@ export const Feature = [
 
   {
     color: colors.indigo[500],
-    title: 'Video creating',
-    subtitle: 'Choose thousands of Video creating online course.',
+    title: 'IT Training',
+    subtitle: 'Dive into career oriented and job ready IT training.',
     icon: (
       <svg
         height={24}
@@ -1305,8 +3816,8 @@ export const Feature = [
   },
   {
     color: colors.deepPurple[500],
-    title: 'Graphic design',
-    subtitle: 'Choose thousands of Graphic design online course.',
+    title: 'Remote Placement in USA',
+    subtitle: 'We provide a full range of enterprise and mission IT support to top software firms in Silicon Valley. Do you wish to work remotely? ',
     icon: (
       <svg
         height={24}
@@ -1383,39 +3894,39 @@ export const ContactsDetail = [
       </svg>
     ),
   },
-  {
-    label: 'Head Office',
-    value: 'Putalisadak, Kathmandu, Nepal',
-    icon: (
-      <svg
-        width={20}
-        height={20}
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-          clipRule="evenodd"
-        />
-      </svg>
-    ),
-    weblink:
-      'https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021355,85.3200425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312',
-  },
-  {
-    label: 'Facebook Page',
-    value: '@achievergroups',
-    icon: <FacebookIcon />,
-    weblink: 'https://www.facebook.com/achievergroups',
-  },
-  {
-    label: 'Instagram Page',
-    value: 'achievergroups',
-    icon: <InstagramIcon />,
-    weblink: 'https://www.instagram.com/achievergroups/',
-  },
+  // {
+  //   label: 'Head Office',
+  //   value: 'Putalisadak, Kathmandu, Nepal',
+  //   icon: (
+  //     <svg
+  //       width={20}
+  //       height={20}
+  //       xmlns="http://www.w3.org/2000/svg"
+  //       viewBox="0 0 20 20"
+  //       fill="currentColor"
+  //     >
+  //       <path
+  //         fillRule="evenodd"
+  //         d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+  //         clipRule="evenodd"
+  //       />
+  //     </svg>
+  //   ),
+  //   weblink:
+  //     'https://www.google.com/maps/place/Achiever+Groups+Software+%26+Research+Centre/@27.7021355,85.3200425,700m/data=!3m2!1e3!4b1!4m5!3m4!1s0x39eb195da1bc6e81:0x554ecdb446d5b245!8m2!3d27.7021308!4d85.3222312',
+  // },
+  // {
+  //   label: 'Facebook Page',
+  //   value: '@achievergroups',
+  //   icon: <FacebookIcon />,
+  //   weblink: 'https://www.facebook.com/achievergroups',
+  // },
+  // {
+  //   label: 'Instagram Page',
+  //   value: 'achievergroups',
+  //   icon: <InstagramIcon />,
+  //   weblink: 'https://www.instagram.com/achievergroups/',
+  // },
 ];
 
 export const link = [
@@ -1641,9 +4152,9 @@ export const AppWork = [
 export const tools = [
   '/html.png',
   '/css.png',
-  '/javascript.png',
-  '/mysql.png',
-  '/react.png',
+  '/blackjs.png',
+  '/blacksql.png',
+  '/blackreact.png',
   '/aws.png',
   '/mongoo.png',
   '/api.png',
@@ -1986,4 +4497,47 @@ export const Internship = [
     team: 'Consulting',
     subtitle: 'Responsible for creating life in our apps.',
   },
+];
+
+export const services = [
+  {
+    id: '01',
+    title: 'Web Development',
+    link: '/web-service',
+  },
+  {
+    id: '02',
+    title: 'App Development',
+    link: '/app-service',
+  },
+  {
+    id: '03',
+    title: 'IT Traning',
+    link: '/it-traning',
+  },
+];
+export const career = [
+  {
+    id: '01',
+    title: 'Job Vacancies',
+    link: '/career-listing',
+  },
+  {
+    id: '02',
+    title: 'Internship',
+    link: '/internship',
+  },
+];
+
+
+export const courseImg = [
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t39.30808-6/252132891_280660580733072_1492728944178457504_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=xwU8EZbaQ_EAX_WcGRd&_nc_ht=scontent.fktm8-1.fna&oh=00_AT_IOuLFMTcLJXTrDpyZSJ4WrRBZOcn80PU39-5nwbqvGw&oe=61CA8A49',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/165265201_128159629316502_1280554920564312474_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=r-S0k8C2rrIAX-ejlOU&_nc_ht=scontent.fktm8-1.fna&oh=00_AT_OceAqv463ANTfXYLIEt3-K_Hk7tZgyB5RIlFlRRM7Aw&oe=61EC531F',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/166675195_131687765630355_2825839460036978997_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=9GmaE76l63EAX8H9mEj&_nc_ht=scontent.fktm8-1.fna&oh=00_AT-_v5WueUcx7xoJoNizCEbAaxnXRi-cVYRCol4jrVlGKQ&oe=61EB0C9F',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/168991097_131587448973720_3385853853917564260_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=ytETPgumV2oAX8djcI5&_nc_ht=scontent.fktm8-1.fna&oh=00_AT-96kq4q7bHkgE1xyWhTB2Y05mk23HriVy2AWwA320ImQ&oe=61EC414E',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/168548276_132052482260550_575438274950427631_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=DDfY_UTy-4oAX9k_MnQ&_nc_ht=scontent.fktm8-1.fna&oh=00_AT-rVJXqcLAuxLIx1x7bZw8soe9Mj0FmWYlQ-eDsBnj19w&oe=61E9784E',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/166759708_130179025781229_3790211262636013611_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=2od9NLMSkKEAX-0Dn0b&_nc_ht=scontent.fktm8-1.fna&oh=00_AT8elcVyHVgaNjC7UEUKAMvad9J5eC6aiCPozXchqCgbvw&oe=61EAF34F',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/167897456_131170902348708_8307085941878646469_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=S7CCfqbXIIkAX8iICYD&_nc_ht=scontent.fktm8-1.fna&oh=00_AT-medosxRO3anhrHy5XETrckPCj5d1hn7tY6SCjOzf21A&oe=61EA91EC',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/166091024_130380655761066_8483788029480123846_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=0bvQaq4xBOoAX8sS27E&_nc_oc=AQle0XQJsHFjTu51qorH5GjgNRN2xpHrKY3Nfbk96EHLQavHWOrnpXlkjjNxJlbLhsk&_nc_ht=scontent.fktm8-1.fna&oh=00_AT8FqlP1JgXsbk401pGKvcozhQscHlcUhH74S0PWbsyfTQ&oe=61EBD70A',
+  'https://scontent.fktm8-1.fna.fbcdn.net/v/t1.6435-9/166826567_130379542427844_1209308352351302050_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=cMhA8SIsQBYAX89pIH4&_nc_ht=scontent.fktm8-1.fna&oh=00_AT8qv5zXBGEGGmWwL5oGceADxjeewRPo3EtwwKpoL-g_KA&oe=61EB92D9'
 ];

@@ -9,7 +9,7 @@ import {
   // Hero,
   Story,
   WhoWeAre,
-  Team,
+  //Team,
 } from './components';
 
 const About = () => {
@@ -24,9 +24,9 @@ const About = () => {
       <Container maxWidth={800} paddingY={'0 !important'}>
         <Divider />
       </Container>
-      <Container>
+      {/* <Container>
         <Team />
-      </Container>
+      </Container> */}
       <Container>
         <Gallery />
       </Container>

@@ -91,7 +91,7 @@ const Heros = ({ className, ...rest }) => {
 
   const title = (
     <Typography
-      variant="h2"
+      variant="h3"
       color="text.primary"
       gutterBottom
       
@@ -99,19 +99,20 @@ const Heros = ({ className, ...rest }) => {
         fontWeight: 500,
       }}
     >
-      Software company and Software Training partner .
+      SOFTWARE DEVELOPMENT AND IT TRAINING PARTNER.
       <br />
       <TypedText
         color={'secondary'}
         component={'span'}
-        variant={isMd ? 'h3' : 'h4'}
-        
+        variant={isMd ? 'h4' : 'h4'}
+        sx={{fontWeight: 500}}
         typedProps={{
           strings: [
-            'Startup.',
-            'Online course.',
-            'Enhancing business|.',
-            'and many more...',
+            'Web App Development.',
+            'Mobile App Development',
+            'eCommerce Development',
+            'IT Training',
+            'Remote US Job Placement',
           ],
           typeSpeed: 80,
           loop: true,
@@ -119,8 +120,7 @@ const Heros = ({ className, ...rest }) => {
       />
     </Typography>
   );
-
-  const subtitle = 'Helping the freshers to grow in Software industry.';
+  const subtitle = 'Whether you are an established business or a fresher looking for opportunities- we have got you covered';
 
   const buyButton = (
     <Button

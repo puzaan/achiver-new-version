@@ -7,8 +7,7 @@ import NavItem from './components/NavItem';
 import CourseItem from './components/CourseItem';
 import { NavLink } from 'react-router-dom';
 import { Typography } from '@mui/material';
-import { services, career } from '../../../../../navigation';
-import { Course } from 'views/Store/AllData';
+import { Course, services, career } from 'views/Store/AllData';
 const SidebarNav = () => {
   const theme = useTheme();
   const { mode } = theme.palette;

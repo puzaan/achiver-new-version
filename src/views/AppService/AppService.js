@@ -3,7 +3,14 @@ import Box from '@mui/material/Box';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import { Hero, Work, Folio, Trucking, Integrations, CaseStudies } from './components';
+import {
+  Hero,
+  Work,
+  //Folio,
+  Trucking,
+  Integrations,
+  CaseStudies
+} from './components';
 
 const JobListing = () => {
   return (
@@ -24,9 +31,9 @@ const JobListing = () => {
       <Container paddingTop={'0 !important'}>
         <CaseStudies />
       </Container>
-      <Container>
+      {/* <Container>
         <Folio />
-      </Container>
+      </Container> */}
       
 
     </Main>

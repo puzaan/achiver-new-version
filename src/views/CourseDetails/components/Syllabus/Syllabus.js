@@ -9,11 +9,8 @@ import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import { Link } from 'react-router-dom';
 import Container from 'components/Container';
-//import { syllabusDetails } from 'views/Store/AllData';
-//import { alpha } from '@mui/material/styles';
-import Card from '@mui/material/Card';
+//import Card from '@mui/material/Card';
 import PropTypes from 'prop-types';
 
 const Syllabus = props => {
@@ -23,7 +20,7 @@ const Syllabus = props => {
   const theme = useTheme();
   return (
     <Box bgcolor='alternate.main'>
-      <Container maxWidth={900} sx={{ padding: 0 }}>
+      <Container maxWidth={{xs:450, md:900}} sx={{ padding: 0 }}>
         <List
           sx={{
             width: '100%',
@@ -31,59 +28,36 @@ const Syllabus = props => {
             // padding: 2,
             borderRadius: 2,
             boxShadow: 2,
+            
             marginTop: -10.5
+            
           }}
         >
-          <Box
-            display={'flex'}
-            alignItems={'center'}
-            flexDirection={'column'}
-            
-          >
+          <Grid sx={{ alignItems: 'unset', padding: 2, marginTop: -1, borderBottomLeftRadius:10, borderBottomRightRadius:10 }} bgcolor="primary.main" >
             <Box
               display={'flex'}
               alignItems={'center'}
               flexDirection={'column'}
-              data-aos={'fade-up'}
-              data-aos-delay={100}
-              data-aos-offset={100}
-              data-aos-duration={600}
-              component={Card}
-              boxShadow={1}
-              variant={'outlined'}
-              borderRadius={3}
-              width={500}
-              padding={'10px'}
-              bgcolor="alternate.yellow"
-              
+              bgcolor="primary.main"
             >
-
-
               <Box >
-
                 <ListItemText
                   align={'center'}
                   sx={{ margin: 0 }}
                   padding={'10px'}
-
                   primary={'Syllabus'}
-
                   primaryTypographyProps={{
                     variant: 'h3',
                     color: 'white',
                     sx: {
                       fontWeight: 600,
-
                     },
                   }}
-
                 />
               </Box>
+              
             </Box>
-
-          </Box>
-
-          
+          </Grid>
           {data.syllabus.map((item, i) => (
             <Grid sx={{ alignItems: 'unset', padding: 2 }} key={i}>
               <Box>
@@ -97,62 +71,65 @@ const Syllabus = props => {
                 >
                   {item.title}
                 </Typography>
-                {item.topics.map((topic, j) => (
-                  <ListItem sx={{ alignItems: 'unset' }} key={j}>
-                    <Box
-                      display={'flex'}
-                      flexDirection={'column'}
-                      alignItems={'center'}
-                    >
-                      <ListItemIcon sx={{ minWidth: 'auto' }}>
-                        <Box
-                          component={Avatar}
-                          width={50}
-                          height={50}
-                          marginBottom={2}
-                          bgcolor={theme.palette.primary.main}
-                          color={theme.palette.background.paper}
-                        >
-                          <svg
-                            xmlns='http://www.w3.org/2000/svg'
-                            className='h-6 w-6'
-                            fill='none'
-                            viewBox='0 0 24 24'
-                            stroke='currentColor'
-                          >
-                            <path
-                              strokeLinecap='round'
-                              strokeLinejoin='round'
-                              strokeWidth='2'
-                              d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
-                            />
-                          </svg>
-                        </Box>
-                      </ListItemIcon>
+                {item.topics.length > 0
+                  ? item.topics.map((topic, j) => (
+                    <ListItem sx={{ alignItems: 'unset' }} key={j}>
                       <Box
-                        display={i === topic.length - 1 ? 'none' : 'flex'}
-                        flex={'1 1 0%'}
-                        borderRight={`1px solid ${theme.palette.divider}`}
-                      />
-                    </Box>
-                    <Box marginLeft={2}>
-                      <ListItemText
-                        primary={topic.topicName}
-                        secondary={topic.day}
-                        primaryTypographyProps={{ fontWeight: 700 }}
-                        secondaryTypographyProps={{
-                          fontWeight: 600,
-                          color: 'primary',
-                        }}
-                      />
-                      <Box marginTop={2}>
-                        <Typography variant={'subtitle2'}>
-                          {topic.description}
-                        </Typography>
+                        display={'flex'}
+                        flexDirection={'column'}
+                        alignItems={'center'}
+                      >
+                        <ListItemIcon sx={{ minWidth: 'auto' }}>
+                          <Box
+                            component={Avatar}
+                            width={50}
+                            height={50}
+                            marginBottom={2}
+                            bgcolor={theme.palette.primary.main}
+                            color={theme.palette.background.paper}
+                          >
+                            <svg
+                              xmlns='http://www.w3.org/2000/svg'
+                              className='h-6 w-6'
+                              fill='none'
+                              viewBox='0 0 24 24'
+                              stroke='currentColor'
+                            >
+                              <path
+                                strokeLinecap='round'
+                                strokeLinejoin='round'
+                                strokeWidth='2'
+                                d='M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z'
+                              />
+                            </svg>
+                          </Box>
+                        </ListItemIcon>
+                        <Box
+                          display={i === topic.length - 1 ? 'none' : 'flex'}
+                          flex={'1 1 0%'}
+                          borderRight={`1px solid ${theme.palette.divider}`}
+                        />
                       </Box>
-                    </Box>
-                  </ListItem>
-                ))}
+                      <Box marginLeft={2}>
+                        <ListItemText
+                          primary={topic.topicName}
+                          secondary={topic.day}
+                          primaryTypographyProps={{ fontWeight: 700 }}
+                          secondaryTypographyProps={{
+                            fontWeight: 600,
+                            color: 'primary',
+                          }}
+                        />
+                        <Box marginTop={2}>
+                          <Typography variant={'subtitle2'}>
+                            {topic.description}
+                          </Typography>
+                        </Box>
+                      </Box>
+                    </ListItem>
+                  ))
+                  : null}
+                
               </Box>
             </Grid>
           ))}
@@ -165,8 +142,8 @@ const Syllabus = props => {
           sx={{ pt: 2 }}
         >
           <Button
-            component={Link}
-            to={'/'}
+            component={'a'}
+            href={'/enroll'}
             size='large'
             endIcon={
               <svg
@@ -187,7 +164,7 @@ const Syllabus = props => {
             }
             variant='outlined'
           >
-            Go Home
+            Enroll
           </Button>
         </Grid>
       </Container>

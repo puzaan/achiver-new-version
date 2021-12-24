@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Internship } from 'views/Store/AllData';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const Jobs = () => {
   const theme = useTheme();
@@ -58,11 +58,13 @@ const Jobs = () => {
               </Box>
               <Box marginLeft={2}>
                 <Button
-                  component={Link}
+                  component={'a'}
                   variant="outlined"
                   color="primary"
                   size="small"
-                  to={'/internship'}
+                  href={'https://l5blrp4knzx.typeform.com/to/m2FHRbTp'}
+                  target='_blank'
+                  rel='noreferrer'
                   endIcon={
                     <Box
                       component={'svg'}

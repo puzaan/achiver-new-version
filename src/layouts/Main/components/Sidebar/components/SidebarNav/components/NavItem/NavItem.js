@@ -18,7 +18,7 @@ const NavItem = ({ title, items }) => {
     setActiveLink(window && window.location ? window.location.pathname : '');
   }, []);
 
-  const hasActiveLink = () => items.find(i => i.href === activeLink);
+  const hasActiveLink = () => items.find(i => i.link === activeLink);
 
   return (
     <Box>

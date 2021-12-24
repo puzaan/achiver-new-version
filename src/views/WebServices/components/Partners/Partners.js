@@ -33,7 +33,7 @@ const Partners = () => {
               component="img"
               height= '10 px'
               width= '100%'
-              src={item}
+              src={theme.palette.mode === 'dark' ? item : item}
               alt="..."
               sx={{
                 filter:

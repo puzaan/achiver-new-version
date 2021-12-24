@@ -3,6 +3,7 @@ import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Routes from './Routes';
 import Page from './components/Page';
+import ScrollRestoration from 'react-scroll-restoration';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'slick-carousel/slick/slick.css';
@@ -16,9 +17,11 @@ const App = () => {
   return (
     <Page>
       <Router history={browserHistory}>
+        <ScrollRestoration />
         <Routes />
       </Router>
     </Page>
   );
 };
 export default App;
+

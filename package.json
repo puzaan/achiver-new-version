@@ -63,6 +63,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.4",
+    "react-scroll-restoration": "^1.0.8",
     "react-slick": "^0.28.1",
     "react-syntax-highlighter": "^15.4.3",
     "react-typed": "^1.2.0",

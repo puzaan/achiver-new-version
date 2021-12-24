@@ -9,3 +9,4 @@ export { default as Sections } from './Sections';
 export { default as SectionHeader } from './SectionHeader';
 export { default as TypedText } from './TypedText';
 export { default as Heros } from './Heros';
+export { default as CourseImage } from './CourseImage';

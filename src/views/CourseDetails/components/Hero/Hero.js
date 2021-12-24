@@ -5,11 +5,13 @@ import Typography from '@mui/material/Typography';
 import ListItemText from '@mui/material/ListItemText';
 import { useTheme } from '@mui/material/styles';
 import Container from 'components/Container';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Card from '@mui/material/Card';
 import PropTypes from 'prop-types';
-const Hero = props => {
+
+const Hero = (props) => {
   const { headder } = props;
-  console.log(headder);
+
   const theme = useTheme();
   useEffect(() => {
     const jarallaxInit = async () => {
@@ -78,9 +80,11 @@ const Hero = props => {
           alignContent={'center'}
         >
           <Box>
+
             <Box
               display={'flex'}
               alignItems={'center'}
+              //flexDirection={'column'}
               data-aos={'fade-up'}
               data-aos-delay={100}
               data-aos-offset={100}
@@ -91,36 +95,42 @@ const Hero = props => {
               borderRadius={3}
               sx={{
                 background: alpha('#161c2d', 0.6),
-
               }}
+              maxWidth={500}
             >
-              <Box paddingLeft={'80px'}>
+              <Box paddingLeft={'80px'}
+                sx={{
+                  
+                  '& .lazy-load-image-loaded': {
+                    
+                    display: 'flex !important',
+                    bgcolor: 'transparent'
+                  },
+                }}
+              >
                 <Box
-                  maxWidth={100}
-
-
-                  component="img"
+                  //maxWidth={90}
+                  component={LazyLoadImage}
                   height="10 px"
-                  width="100%"
-                  src={'/react.png'}
+                  width="80%"
+                  src={headder.logo}
                   alt="..."
                   sx={{
+                    marginTop : 1,
+                    borderRadius: '50%',
                     filter:
                       theme.palette.mode === 'dark'
-                        ? 'brightness(0) invert(0.7)'
+                        ? 'brightness(0.7)'
                         : 'none',
 
                   }}
                 />
               </Box>
-              
-              
 
               <Box paddingLeft={'20px'}>
                 <ListItemText
                   //align={'center'}
                   sx={{ margin: 0 }}
-                  
                   primary={headder.id}
                   secondary={'Duration: 2.5 months'}
                   primaryTypographyProps={{
@@ -140,19 +150,91 @@ const Hero = props => {
               </Box>
             </Box>
 
+            {/* <Box
+              component={Card}
+              width={500}
+              height={111}
+              boxShadow={1}
+              variant={'outlined'}
+              borderRadius={3}
+              display={'flex'}
+              alignItems={'center'}
+              flexDirection={{ xs: 'column', md: 'row' }}
+              sx={{ backgroundImage: 'none', bgcolor: 'transparent' }}
+            >
+              <Box
+                sx={{
+                  width: { xs: 1, md: 60 },
+                  maxWidth: 60,
+                  '& .lazy-load-image-loaded': {
+                    height: 1,
+                    display: 'flex !important',
+                  },
+                }}
+              >
+                <Box
+                  component={LazyLoadImage}
+                  height={1}
+                  width={1}
+                  src={headder.logo}
+                  alt="..."
+                  effect="blur"
+                  sx={{
+                    objectFit: 'cover',
+                    maxHeight: 50,
+                    maxWidth: 50,
+                    minWidth: 50,
+                    borderRadius: '50%',
+                    filter:
+                      theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+                  }}
+                />
+              </Box>
+              <CardContent
+                style={{ textDecoration: 'none' }}
+                component={'a'}
+                href={`/course-detail/${headder.id}`}
+                sx={{ padding: 1, '&:last-child': { paddingBottom: 1 } }}
+              >
+                <Typography
+                  color="main"
+                  fontWeight={300}
+                  gutterBottom={true}
+                  sx={{
+                    textDecoration: 'none',
+                    color: theme.palette.mode === 'dark' ? '#ffffff' : '#000000',
+                  }}
+                >
+                  {headder.title}
+                </Typography>
+                <Box marginY={1 / 5}>
+                  <Typography
+                    variant={'caption'}
+                    color={'text.secondary'}
+                    component={'i'}
+                  >
+                    Avilable Now
+                  </Typography>
+                </Box>
+              </CardContent>
+            </Box> */}
+
             <Box>
               <Typography
                 variant="h6"
                 sx={{
                   fontWeight: 500,
                   color: 'common.white',
-                  
                 }}
               >
                 Remote work in the future, but should you go remote?
               </Typography>
             </Box>
           </Box>
+
+          
+
+
         </Box>
       </Container>
     </Box>
@@ -162,6 +244,4 @@ const Hero = props => {
 export default Hero;
 Hero.propTypes = {
   headder: PropTypes.any,
-  
-  
 };

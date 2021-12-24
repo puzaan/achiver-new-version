@@ -2,57 +2,14 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+// import Card from '@mui/material/Card';
+// import CardContent from '@mui/material/CardContent';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { alpha, useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
-
-const mock = [
-  {
-    title: 'Your brand platform',
-    description:
-      'Monetize your website and manage all guest interactions with your own brand, logo and domains.',
-    illustration:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration4.svg',
-    illustrationDark:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration4--dark.svg',
-    color: colors.blue[200],
-  },
-  {
-    title: 'Your brand platform',
-    description:
-      'Monetize your website and manage all guest interactions with your own brand, logo and domains.',
-    illustration:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration3.svg',
-    illustrationDark:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration3--dark.svg',
-    color: colors.purple[200],
-  },
-  {
-    label: 'Client portal access',
-    title: 'Simple customer dashboards',
-    description:
-      'Give sub-users access to a simplified dashboard with limited permission levels to offer remote management and real-time analytics.',
-    illustration:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration2.svg',
-    illustrationDark:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration2--dark.svg',
-    color: colors.indigo[200],
-  },
-  {
-    title: 'Mobile compatible platform',
-    description:
-      'Introduce your brand-new mobile friendly website to your customers. Seamlessly integrates with WiFi hardware and marketing automation software.',
-    illustration:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration1.svg',
-    illustrationDark:
-      'https://assets.maccarianagency.com/svg/illustrations/illustration1--dark.svg',
-    color: colors.green[200],
-  },
-];
+import {  useTheme } from '@mui/material/styles';
+// import { colors } from '@mui/material';
+import { courseImg } from 'views/Store/AllData';
 
 const Solutions = () => {
   const theme = useTheme();
@@ -61,18 +18,9 @@ const Solutions = () => {
   });
 
   return (
-    <Box marginBottom={4}>
+    <Box>
       <Box marginBottom={4}>
-        <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'secondary'}
-        >
-          Solutions
-        </Typography>
+        
         <Typography
           variant="h4"
           data-aos={'fade-up'}
@@ -81,25 +29,84 @@ const Solutions = () => {
             fontWeight: 700,
           }}
         >
-          Your new website marketing solution is here
+          Professional Software Development Programs
         </Typography>
         <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>
-          theFront Kit offers a completely customizable website landing pages
-          and supported pages management platform.
-          <br />
-          Here’s what makes us different.
+          Lern form the industry export software developers and get hired.
         </Typography>
-        <Button
-          variant="contained"
-          color="primary"
-          size="large"
-          sx={{ marginTop: 2 }}
-        >
-          View all
-        </Button>
       </Box>
-      <Grid container spacing={isMd ? 8 : 4}>
-        {mock.map((item, i) => (
+      <Grid container spacing={isMd ? 2 : 4}>
+        {courseImg.map((item, i) => (
+          <Grid key={i} item xs={12} md={4}>
+            <Box
+              sx={{
+                position: 'relative',
+                overflow: 'hidden',
+                borderRadius: 1,
+                '&:hover': {
+                  '& img': {
+                    transform: 'scale(1.2)',
+                  },
+                },
+                '& .lazy-load-image-loaded': {
+                  display: 'flex !important',
+                },
+              }}
+            >
+              <Box
+                component={LazyLoadImage}
+                height={1}
+                width={1}
+                src={item}
+                alt="..."
+                effect="blur"
+                minHeight={{ xs: 400, md: 350 }}
+                sx={{
+                  transition: 'transform .7s ease !important',
+                  transform: 'scale(1.0)',
+                  objectFit: 'contain',
+                  filter:
+                    theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+                }}
+              />
+              {/* <Box
+                                position={'absolute'}
+                                bottom={0}
+                                left={0}
+                                right={0}
+                                padding={3}
+                                sx={{
+                                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0) 2%, ${item.color})`,
+                                }}
+                            >
+                                <Typography
+                                    variant={'h4'}
+                                    fontWeight={700}
+                                    sx={{ color: 'common.white' }}
+                                >
+                                    {item.title}
+                                </Typography>
+                                <Typography
+                                    variant={'h6'}
+                                    fontWeight={700}
+                                    sx={{ color: 'common.white' }}
+                                    gutterBottom
+                                >
+                                    {item.description}
+                                </Typography>
+                                <Button
+                                    size={'large'}
+                                    variant={'contained'}
+                                    color={'secondary'}
+                                >
+                                    Read more
+                                </Button>
+                            </Box> */}
+            </Box>
+          </Grid>
+        ))}
+
+        {/* {mock.map((item, i) => (
           <Grid
             key={i}
             item
@@ -180,7 +187,7 @@ const Solutions = () => {
               </CardContent>
             </Box>
           </Grid>
-        ))}
+        ))} */}
       </Grid>
     </Box>
   );

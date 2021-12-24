@@ -8,8 +8,7 @@ import { NavLink } from 'react-router-dom';
 import { NavItem, CourseItem } from './components';
 import { Typography } from '@mui/material';
 import { ThemeModeToggler } from 'layouts/Fixed/components/Topbar/components';
-import { Course } from 'views/Store/AllData';
-import { services, career } from '../../../navigation';
+import { Course, services, career } from 'views/Store/AllData';
 
 const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();

@@ -7,10 +7,10 @@ import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-//import { Link } from 'react-router-dom';
 
 const CourseItem = ({ title, id, items, colorInvert = false }) => {
   const theme = useTheme();
+  
 
   const [anchorEl, setAnchorEl] = useState(null);
   const [openedPopoverId, setOpenedPopoverId] = useState(null);
@@ -29,6 +29,7 @@ const CourseItem = ({ title, id, items, colorInvert = false }) => {
   useEffect(() => {
     setActiveLink(window && window.location ? window.location.pathname : '');
   }, []);
+  // console.log(id);
   ///course-detail
   //const hasActiveLink = () => items.find((i) => i.link === activeLink);
   const hasActiveLink = () => '/course-detail/:id' === activeLink;
