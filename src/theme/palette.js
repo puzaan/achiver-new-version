@@ -17,6 +17,7 @@ export const light = {
     dark: '#000000',
     contrastText: '#fff',
     blue: 'rgb(17, 82, 147)',
+    white: '#ffffff'
   },
   secondary: {
     // main: '#f9b934',
@@ -78,6 +79,7 @@ export const dark = {
     dark: '#f9b934',
     contrastText: 'rgba(0, 0, 0, 0.87)',
     blue: 'rgb(100, 141, 174)',
+    white: '#f9b934'
   },
   secondary: {
     // light: '#FFEA41',

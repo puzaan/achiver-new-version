@@ -111,8 +111,8 @@ const Hero = (props) => {
                 <Box
                   //maxWidth={90}
                   component={LazyLoadImage}
-                  height="10 px"
-                  width="80%"
+                  height="100px"
+                  width="100px"
                   src={headder.logo}
                   alt="..."
                   sx={{

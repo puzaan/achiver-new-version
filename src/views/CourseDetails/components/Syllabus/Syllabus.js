@@ -19,7 +19,7 @@ const Syllabus = props => {
 
   const theme = useTheme();
   return (
-    <Box bgcolor='alternate.main'>
+    <Box bgcolor='alternate.main' width={825}>
       <Container maxWidth={{xs:450, md:900}} sx={{ padding: 0 }}>
         <List
           sx={{

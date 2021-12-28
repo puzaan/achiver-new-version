@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     
     marginTop: '-1px',
 
-    padding: theme.spacing(8, 0),
+    // padding: theme.spacing(8, 0),
     [theme.breakpoints.up('md')]: {
       padding: theme.spacing(13, 0),
     },
@@ -366,7 +366,7 @@ const Footer = props => {
                       }}
                     >
                       <ListItemText
-                        primary="Office"
+                        primary="Location"
                         secondary="Putalisadak,Kathmandu,Nepal"
                         primaryTypographyProps={{
                           variant: 'subtitle1',

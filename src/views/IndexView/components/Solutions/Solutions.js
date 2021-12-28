@@ -10,6 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import {  useTheme } from '@mui/material/styles';
 // import { colors } from '@mui/material';
 import { courseImg } from 'views/Store/AllData';
+import { Link } from 'react-router-dom';
 
 const Solutions = () => {
   const theme = useTheme();
@@ -22,31 +23,31 @@ const Solutions = () => {
       <Box marginBottom={4}>
         
         <Typography
-          variant="h4"
+          variant="h3"
           data-aos={'fade-up'}
           gutterBottom
           sx={{
             fontWeight: 700,
           }}
         >
-          Professional Software Development Programs
+          Professional Software Development & Training Programs
         </Typography>
         <Typography variant="h6" color={'text.secondary'} data-aos={'fade-up'}>
-          Lern form the industry export software developers and get hired.
+          Learn form the industry export software developers and get hired.
         </Typography>
       </Box>
       <Grid container spacing={isMd ? 2 : 4}>
         {courseImg.map((item, i) => (
           <Grid key={i} item xs={12} md={4}>
             <Box
+              component={Link}
+              to={item.link}
               sx={{
                 position: 'relative',
                 overflow: 'hidden',
                 borderRadius: 1,
                 '&:hover': {
-                  '& img': {
-                    transform: 'scale(1.2)',
-                  },
+                  cursor: 'pointer'
                 },
                 '& .lazy-load-image-loaded': {
                   display: 'flex !important',
@@ -57,7 +58,7 @@ const Solutions = () => {
                 component={LazyLoadImage}
                 height={1}
                 width={1}
-                src={item}
+                src={item.image}
                 alt="..."
                 effect="blur"
                 minHeight={{ xs: 400, md: 350 }}
@@ -66,7 +67,7 @@ const Solutions = () => {
                   transform: 'scale(1.0)',
                   objectFit: 'contain',
                   filter:
-                    theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+                    theme.palette.mode === 'dark' ?' none' : 'none',
                 }}
               />
               {/* <Box

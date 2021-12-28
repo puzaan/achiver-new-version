@@ -16,7 +16,7 @@ const Features = () => {
   const theme = useTheme();
 
   const LeftSide = () => (
-    <Grid container spacing={4}>
+    <Grid container spacing={2}>
       {Feature.map((item, index) => (
         <Grid
           item
@@ -36,14 +36,15 @@ const Features = () => {
             }}
           >
             <Box component={Card} padding={4} borderRadius={2} width={1}>
-              <Box display={'flex'} flexDirection={'column'}>
+              <Box display={'flex'} flexDirection={'column'} marginBottom={{ xs: 2, md: 2 }}>
                 <Box
                   component={Avatar}
                   width={60}
                   height={60}
                   marginBottom={2}
                   bgcolor={alpha(item.color, 0.1)}
-                  color={item.color}
+                  // color={item.color}
+                  color={'#000000'}
                   variant={'rounded'}
                   borderRadius={2}
                 >
@@ -58,30 +59,6 @@ const Features = () => {
                 </Typography>
                 <Typography color="text.secondary">{item.subtitle}</Typography>
                 <Box sx={{ flexGrow: 1 }} />
-                {/* <Box marginTop={2} display={'flex'} justifyContent={'flex-end'}>
-                  <Button
-                    endIcon={
-                      <Box
-                        component={'svg'}
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        width={24}
-                        height={24}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </Box>
-                    }
-                  >
-                    Learn more
-                  </Button>
-                </Box> */}
               </Box>
             </Box>
           </Box>
@@ -101,22 +78,21 @@ const Features = () => {
           gutterBottom
           color={'primary'}
         >
-          SEAMLESS INTEGRATION
+          GET HIRED IN OUR
         </Typography>
       </Box>
       <Box marginBottom={2}>
         <Typography variant={'h4'} sx={{ fontWeight: 700 }} gutterBottom>
-          Professional Job Ready Career Oriented Software Development & Traning Programs.
+          Career Oriented Software Development & Training Programs.
         </Typography>
         <Typography color="text.secondary" variant={'h6'}>
-          We are Proud to Collaborate with top Silicon Vally Software Ventures.
-          
+We are Proud to Collaborate with top Silicon Vally Software Ventures.          
         </Typography>
       </Box>
       <Grid container spacing={1}>
         {[
-          'Industry standard and job Ready Software Training.',
-          'Remotr Job Placement in USA.',
+          'Industry Standard and Job Ready Software Training.',
+          'Remote Job Placement in USA',
           'Get Hired Directly in Top Software Firms in Nepal.',
           'Free Internship with Professional Software Devopers.',
         ].map((item, i) => (

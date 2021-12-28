@@ -10,7 +10,7 @@ import {
   // Reviews,
   DoNotListion,
   Solutions,
-  Partners,
+  // Partners,
   Heros,
 } from './components';
 import { Contact } from '../ContactPage/components/index';
@@ -54,13 +54,13 @@ const IndexView = () => {
           <Container>
             <Contact />
           </Container>
-          <Box bgcolor={'primary.main'}>
+          {/* <Box bgcolor={'primary.main'}>
             <Container paddingX={'0 !important'} maxWidth={1}>
               <Partners />
             </Container>
           </Box>
           <Box bgcolor={'alternate.green'} height='3px'>
-          </Box>
+          </Box> */}
         </Box>
         
       </Main>

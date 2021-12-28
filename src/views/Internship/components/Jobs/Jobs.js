@@ -52,9 +52,6 @@ const Jobs = () => {
                     {item.jobTitle}
                   </Typography>
                 </Box>
-                <Typography color={'text.secondary'}>
-                  {`${item.type} / ${item.location}`}
-                </Typography>
               </Box>
               <Box marginLeft={2}>
                 <Button

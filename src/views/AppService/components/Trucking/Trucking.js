@@ -34,7 +34,7 @@ const Trucking = () => {
             <Box
               component={Avatar}
               variant={'rounded'}
-              color={theme.palette.primary.dark}
+              color={theme.palette.primary.white}
               bgcolor={`${theme.palette.primary.light}22`}
             >
               {item.icon}

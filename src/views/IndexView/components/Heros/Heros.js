@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@mui/styles';
-import { Button, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { SectionHeader, TypedText, HeroShaped } from '../../components';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha,useTheme } from '@mui/material/styles';
 import { Box } from '@mui/system';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   fontWeight400: {
@@ -96,22 +96,23 @@ const Heros = ({ className, ...rest }) => {
       gutterBottom
       
       sx={{
-        fontWeight: 500,
+        fontWeight: 700,
       }}
     >
       SOFTWARE DEVELOPMENT AND IT TRAINING PARTNER.
       <br />
       <TypedText
         color={'secondary'}
+        // color={'#ffb74d'}
         component={'span'}
         variant={isMd ? 'h4' : 'h4'}
-        sx={{fontWeight: 500}}
+        sx={{fontWeight: 700}}
         typedProps={{
           strings: [
             'Web App Development.',
             'Mobile App Development',
             'eCommerce Development',
-            'IT Training',
+            'Software Development Training',
             'Remote US Job Placement',
           ],
           typeSpeed: 80,
@@ -122,18 +123,18 @@ const Heros = ({ className, ...rest }) => {
   );
   const subtitle = 'Whether you are an established business or a fresher looking for opportunities- we have got you covered';
 
-  const buyButton = (
-    <Button
-      component={Link}
-      variant="contained"
-      color="primary"
-      size="large"
-      fullWidth={isMd ? false : true}
-      to={'/'}
-    >
-      Read More
-    </Button>
-  );
+  // const buyButton = (
+  //   <Button
+  //     component={Link}
+  //     variant="contained"
+  //     color="primary"
+  //     size="large"
+  //     fullWidth={isMd ? false : true}
+  //     to={'/'}
+  //   >
+  //     Read More
+  //   </Button>
+  // );
 
   const leftSideContent = (
     <SectionHeader
@@ -145,7 +146,7 @@ const Heros = ({ className, ...rest }) => {
         color: 'textPrimary',
       }}
       
-      ctaGroup={[buyButton]}
+      // ctaGroup={[buyButton]}
       data-aos="fade-right"
       disableGutter
       className={classes.leftSideContent}
